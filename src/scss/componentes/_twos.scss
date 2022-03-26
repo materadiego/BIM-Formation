@@ -1,0 +1,79 @@
+.two {
+  background-color: $color-variacion2;
+  height: 380px;
+  padding: 70px 0 0;
+
+  &__container {
+    //border: 2px solid red;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    &--title {
+      //border: 2px solid red;
+      width: 60%;
+      font-size: 34px;
+      line-height: 90%;
+      color: $color-variacion1;
+      & span {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 90%;
+      }
+    }
+    &--image {
+      background-image: url(../images/nf.png);
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+      border: 2px solid red;
+    }
+    &--text {
+      width: 100%;
+      font-size: 14px;
+      font-weight: 600;
+      color: $color-claro;
+    }
+  }
+  &__container2 {
+    //border: 2px solid red;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    &--image {
+      background-image: url(../images/nf.png);
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 40px;
+      border: 2px solid red;
+    }
+    &--text {
+      font-size: 11px;
+      width: 160px;
+      font-weight: 600;
+      text-align: end;
+      margin-bottom: 0;
+      color: $color-claro;
+      //border: 2px solid red;
+    }
+  }
+  &__figure {
+    background-image: url(../images/nf.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid red;
+    height: 190px;
+    @include basic-flex;
+    &--image {
+      //border: 2px solid red;
+      width: 95%;
+      height: 190px;
+    }
+  }
+}

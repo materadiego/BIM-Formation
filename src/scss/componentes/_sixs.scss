@@ -1,0 +1,175 @@
+.six {
+  background-color: $color-variacion2;
+  //border-top: 2px solid red;
+  position: relative;
+  margin-top: -30px;
+  &__title-cont {
+    //border: 2px solid red;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    &--title {
+      text-align: end;
+      font-weight: 600;
+      width: 100%;
+      color: $color-claro;
+      &--span {
+        color: $color-variacion1;
+      }
+    }
+    &--arrow {
+      //border: 2px solid red;
+      width: 25px;
+      height: 25px;
+      &--image {
+        width: 100%;
+        opacity: 0.22;
+        opacity: 1;
+      }
+    }
+  }
+  &__box {
+    width: 55%;
+    //border: 2px solid red;
+    height: 250px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: $color-claro;
+    &--background1 {
+      width: 85%;
+      height: 110px;
+      right: 0;
+      position: absolute;
+      background-color: $color-variacion1;
+    }
+    &--background2 {
+      width: 15%;
+      height: 25px;
+      top: 110px;
+      position: absolute;
+      background-color: $color-variacion1;
+    }
+    &--image {
+      border: 2px solid red;
+      width: 85%;
+      height: 80px;
+      z-index: 3;
+      top: 10px;
+      position: relative;
+    }
+    &--number {
+      font-size: 28px;
+      position: absolute;
+      z-index: 3;
+      right: 11%;
+      top: 70px;
+      color: $color-variacion2;
+    }
+    &--stats {
+      //border: 2px solid red;
+      width: 90%;
+      margin: 37px auto 0;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      z-index: 3;
+      &--minutes {
+        border: 2px solid red;
+        width: 50px;
+        font-weight: 600;
+        font-size: 10px;
+        text-align: end;
+        color: $color-variacion2;
+        & p {
+          margin: 0;
+        }
+      }
+      &--modules {
+        border: 2px solid red;
+        width: 50px;
+        font-weight: 600;
+        font-size: 10px;
+        text-align: end;
+        & p {
+          margin: 0;
+        }
+      }
+    }
+    &--title {
+      //border: 2px solid red;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: $color-variacion2;
+    }
+    &--actions {
+      //border: 2px solid red;
+      width: 90%;
+      margin: 0 auto;
+      height: 75px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.box-l {
+  left: 5%;
+}
+.box-r {
+  left: 40%;
+}
+
+.actions-gratis {
+  //border: 2px solid red;
+  width: 48%;
+  font-size: 10px;
+  padding: 4px 0;
+  margin: 0 0 5px;
+  font-weight: 500;
+
+  text-align: center;
+  color: $color-variacion2;
+  background-color: $color-variacion1;
+}
+
+.actions-resumen {
+  //border: 2px solid red;
+  width: 48%;
+  font-size: 10px;
+  padding: 6px 0;
+  font-weight: 600;
+  text-align: center;
+  color: $color-claro;
+  background-color: $color-variacion2;
+}
+
+.actions-play {
+  border: 4px solid $color-shadow1;
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  &--shadow1 {
+    border: 4px solid $color-shadow2;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+  }
+  &--shadow2 {
+    border: 4px solid $color-variacion2;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    @include basic-flex;
+  }
+}
+
+.actions-play-image {
+  width: 25px;
+  transform: rotateZ(270deg);
+  margin: 0 0 0 6px;
+}

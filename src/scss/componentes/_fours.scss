@@ -1,0 +1,181 @@
+.four {
+  padding-bottom: 150px;
+  &__container {
+    //border: 2px solid red;
+    width: 85%;
+    margin: 60px 15% 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    &--title {
+      width: 100%;
+      text-align: end;
+      color: $color-variacion2;
+      & span {
+        color: $color-variacion1;
+      }
+    }
+    &--arrow {
+      //border: 2px solid red;
+      opacity: 0.19;
+      opacity: 1;
+      width: 30px;
+      height: 30px;
+      right: 15%;
+    }
+  }
+}
+
+.rafael {
+  margin-top: -40px;
+  &__image {
+    left: 15px;
+  }
+}
+
+.melissa {
+  &__image {
+    right: 15px;
+  }
+}
+
+.admins {
+  //border: 2px solid red;
+  &__img-container {
+    //border: 2px solid red;
+    height: 210px;
+    position: relative;
+    &--block1 {
+      width: 155px;
+      height: 155px;
+      z-index: 1;
+      bottom: 0;
+      position: absolute;
+    }
+    &--block2 {
+      width: 105px;
+      height: 105px;
+      bottom: 33px;
+
+      z-index: 2;
+      position: absolute;
+    }
+    &--block3 {
+      width: 25px;
+      height: 25px;
+      bottom: 8px;
+      z-index: 2;
+      position: absolute;
+    }
+    &--image {
+      width: 200px;
+      bottom: 0;
+
+      position: absolute;
+      z-index: 4;
+    }
+  }
+  &__container {
+    //border: 2px solid red;
+    width: 75%;
+    margin: 0 auto;
+
+    &--name {
+      font-size: 24px;
+      margin-bottom: 0px;
+      color: $color-variacion2;
+    }
+    &--subtitle {
+      font-size: 13px;
+      margin: 0px 0 10px;
+      color: $color-variacion1;
+    }
+    &--subcont {
+      //border: 2px solid red;
+      display: flex;
+      flex-wrap: wrap;
+      &--button {
+        width: 85px;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 3px 10px;
+        margin-right: 7px;
+        display: flex;
+        align-items: center;
+
+        background-image: url(../images/admins-flecha-down.svg);
+        background-size: 6px;
+        background-position: 90% center;
+        background-repeat: no-repeat;
+        background-color: $color-variacion2;
+        color: $color-claro;
+      }
+      &--link {
+        //border: 2px solid red;
+        width: 20px;
+        height: 20px;
+        margin-right: 7px;
+        border-radius: 50px;
+        background-color: $color-variacion2;
+        @include basic-flex;
+      }
+      &--text {
+        border: 2px solid red;
+        width: 100%;
+        font-size: 8px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.melissa-name,
+.melissa-subtitle {
+  text-align: end;
+}
+
+.melissa-saber-mas {
+  margin-right: 0;
+}
+
+.block-rafael1 {
+  background-color: $color-variacion2;
+}
+.block-rafael2 {
+  left: 73px;
+  background-color: $color-variacion1;
+}
+.block-rafael3 {
+  left: 178px;
+  background-color: $color-variacion2;
+}
+
+.block-melissa1 {
+  background-color: $color-variacion1;
+  right: 0;
+}
+.block-melissa2 {
+  background-color: $color-variacion2;
+  right: 73px;
+}
+.block-melissa3 {
+  right: 178px;
+  background-color: $color-variacion1;
+}
+
+.subcont-melissa {
+  justify-content: flex-end;
+}
+
+.ig-image,
+.in-image {
+  width: 50%;
+}
+
+.admins-padding-span {
+  padding-left: 20px;
+}
+.admins-color-span {
+  color: $color-variacion2;
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Aventa";
+  src: url("Aventa-LightItallic.eot");
+  src: url("Aventa-LightItallic.eot?#iefix") format("embedded-opentype"), url("Aventa-LightItallic.woff2") format("woff2"), url("Aventa-LightItallic.woff") format("woff"), url("Aventa-LightItallic.svg#Aventa-LightItallic") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Aventa";
+  src: url("Aventa-Light.eot");
+  src: url("Aventa-Light.eot?#iefix") format("embedded-opentype"), url("Aventa-Light.woff2") format("woff2"), url("Aventa-Light.woff") format("woff"), url("Aventa-Light.svg#Aventa-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }

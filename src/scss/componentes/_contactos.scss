@@ -1,0 +1,92 @@
+.contacto {
+  background-color: $color-variacion5;
+  padding-bottom: 30px;
+  &__start {
+    //border: 2px solid red;
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    &--image {
+      width: 52%;
+    }
+    &--title-cont {
+      //border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 42%;
+      &--title {
+        text-align: end;
+        font-size: 20px;
+        color: $color-claro;
+      }
+    }
+  }
+  &__container {
+    //border: 2px solid red;
+    margin: 30px auto 0;
+    width: 90%;
+    &--text {
+      font-size: 10px;
+      font-weight: 700;
+      color: $color-claro;
+    }
+    &--subtitle {
+      font-size: 18px;
+      color: $color-variacion1;
+    }
+  }
+}
+
+.form {
+  //border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 11px;
+    padding: 10px;
+    color: $color-variacion2;
+    &::placeholder {
+      font-family: "Aventa";
+      font-weight: 600;
+      font-size: 11px;
+      border: none;
+      outline: none;
+    }
+  }
+  &__textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    font-size: 11px;
+    padding: 10px;
+
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    color: $color-variacion2;
+
+    &::placeholder {
+      font-family: "Aventa";
+      font-weight: 600;
+      font-size: 11px;
+    }
+  }
+  & button {
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    width: 140px;
+    color: $color-claro;
+    background-color: $color-variacion1;
+  }
+}
+
+.contacto-arrow {
+  width: 25px;
+  margin-bottom: 10px;
+}

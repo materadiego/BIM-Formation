@@ -1,0 +1,78 @@
+.swiper {
+  //border: 2px solid red;
+  width: 100%;
+  height: 230px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.opinion-box {
+  width: 55%;
+  height: 155px;
+  padding: 0 15px;
+  position: relative;
+  @include shadow-caja;
+  &__quotation {
+    //border: 2px solid red;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    &--image {
+      width: 100%;
+      position: absolute;
+      top: -20px;
+      left: 0;
+    }
+  }
+  &__text {
+    font-size: 10px;
+    font-weight: 600;
+    margin: 30px 0 10px;
+    text-align: left;
+    line-height: 115%;
+    color: $color-secundario;
+  }
+  &__author {
+    text-align: end;
+    font-size: 13px;
+    margin: 0 0 5px;
+    font-weight: 500;
+    color: $color-variacion2;
+  }
+  &__author-rol {
+    font-size: 10px;
+    text-align: end;
+    font-weight: 600;
+    margin: 0;
+    color: $color-secundario;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  transform: scale(0.6);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: $color-variacion2;
+}

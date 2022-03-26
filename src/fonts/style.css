@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Aventa';
+    src: local('Aventa Variable'), local('Aventa-Variable'),
+        url('AventaVariable.woff2') format('woff2'),
+        url('AventaVariable.woff') format('woff'),
+        url('AventaVariable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
