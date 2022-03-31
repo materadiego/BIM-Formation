@@ -442,13 +442,11 @@ body {
   display: none; }
 
 .header-container {
-  border: 2px solid red;
   width: 85%;
   height: 100vh;
   margin: 0 auto;
   padding-top: 80px; }
   .header-container__redes {
-    border: 2px solid red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -457,16 +455,13 @@ body {
     .header-container__redes a {
       width: 100%;
       padding-left: 20px;
-      border: 2px solid red;
       font-size: 13px;
       font-weight: 600;
       text-decoration: none;
       color: #fff; }
   .header-container__buttons {
-    border: 2px solid red;
     margin-top: 20px; }
     .header-container__buttons--contactanos {
-      border: 2px solid red;
       width: 130px;
       margin-bottom: 5px;
       display: -webkit-box;
@@ -482,10 +477,8 @@ body {
       .header-container__buttons--contactanos img {
         width: 20px;
         height: 20px;
-        margin-right: 10px;
-        border: 2px solid red; }
+        margin-right: 10px; }
     .header-container__buttons--inscribirme {
-      border: 2px solid red;
       width: 130px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -503,22 +496,19 @@ body {
     display: flex;
     margin: 40px 0;
     border-bottom: 2px solid #b3b3b3; }
-  .header-container__subcontainer {
-    border: 2px solid red; }
-    .header-container__subcontainer--title {
-      font-weight: 600;
-      line-height: 110%;
-      color: #fff; }
-      .header-container__subcontainer--title span {
-        font-size: 13px;
-        color: #2fe6b0; }
-    .header-container__subcontainer--text {
-      font-size: 9px;
-      font-weight: 600;
-      color: #fff; }
+  .header-container__subcontainer--title {
+    font-weight: 600;
+    line-height: 110%;
+    color: #fff; }
+    .header-container__subcontainer--title span {
+      font-size: 13px;
+      color: #2fe6b0; }
+  .header-container__subcontainer--text {
+    font-size: 9px;
+    font-weight: 600;
+    color: #fff; }
 
 .header-form {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
