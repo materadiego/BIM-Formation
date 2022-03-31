@@ -414,9 +414,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  z-index: 3;
-  right: 20px;
+  position: fixed;
+  z-index: 6;
+  right: 10px;
   top: 15px; }
   .burger-container--image {
     width: 100%;
@@ -426,6 +426,134 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 3; }
+
+.header {
+  position: fixed;
+  width: 65%;
+  height: 100vh;
+  z-index: 5;
+  -webkit-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  margin-left: 100%;
+  background-color: #3600e0; }
+
+.header-logo-container {
+  display: none; }
+
+.header-container {
+  border: 2px solid red;
+  width: 85%;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 80px; }
+  .header-container__redes {
+    border: 2px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .header-container__redes a {
+      width: 100%;
+      padding-left: 20px;
+      border: 2px solid red;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #fff; }
+  .header-container__buttons {
+    border: 2px solid red;
+    margin-top: 20px; }
+    .header-container__buttons--contactanos {
+      border: 2px solid red;
+      width: 130px;
+      margin-bottom: 5px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 13px;
+      color: #fff;
+      font-weight: 600;
+      background-color: #090060; }
+      .header-container__buttons--contactanos img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        border: 2px solid red; }
+    .header-container__buttons--inscribirme {
+      border: 2px solid red;
+      width: 130px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-weight: 600;
+      color: #fff;
+      background-color: #2fe6b0; }
+  .header-container__line {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 40px 0;
+    border-bottom: 2px solid #b3b3b3; }
+  .header-container__subcontainer {
+    border: 2px solid red; }
+    .header-container__subcontainer--title {
+      font-weight: 600;
+      line-height: 110%;
+      color: #fff; }
+      .header-container__subcontainer--title span {
+        font-size: 13px;
+        color: #2fe6b0; }
+    .header-container__subcontainer--text {
+      font-size: 9px;
+      font-weight: 600;
+      color: #fff; }
+
+.header-form {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .header-form__input {
+    width: 100%;
+    font-size: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: none;
+    outline: none; }
+    .header-form__input::-webkit-input-placeholder {
+      font-family: "Aventa";
+      font-weight: 600; }
+    .header-form__input:-ms-input-placeholder {
+      font-family: "Aventa";
+      font-weight: 600; }
+    .header-form__input::-ms-input-placeholder {
+      font-family: "Aventa";
+      font-weight: 600; }
+    .header-form__input::placeholder {
+      font-family: "Aventa";
+      font-weight: 600; }
+  .header-form__submit {
+    font-size: 8px;
+    padding: 5px 7px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #2fe6b0; }
+
+.is-active {
+  margin-left: 35%; }
 
 .chat-container {
   display: none; }
@@ -524,8 +652,8 @@ body {
     border: 2px solid red; }
 
 .mobile-logo {
-  width: 100px;
-  margin: 0; }
+  width: 90px;
+  margin: 5px 0 0; }
   .mobile-logo__image {
     width: 100%; }
 

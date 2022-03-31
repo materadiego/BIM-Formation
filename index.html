@@ -24,7 +24,53 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header id="header" class="header"></header>
+    <header id="header" class="header">
+      <figure class="header-logo-container">
+        <img src="" alt="" class="header-logo-container__image" />
+      </figure>
+      <div class="header-container">
+        <div class="header-container__redes">
+          <a href="" class="header-container__redes--instagram">Instagram</a>
+          <a href="" class="header-container__redes--facebook">Facebook</a>
+        </div>
+        <div class="header-container__buttons">
+          <a href="" class="header-container__buttons--contactanos"
+            ><img src="" alt="" /> ¡Contactanos!</a
+          >
+          <a href="" class="header-container__buttons--inscribirme"
+            >INSCRIBIRME</a
+          >
+        </div>
+        <div class="header-container__line"></div>
+        <div class="header-container__subcontainer">
+          <p class="header-container__subcontainer--title">
+            <span>¡TE REGALAMOS</span> <br />
+            EL MODULO 1 <br />
+            COMPLETO!
+          </p>
+          <p class="header-container__subcontainer--text">
+            Para que puedas probar la excelencia <br />
+            de nuestro curso, gratis completando <br />
+            este formulario
+          </p>
+          <form action="" class="header-form">
+            <input
+              type="text"
+              class="header-form__input"
+              placeholder="Nombre y Apellido"
+            />
+            <input
+              type="text"
+              class="header-form__input"
+              placeholder="Correo Electrónico"
+            />
+            <button type="submit" class="header-form__submit">
+              ACCEDER AL MÓDULO GRATIS
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
     <!-- BURGER BUTTON -->
     <div class="burger-container" id="burger-button">
       <i class="burger-container--image"></i>
@@ -592,5 +638,6 @@
         },
       });
     </script>
+    <script src="src/js/burger.js"></script>
   </body>
 </html>
