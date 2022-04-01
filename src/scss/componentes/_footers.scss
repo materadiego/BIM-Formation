@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   &__figure {
-    border: 2px solid red;
+    //border: 2px solid red;
     width: 50%;
     margin-top: 5px;
     &--image {
@@ -26,21 +26,26 @@
       display: flex;
       justify-content: space-between;
       & a {
-        border: 2px solid red;
+        //border: 2px solid red;
         width: 20px;
         height: 20px;
+        padding: 0;
+        margin-bottom: 10px;
+        & img {
+          width: 100%;
+        }
       }
     }
     &--text {
       font-size: 8px;
       margin: 5px 0 10px;
       font-weight: 600;
-      color: $color-claro;
+      color: $color-secundario;
     }
     &--email {
       font-size: 10px;
       font-weight: 600;
-      color: $color-claro;
+      color: $color-secundario;
     }
   }
 }

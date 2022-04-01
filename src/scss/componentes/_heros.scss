@@ -69,20 +69,62 @@
     }
   }
   &__grid {
-    background-image: url(../images/nf.png);
-    background-size: 60%;
-    background-position: center top;
-    background-repeat: no-repeat;
-    height: 400px;
+    height: 413px;
     width: 40%;
     position: absolute;
-    top: 220px;
+    top: 222px;
     right: 0;
     z-index: 1;
-    display: grid;
+
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    border: 2px solid red;
+    &--horizontal {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    &--vertical {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      &--subcont1 {
+        width: 100%;
+        height: 85.5%;
+
+        display: flex;
+      }
+      &--subcont2 {
+        width: 100%;
+        height: 14%;
+        display: flex;
+      }
+    }
   }
+}
+
+.lineas-horizontales {
+  width: 100%;
+  height: 3.57%;
+  border-bottom: 1px solid;
+}
+
+.lineas-verticales {
+  border-right: 2px solid;
+  width: 13.2%;
+}
+
+.linea-final {
+  border: none;
+}
+
+.color1 {
+  color: $color-variacion1;
+}
+
+.color2 {
+  color: $color-variacion2;
 }
 
 .mobile-logo {

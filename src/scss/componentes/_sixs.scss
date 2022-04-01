@@ -52,7 +52,7 @@
       background-color: $color-variacion1;
     }
     &--image {
-      border: 2px solid red;
+      //border: 2px solid red;
       width: 85%;
       height: 80px;
       z-index: 3;
@@ -69,29 +69,39 @@
     }
     &--stats {
       //border: 2px solid red;
-      width: 90%;
+      width: 80%;
       margin: 37px auto 0;
       display: flex;
       justify-content: flex-end;
       position: relative;
       z-index: 3;
       &--minutes {
-        border: 2px solid red;
-        width: 50px;
+        //border: 2px solid red;
+        width: 52px;
         font-weight: 600;
         font-size: 10px;
         text-align: end;
+        background-image: url(../images/six-icon1.svg);
+        background-size: 12px;
+        background-position: left 1px;
+        background-repeat: no-repeat;
         color: $color-variacion2;
         & p {
           margin: 0;
         }
       }
       &--modules {
-        border: 2px solid red;
-        width: 50px;
+        //border: 2px solid red;
+        width: 40px;
         font-weight: 600;
         font-size: 10px;
         text-align: end;
+        margin-left: 10px;
+        background-image: url(../images/six-icon2.svg);
+        background-size: 15px;
+        background-position: left 1px;
+        background-repeat: no-repeat;
+        color: $color-variacion2;
         & p {
           margin: 0;
         }
