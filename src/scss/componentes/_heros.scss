@@ -1,11 +1,11 @@
 .hero {
-  height: 575px;
-  padding: 15px 5% 0;
+  height: 179.68vw;
+  padding: 4.68vw 5% 0;
   position: relative;
 
   &__green-block {
     width: 50%;
-    height: 480px;
+    height: 150vw;
     top: 0;
     right: 0;
     z-index: 0;
@@ -14,17 +14,17 @@
   }
   &__title {
     // border: 2px solid red;
-    width: 285px;
-    margin: 60px auto 0;
+    width: 89.06vw;
+    margin: 18.75vw auto 0;
     z-index: 2;
-    font-size: 22px;
+    font-size: 6.87vw;
     font-weight: 600;
     line-height: 110%;
     position: relative;
     color: $color-variacion2;
     &--span {
       color: $color-variacion5;
-      font-size: 26px;
+      font-size: 8.12vw;
       font-weight: 600;
     }
   }
@@ -33,51 +33,53 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 285px;
-    margin: 30px auto 0;
+    width: 89.06vw;
+    margin: 9.37vw auto 0;
     z-index: 2;
 
     &--one {
-      width: 130px;
+      width: 40.62vw;
       font-weight: 600;
-      padding: 3px 0;
+      padding: 1vw 0;
+      font-size: 3.12vw;
+
       color: $color-claro;
       background: $color-variacion2;
       @include basic-flex;
     }
     &--two {
-      width: 130px;
+      width: 40.62vw;
       font-weight: 600;
-      padding: 3px 0;
-      margin: 8px 0 0;
-      font-size: 10px;
+      padding: 1vw 0;
+      margin: 2.5vw 0 0;
+      font-size: 3.12vw;
       color: $color-claro;
       background: $color-variacion1;
       @include basic-flex;
     }
   }
   &__image-container {
-    width: 285px;
-    margin: 60px 0 0;
-    // border: 2px solid red;
+    width: 100%;
+    margin: 18.75vw auto 0;
+    //border: 2px solid red;
     position: relative;
     z-index: 2;
+    @include basic-flex;
 
     &--img {
-      width: 100%;
+      width: 110%;
       // border: 2px solid red;
     }
   }
   &__grid {
-    height: 413px;
-    width: 40%;
+    height: 129.06vw;
+    width: 36%;
     position: absolute;
-    top: 222px;
+    top: 69.375vw;
     right: 0;
     z-index: 1;
 
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     &--horizontal {
       display: flex;
       flex-wrap: wrap;
@@ -107,11 +109,11 @@
 .lineas-horizontales {
   width: 100%;
   height: 3.57%;
-  border-bottom: 1px solid;
+  border-bottom: 0.31vw solid;
 }
 
 .lineas-verticales {
-  border-right: 2px solid;
+  border-right: 0.31vw solid;
   width: 13.2%;
 }
 
@@ -128,8 +130,8 @@
 }
 
 .mobile-logo {
-  width: 90px;
-  margin: 5px 0 0;
+  width: 28.12vw;
+  margin: 1.56vw 0 0;
   //border: 2px solid red;
   &__image {
     width: 100%;

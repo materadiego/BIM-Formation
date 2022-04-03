@@ -2,7 +2,7 @@
   background-color: $color-variacion2;
   //border-top: 2px solid red;
   position: relative;
-  margin-top: -30px;
+  margin-top: -9.37vw;
   &__title-cont {
     //border: 2px solid red;
     width: 80%;
@@ -14,6 +14,7 @@
       text-align: end;
       font-weight: 600;
       width: 100%;
+      font-size: 6.5vw;
       color: $color-claro;
       &--span {
         color: $color-variacion1;
@@ -21,8 +22,8 @@
     }
     &--arrow {
       //border: 2px solid red;
-      width: 25px;
-      height: 25px;
+      width: 7.81vw;
+      height: 7.81vw;
       &--image {
         width: 100%;
         opacity: 0.22;
@@ -33,56 +34,56 @@
   &__box {
     width: 55%;
     //border: 2px solid red;
-    height: 250px;
-    margin-bottom: 20px;
+    height: 78.125vw;
+    margin-bottom: 6.25vw;
     position: relative;
     background-color: $color-claro;
     &--background1 {
       width: 85%;
-      height: 110px;
+      height: 34.37vw;
       right: 0;
       position: absolute;
       background-color: $color-variacion1;
     }
     &--background2 {
       width: 15%;
-      height: 25px;
-      top: 110px;
+      height: 7.81vw;
+      top: 34.37vw;
       position: absolute;
       background-color: $color-variacion1;
     }
     &--image {
       //border: 2px solid red;
       width: 85%;
-      height: 80px;
+      height: 25vw;
       z-index: 3;
-      top: 10px;
+      top: 3.12vw;
       position: relative;
     }
     &--number {
-      font-size: 28px;
+      font-size: 8.75vw;
       position: absolute;
       z-index: 3;
       right: 11%;
-      top: 70px;
+      top: 21.87vw;
       color: $color-variacion2;
     }
     &--stats {
       //border: 2px solid red;
       width: 80%;
-      margin: 37px auto 0;
+      margin: 11.56vw auto 0;
       display: flex;
       justify-content: flex-end;
       position: relative;
       z-index: 3;
       &--minutes {
         //border: 2px solid red;
-        width: 52px;
+        width: 16.25vw;
         font-weight: 600;
-        font-size: 10px;
+        font-size: 3.12vw;
         text-align: end;
         background-image: url(../images/six-icon1.svg);
-        background-size: 12px;
+        background-size: 3.75vw;
         background-position: left 1px;
         background-repeat: no-repeat;
         color: $color-variacion2;
@@ -92,13 +93,13 @@
       }
       &--modules {
         //border: 2px solid red;
-        width: 40px;
+        width: 12.5vw;
         font-weight: 600;
-        font-size: 10px;
+        font-size: 3.12vw;
         text-align: end;
-        margin-left: 10px;
+        margin-left: 3.12vw;
         background-image: url(../images/six-icon2.svg);
-        background-size: 15px;
+        background-size: 4.68vw;
         background-position: left 1px;
         background-repeat: no-repeat;
         color: $color-variacion2;
@@ -110,7 +111,7 @@
     &--title {
       //border: 2px solid red;
       text-align: center;
-      font-size: 12px;
+      font-size: 3.75vw;
       font-weight: 500;
       color: $color-variacion2;
     }
@@ -118,7 +119,7 @@
       //border: 2px solid red;
       width: 90%;
       margin: 0 auto;
-      height: 75px;
+      height: 23.43vw;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -137,9 +138,9 @@
 .actions-gratis {
   //border: 2px solid red;
   width: 48%;
-  font-size: 10px;
+  font-size: 3.12vw;
   padding: 4px 0;
-  margin: 0 0 5px;
+  margin: 0 0 1.56vw;
   font-weight: 500;
 
   text-align: center;
@@ -150,7 +151,7 @@
 .actions-resumen {
   //border: 2px solid red;
   width: 48%;
-  font-size: 10px;
+  font-size: 3.125vw;
   padding: 6px 0;
   font-weight: 600;
   text-align: center;
@@ -160,26 +161,26 @@
 
 .actions-play {
   border: 4px solid $color-shadow1;
-  width: 65px;
-  height: 65px;
-  border-radius: 50px;
+  width: 20.31vw;
+  height: 20.31vw;
+  border-radius: 300px;
   &--shadow1 {
     border: 4px solid $color-shadow2;
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    border-radius: 300px;
   }
   &--shadow2 {
     border: 4px solid $color-variacion2;
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    border-radius: 300px;
     @include basic-flex;
   }
 }
 
 .actions-play-image {
-  width: 25px;
+  width: 7.81vw;
   transform: rotateZ(270deg);
-  margin: 0 0 0 6px;
+  margin: 0 0 0 1.87vw;
 }

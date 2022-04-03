@@ -1,8 +1,9 @@
 .seven {
   &__title {
     //border: 2px solid red;
-    padding: 5px 0 10px 15%;
+    padding: 1.56vw 0 3.12vw 15%;
     font-weight: 600;
+    font-size: 6.5vw;
     background-color: $color-variacion2;
     color: $color-claro;
 
@@ -12,9 +13,9 @@
   }
   &__arrow {
     //border: 2px solid red;
-    width: 25px;
-    height: 25px;
-    margin: 30px 0 0 15%;
+    width: 7.81vw;
+    height: 7.81vw;
+    margin: 9vw 0 0 15%;
 
     &--image {
       width: 100%;

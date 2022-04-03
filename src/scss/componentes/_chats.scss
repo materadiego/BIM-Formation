@@ -4,27 +4,28 @@
   align-items: center;
   margin-left: 50%;
   padding: 10px 0;
-  top: 70vh;
+  top: 80vh;
   width: 50%;
-  border: 2px solid red;
   z-index: 5;
   background-color: $color-claro;
+  @include shadow-caja;
   &__img {
-    width: 50px;
-    height: 50px;
-    border: 2px solid red;
+    width: 13vw;
+    height: 13vw;
+    margin-left: 10px;
+    //border: 2px solid red;
   }
   &__text {
     font-family: "Aventa";
-    border: 2px solid red;
+    //border: 2px solid red;
     font-weight: 500;
-    padding-left: 8px;
-    font-size: 9px;
+    padding: 0 6px 0 10px;
+    font-size: 3vw;
     margin: 0;
     line-height: 110%;
     color: $color-variacion2;
     &--span {
-      font-size: 7px;
+      font-size: 2.5vw;
       color: $color-variacion1;
     }
   }

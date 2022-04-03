@@ -1,9 +1,9 @@
 .contacto {
   background-color: $color-variacion5;
-  padding-bottom: 30px;
+  padding-bottom: 9.37vw;
   &__start {
     //border: 2px solid red;
-    padding-top: 15px;
+    padding-top: 4.68vw;
     width: 100%;
     display: flex;
     &--image {
@@ -18,22 +18,22 @@
       width: 42%;
       &--title {
         text-align: end;
-        font-size: 20px;
+        font-size: 6.25vw;
         color: $color-claro;
       }
     }
   }
   &__container {
     //border: 2px solid red;
-    margin: 30px auto 0;
+    margin: 9.37vw auto 0;
     width: 90%;
     &--text {
-      font-size: 10px;
+      font-size: 3.12vw;
       font-weight: 700;
       color: $color-claro;
     }
     &--subtitle {
-      font-size: 18px;
+      font-size: 5.62vw;
       color: $color-variacion1;
     }
   }
@@ -46,14 +46,14 @@
   justify-content: center;
   &__input {
     width: 100%;
-    margin-bottom: 10px;
-    font-size: 11px;
+    margin-bottom: 3.12vw;
+    font-size: 3.43vw;
     padding: 10px;
     color: $color-variacion2;
     &::placeholder {
       font-family: "Aventa";
       font-weight: 600;
-      font-size: 11px;
+      font-size: 3.43vw;
       border: none;
       outline: none;
     }
@@ -62,7 +62,7 @@
     resize: none;
     width: 100%;
     height: 100px;
-    font-size: 11px;
+    font-size: 3.43vw;
     padding: 10px;
 
     margin-bottom: 20px;
@@ -73,7 +73,7 @@
     &::placeholder {
       font-family: "Aventa";
       font-weight: 600;
-      font-size: 11px;
+      font-size: 3.43vw;
     }
   }
   & button {
@@ -87,6 +87,6 @@
 }
 
 .contacto-arrow {
-  width: 25px;
-  margin-bottom: 10px;
+  width: 7.81vw;
+  margin-bottom: 3.12vw;
 }

@@ -12,12 +12,12 @@
   justify-content: space-between;
   padding-bottom: 0px;
   position: relative;
-  top: -70px;
+  top: -21.87vw;
   &__box {
     width: 45%;
-    height: 130px;
-    padding-top: 5px;
-    margin-bottom: 60px;
+    height: 40.62vw;
+    padding-top: 1.5vw;
+    margin-bottom: 18.75vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,30 +25,30 @@
     background-color: $color-claro;
     @include shadow-caja;
     &--image-cont {
-      width: 30px;
-      height: 30px;
+      width: 9.37vw;
+      height: 9.37vw;
       margin-bottom: 0;
       background-size: 80%;
       background-position: center;
       background-repeat: no-repeat;
     }
     &--number {
-      font-size: 30px;
+      font-size: 10vw;
       margin: 0;
       color: $color-variacion1;
     }
     &--subtitle {
-      font-size: 8px;
+      font-size: 3vw;
       margin: 0;
       font-weight: 600;
       color: $color-variacion1;
     }
     &--button {
-      width: 35px;
-      height: 35px;
+      width: 10.93vw;
+      height: 10.93vw;
       margin: 0;
       position: absolute;
-      bottom: -20px;
+      bottom: -6.25vw;
       background-color: $color-variacion1;
       @include basic-flex;
     }

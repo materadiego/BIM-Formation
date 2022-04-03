@@ -1,4 +1,6 @@
 const burgerButton = document.querySelector("#burger-button");
+const burgerButton2 = document.querySelector("#burger-button2");
+
 const menu = document.querySelector(".header");
 
 function hideShow() {
@@ -10,3 +12,4 @@ function hideShow() {
 }
 
 burgerButton.addEventListener("click", hideShow);
+burgerButton2.addEventListener("click", hideShow);

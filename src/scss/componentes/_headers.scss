@@ -14,19 +14,27 @@
 
 .header-container {
   //border: 2px solid red;
-  width: 85%;
+  width: 97%;
   height: 100vh;
   margin: 0 auto;
-  padding-top: 80px;
+  overflow: auto;
+  padding: 15vw 10% 80px;
+  &::-webkit-scrollbar {
+    width: 2px;
+    background: $color-variacion5;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color-variacion1;
+  }
   &__redes {
     //border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     & a {
       width: 100%;
-      padding-left: 20px;
+      padding-left: 6.25vw;
       //border: 2px solid red;
-      font-size: 13px;
+      font-size: 4.06vw;
       font-weight: 600;
       text-decoration: none;
       color: $color-claro;
@@ -34,31 +42,32 @@
   }
   &__buttons {
     //border: 2px solid red;
-    margin-top: 20px;
+    margin-top: 30px;
     &--contactanos {
       //border: 2px solid red;
-      width: 130px;
-      margin-bottom: 5px;
+      width: 40.62vw;
+      margin-bottom: 1.56vw;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 13px;
+      font-size: 4.06vw;
       color: $color-claro;
       font-weight: 600;
       background-color: $color-variacion5;
       & img {
-        width: 30px;
-        height: 30px;
+        width: 9.37vw;
+        height: 9.37vw;
         margin-right: 0px;
         //border: 2px solid red;
       }
     }
     &--inscribirme {
       //border: 2px solid red;
-      width: 130px;
+      width: 40.62vw;
       display: flex;
       justify-content: center;
       font-weight: 600;
+      font-size: 3.5vw;
       color: $color-claro;
       background-color: $color-variacion1;
     }
@@ -66,22 +75,23 @@
   &__line {
     width: 100%;
     display: flex;
-    margin: 40px 0;
+    margin: 30px 0;
     border-bottom: 2px solid $color-secundario;
   }
   &__subcontainer {
-    //border: 2px solid red;
+    // border: 2px solid red;
     &--title {
       font-weight: 600;
       line-height: 110%;
+      font-size: 5vw;
       color: $color-claro;
       & span {
-        font-size: 13px;
+        font-size: 4.06vw;
         color: $color-variacion1;
       }
     }
     &--text {
-      font-size: 9px;
+      font-size: 2.7vw;
       font-weight: 600;
       color: $color-claro;
     }
@@ -94,9 +104,9 @@
   flex-wrap: wrap;
   &__input {
     width: 100%;
-    font-size: 10px;
-    margin-bottom: 5px;
-    padding: 5px;
+    font-size: 3.12vw;
+    margin-bottom: 1.56vw;
+    padding: 1.56vw;
     border: none;
     outline: none;
     &::placeholder {
@@ -105,9 +115,9 @@
     }
   }
   &__submit {
-    font-size: 8px;
-    padding: 5px 7px;
-    margin-top: 5px;
+    font-size: 2.5vw;
+    padding: 1.56vw 2.18vw;
+    margin-top: 1.56vw;
     border: none;
     outline: none;
     color: $color-claro;
