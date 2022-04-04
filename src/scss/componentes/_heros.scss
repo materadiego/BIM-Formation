@@ -2,7 +2,10 @@
   height: 179.68vw;
   padding: 4.68vw 5% 0;
   position: relative;
-
+  @include media(desktop-s) {
+    height: 65vw;
+    padding: 11vw 5% 0;
+  }
   &__green-block {
     width: 50%;
     height: 150vw;
@@ -11,9 +14,13 @@
     z-index: 0;
     position: absolute;
     background-color: $color-variacion1;
+    @include media(desktop-s) {
+      height: 60vw;
+      width: 65%;
+    }
   }
   &__title {
-    // border: 2px solid red;
+    //border: 2px solid red;
     width: 89.06vw;
     margin: 18.75vw auto 0;
     z-index: 2;
@@ -22,30 +29,49 @@
     line-height: 110%;
     position: relative;
     color: $color-variacion2;
+    @include media(tablet) {
+      margin: 10vw auto 0;
+    }
+    @include media(desktop-s) {
+      font-size: 3.25vw;
+      width: 45vw;
+      margin: 0;
+    }
     &--span {
       color: $color-variacion5;
       font-size: 8.12vw;
       font-weight: 600;
+      @include media(desktop-s) {
+        font-size: 3.25vw;
+      }
     }
   }
   &__button {
-    // border: 2px solid red;
+    //border: 2px solid red;
     display: flex;
     flex-direction: column;
     position: relative;
     width: 89.06vw;
     margin: 9.37vw auto 0;
     z-index: 2;
-
+    @include media(desktop-s) {
+      margin: 4vw 0 0;
+      width: 18vw;
+    }
     &--one {
       width: 40.62vw;
       font-weight: 600;
       padding: 1vw 0;
       font-size: 3.12vw;
-
+      border: 2px solid red;
       color: $color-claro;
       background: $color-variacion2;
       @include basic-flex;
+      @include media(desktop-s) {
+        font-size: 1.7vw;
+        width: 17vw;
+        padding: 0.7vw 0;
+      }
     }
     &--two {
       width: 40.62vw;
@@ -56,6 +82,13 @@
       color: $color-claro;
       background: $color-variacion1;
       @include basic-flex;
+      @include media(desktop-s) {
+        font-size: 1.3vw;
+        width: 17vw;
+        padding: 0.5vw 0 0.5vw 1vw;
+        margin: 1vw 0;
+        justify-content: flex-start;
+      }
     }
   }
   &__image-container {
@@ -65,10 +98,16 @@
     position: relative;
     z-index: 2;
     @include basic-flex;
-
+    @include media(desktop-s) {
+      margin: -6vw 0 0 18vw;
+      width: 80%;
+    }
     &--img {
       width: 110%;
       // border: 2px solid red;
+      @include media(desktop-s) {
+        width: 100%;
+      }
     }
   }
   &__grid {
@@ -80,6 +119,9 @@
     z-index: 1;
 
     display: flex;
+    @include media(desktop-s) {
+      display: none;
+    }
     &--horizontal {
       display: flex;
       flex-wrap: wrap;
@@ -102,6 +144,17 @@
         height: 14%;
         display: flex;
       }
+    }
+  }
+  &__desktop-media {
+    @include media(desktop-s) {
+      width: 25vw;
+      height: 25vw;
+      right: 0;
+      top: 11vw;
+      display: flex;
+      position: absolute;
+      background-color: $color-variacion2;
     }
   }
 }
@@ -133,6 +186,9 @@
   width: 28.12vw;
   margin: 1.56vw 0 0;
   //border: 2px solid red;
+  @include media(desktop-s) {
+    display: none;
+  }
   &__image {
     width: 100%;
   }

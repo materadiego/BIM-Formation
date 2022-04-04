@@ -8,6 +8,7 @@ $color-variacion2: #3600e0;
 $color-variacion3: #1a00ad;
 $color-variacion4: #180096;
 $color-variacion5: #090060;
+$color-transparente: rgba(0, 0, 0, 0);
 
 $color-shadow1: rgba(54, 0, 224, 0.2);
 $color-shadow2: rgba(54, 0, 224, 0.5);
@@ -39,6 +40,9 @@ body {
   z-index: 5;
   right: 3.12vw;
   top: 4.68vw;
+  @include media(desktop-s) {
+    display: none;
+  }
   &--image {
     width: 100%;
     height: 100%;

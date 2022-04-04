@@ -2,6 +2,9 @@
   background-color: $color-variacion2;
   height: 118.75vw;
   padding: 21.87vw 0 0;
+  @include media(desktop-s) {
+    padding: 8vw 5%;
+  }
 
   &__container {
     //border: 2px solid red;
@@ -9,37 +12,60 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    @include media(desktop-s) {
+      width: 37%;
+      margin: 0 0 0 15%;
+    }
     &--title {
       //border: 2px solid red;
       width: 60%;
       font-size: 11vw;
       line-height: 90%;
       color: $color-variacion1;
+      @include media(desktop-s) {
+        font-size: 4.7vw;
+        width: 70%;
+      }
       & span {
         font-size: 6.7vw;
         font-weight: 600;
         line-height: 90%;
+        @include media(desktop-s) {
+          font-size: 2.85vw;
+        }
       }
     }
     &--image {
       width: 17vw;
       height: 17vw;
       //border: 2px solid red;
+      @include media(desktop-s) {
+        width: 7vw;
+        height: 7vw;
+      }
     }
     &--text {
       width: 100%;
       font-size: 4.3vw;
       font-weight: 600;
       color: $color-claro;
+      @include media(desktop-s) {
+        font-size: 2vw;
+      }
     }
   }
   &__container2 {
-    // border: 2px solid red;
+    //border: 2px solid red;
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    @include media(desktop-s) {
+      width: 37%;
+      margin: 0 0 0 15%;
+      justify-content: flex-start;
+    }
     &--image {
       width: 10vw;
       height: 10vw;
@@ -47,6 +73,10 @@
       opacity: 1;
 
       //border: 2px solid red;
+      @include media(desktop-s) {
+        width: 2vw;
+        height: 2vw;
+      }
     }
     &--text {
       font-size: 3.4vw;
@@ -57,6 +87,9 @@
 
       color: $color-claro;
       //border: 2px solid red;
+      @include media(desktop-s) {
+        font-size: 1vw;
+      }
     }
   }
   &__figure {
