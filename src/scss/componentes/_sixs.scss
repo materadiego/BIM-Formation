@@ -3,6 +3,9 @@
   //border-top: 2px solid red;
   position: relative;
   margin-top: -9.37vw;
+  @include media(desktop-s) {
+    margin-top: 20vw;
+  }
   &__title-cont {
     //border: 2px solid red;
     width: 80%;
@@ -16,6 +19,9 @@
       width: 100%;
       font-size: 6.5vw;
       color: $color-claro;
+      @include media(desktop-s) {
+        font-size: 2.8vw;
+      }
       &--span {
         color: $color-variacion1;
       }
@@ -24,6 +30,10 @@
       //border: 2px solid red;
       width: 7.81vw;
       height: 7.81vw;
+      @include media(desktop-s) {
+        width: 4vw;
+        height: 4vw;
+      }
       &--image {
         width: 100%;
         opacity: 0.22;
@@ -38,12 +48,23 @@
     margin-bottom: 6.25vw;
     position: relative;
     background-color: $color-claro;
+    @include media(desktop-s) {
+      width: 37%;
+      height: 17vw;
+      margin: 0;
+      overflow: hidden;
+    }
     &--background1 {
       width: 85%;
       height: 34.37vw;
       right: 0;
       position: absolute;
       background-color: $color-variacion1;
+      @include media(desktop-s) {
+        width: 35%;
+        height: 15.15vw;
+        left: 13%;
+      }
     }
     &--background2 {
       width: 15%;
@@ -51,6 +72,11 @@
       top: 34.37vw;
       position: absolute;
       background-color: $color-variacion1;
+      @include media(desktop-s) {
+        width: 13%;
+        height: 2vw;
+        top: 15.15vw;
+      }
     }
     &--image {
       //border: 2px solid red;
@@ -59,6 +85,11 @@
       z-index: 3;
       top: 3.12vw;
       position: relative;
+      @include media(desktop-s) {
+        width: 40%;
+        height: auto;
+        top: 2vw;
+      }
     }
     &--number {
       font-size: 8.75vw;
@@ -67,6 +98,12 @@
       right: 11%;
       top: 21.87vw;
       color: $color-variacion2;
+      @include media(desktop-s) {
+        font-size: 4vw;
+        top: 8.4vw;
+        right: 21vw;
+        color: $color-variacion2;
+      }
     }
     &--stats {
       //border: 2px solid red;
@@ -76,8 +113,18 @@
       justify-content: flex-end;
       position: relative;
       z-index: 3;
+      @include media(desktop-s) {
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        right: 0;
+        top: 5vw;
+        margin: 0;
+        width: 52%;
+        padding: 0 2%;
+      }
       &--minutes {
-        //border: 2px solid red;
+        //border: 1px solid red;
         width: 16.25vw;
         font-weight: 600;
         font-size: 3.12vw;
@@ -87,12 +134,23 @@
         background-position: left 1px;
         background-repeat: no-repeat;
         color: $color-variacion2;
+        @include media(desktop-s) {
+          background-size: 1vw;
+          background-position: left 0.18vw;
+          width: 25%;
+        }
         & p {
           margin: 0;
+          @include media(desktop-s) {
+            font-size: 0.9vw;
+            width: 100%;
+            text-align: end;
+            //border: 1px solid red;
+          }
         }
       }
       &--modules {
-        //border: 2px solid red;
+        //border: 1px solid red;
         width: 12.5vw;
         font-weight: 600;
         font-size: 3.12vw;
@@ -103,17 +161,42 @@
         background-position: left 1px;
         background-repeat: no-repeat;
         color: $color-variacion2;
-        & p {
+        @include media(desktop-s) {
+          background-size: 1.2vw;
+          width: 17%;
           margin: 0;
         }
+        & p {
+          margin: 0;
+          @include media(desktop-s) {
+            font-size: 0.9vw;
+          }
+        }
+      }
+      &--checkbar {
+        width: 48%;
+        height: 0.8vw;
+        margin-left: 0.5vw;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid $color-variacion1;
       }
     }
     &--title {
       //border: 2px solid red;
       text-align: center;
       font-size: 3.75vw;
+      margin-top: 3vw;
       font-weight: 500;
       color: $color-variacion2;
+      @include media(desktop-s) {
+        font-size: 1.5vw;
+        width: 52%;
+        position: absolute;
+        right: 0;
+        top: 2vw;
+      }
     }
     &--actions {
       //border: 2px solid red;
@@ -124,15 +207,31 @@
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: center;
+      @include media(desktop-s) {
+        width: 52%;
+        position: absolute;
+        right: 0;
+        top: 8vw;
+        height: 9vw;
+        padding: 0 2%;
+      }
     }
   }
 }
 
 .box-l {
   left: 5%;
+  @include media(desktop-s) {
+    left: 10%;
+    margin: 3vw 0 0 0;
+  }
 }
 .box-r {
   left: 40%;
+  @include media(desktop-s) {
+    left: 53%;
+    margin-top: -8vw;
+  }
 }
 
 .actions-gratis {
@@ -146,6 +245,10 @@
   text-align: center;
   color: $color-variacion2;
   background-color: $color-variacion1;
+  @include media(desktop-s) {
+    font-size: 0.9vw;
+    margin: 0 0 0.5vw;
+  }
 }
 
 .actions-resumen {
@@ -157,6 +260,9 @@
   text-align: center;
   color: $color-claro;
   background-color: $color-variacion2;
+  @include media(desktop-s) {
+    font-size: 1vw;
+  }
 }
 
 .actions-play {
@@ -164,6 +270,10 @@
   width: 20.31vw;
   height: 20.31vw;
   border-radius: 300px;
+  @include media(desktop-s) {
+    width: 7vw;
+    height: 7vw;
+  }
   &--shadow1 {
     border: 4px solid $color-shadow2;
     width: 100%;
@@ -183,4 +293,55 @@
   width: 7.81vw;
   transform: rotateZ(270deg);
   margin: 0 0 0 1.87vw;
+  @include media(desktop-s) {
+    width: 3.5vw;
+    margin: 0 0 0 0.8vw;
+  }
+}
+
+.checkbar-module {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.checked {
+  background-color: $color-variacion2;
+}
+
+.dark-box {
+  @include media(desktop-s) {
+    background-color: $color-variacion5;
+  }
+  &__number {
+    @include media(desktop-s) {
+      color: $color-claro;
+    }
+  }
+  &__title {
+    @include media(desktop-s) {
+      color: $color-claro;
+    }
+  }
+  &__stats {
+    @include media(desktop-s) {
+      color: $color-claro;
+    }
+  }
+  &__gratis {
+    @include media(desktop-s) {
+      color: $color-claro;
+    }
+  }
+  &__play {
+    border: 4px solid $color-shadow3;
+    &--sh1 {
+      border: 4px solid $color-shadow4;
+    }
+    &--sh2 {
+      border: 4px solid $color-claro;
+    }
+  }
 }

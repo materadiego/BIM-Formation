@@ -6,6 +6,11 @@
     font-size: 6vw;
     line-height: 120%;
     color: $color-variacion1;
+    @include media(desktop-s) {
+      font-size: 3.1vw;
+      width: 26vw;
+      margin: 15vw 0 0 10%;
+    }
     & span {
       color: $color-variacion2;
     }
@@ -17,6 +22,12 @@
     margin-left: 15%;
     opacity: 0.17;
     opacity: 1;
+    @include media(desktop-s) {
+      width: 5vw;
+      height: 5vw;
+      margin-left: 10%;
+      margin-top: 2vw;
+    }
   }
   &__container {
     //border: 2px solid red;
@@ -25,6 +36,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include media(desktop-s) {
+      width: 67%;
+      margin: 1vw auto 0;
+    }
     &--box {
       //border: 2px solid red;
       width: 48%;
@@ -34,15 +49,26 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
+      @include media(desktop-s) {
+        width: 15vw;
+        padding: 15px 10px 20px;
+      }
       & img {
         //border: 2px solid red;
         width: 15.62vw;
         height: 15.62vw;
         margin-bottom: 15px;
+        @include media(desktop-s) {
+          width: 4vw;
+          height: 4vw;
+        }
       }
       & h6 {
         font-size: 4.2vw;
         color: $color-variacion1;
+        @include media(desktop-s) {
+          font-size: 1.5vw;
+        }
       }
       & p {
         //border: 2px solid red;
@@ -50,6 +76,10 @@
         font-weight: 600;
         text-align: center;
         color: $color-claro;
+        @include media(desktop-s) {
+          font-size: 1vw;
+          margin: 0;
+        }
       }
     }
   }

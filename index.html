@@ -299,7 +299,7 @@
             <a href="" class="admins__container--subcont--link ig"
               ><img src="src/images/ig.svg" alt="" class="ig-image"
             /></a>
-            <p class="admins__container--subcont--text">
+            <p class="admins__container--subcont--text mobile">
               <span class="admins-padding-span"
                 >Cuando desarrollé mi primer proyecto BIM <br
               /></span>
@@ -313,6 +313,22 @@
                 gustado recibir en mis inicios.”</span
               >
             </p>
+            <p class="admins__container--subcont--text desktop">
+              <span class="admins-padding-span"
+                >Cuando desarrollé mi primer proyecto BIM apenas <br />
+              </span>
+              <span class="admins-padding-span">
+                sabía utilizar Revit. Gracias a buenos maestros y <br
+              /></span>
+              mucha dedicación terminé coordinando proyectos inter- <br />
+              nacionales para una multinacional.
+              <span class="admins-color-span">
+                He creado este pro- <br />
+                yecto para ofrecer formación que me hubiera gustado <br />
+                recibir en mis inicios.”</span
+              >
+            </p>
+            <p class="falta desktop">Me falta conseguir la fuente en italic</p>
           </div>
         </div>
       </div>
@@ -442,30 +458,42 @@
         </div>
 
         <!-- Box 1 -->
-        <div class="six__box box-l">
+        <div class="six__box box-l dark-box">
           <div class="six__box--background1"></div>
           <div class="six__box--background2"></div>
           <img src="src/images/five-box1.png" alt="" class="six__box--image" />
-          <h4 class="six__box--number">.1</h4>
+          <h4 class="six__box--number dark-box__number">.1</h4>
           <div class="six__box--stats">
             <div class="six__box--stats--minutes">
-              <p>10 min.</p>
+              <p class="dark-box__stats">10 min.</p>
             </div>
             <div class="six__box--stats--modules">
-              <p>1/4</p>
+              <p class="dark-box__stats">1/4</p>
+            </div>
+            <div class="six__box--stats--checkbar desktop">
+              <div class="checkbar-module checked"></div>
+              <div class="checkbar-module"></div>
+              <div class="checkbar-module"></div>
+              <div class="checkbar-module"></div>
             </div>
           </div>
-          <h6 class="six__box--title">INTRODUCCIÓN AL BIM</h6>
+          <h6 class="six__box--title dark-box__title">INTRODUCCIÓN AL BIM</h6>
           <div class="six__box--actions">
-            <p class="actions-gratis">GRATIS</p>
-            <a href="" class="actions-resumen">VER RESUMEN</a>
-            <a href="" class="actions-play">
-              <div class="actions-play--shadow1">
-                <div class="actions-play--shadow2">
+            <p class="actions-gratis mobile">GRATIS</p>
+            <p class="actions-gratis desktop dark-box__gratis">MÓDULO GRATIS</p>
+            <a href="" class="actions-resumen dark-box__resumen">VER RESUMEN</a>
+            <a href="" class="actions-play dark-box__play">
+              <div class="actions-play--shadow1 dark-box__play--sh1">
+                <div class="actions-play--shadow2 dark-box__play--sh2">
                   <img
                     src="src/images/flecha-play.svg"
                     alt=""
-                    class="actions-play-image"
+                    class="actions-play-image mobile"
+                  />
+                  <img
+                    src="src/images/flecha-play.svg"
+                    alt=""
+                    class="actions-play-image desktop"
                   />
                 </div>
               </div>
@@ -484,6 +512,12 @@
             </div>
             <div class="six__box--stats--modules">
               <p>2/4</p>
+            </div>
+            <div class="six__box--stats--checkbar desktop">
+              <div class="checkbar-module checked"></div>
+              <div class="checkbar-module checked"></div>
+              <div class="checkbar-module"></div>
+              <div class="checkbar-module"></div>
             </div>
           </div>
           <h6 class="six__box--title">WORK IN PROGRESS</h6>
@@ -514,6 +548,12 @@
             <div class="six__box--stats--modules">
               <p>3/4</p>
             </div>
+            <div class="six__box--stats--checkbar desktop">
+              <div class="checkbar-module checked"></div>
+              <div class="checkbar-module checked"></div>
+              <div class="checkbar-module checked"></div>
+              <div class="checkbar-module"></div>
+            </div>
           </div>
           <h6 class="six__box--title">GESTIÓN DE INFO.</h6>
           <div class="six__box--actions">
@@ -542,6 +582,12 @@
             </div>
             <div class="six__box--stats--modules">
               <p>4/4</p>
+            </div>
+            <div class="six__box--stats--checkbar desktop">
+              <div class="checkbar-module checked"></div>
+              <div class="checkbar-module checked"></div>
+              <div class="checkbar-module checked"></div>
+              <div class="checkbar-module checked"></div>
             </div>
           </div>
           <h6 class="six__box--title">DOCUMENTACIÓN</h6>
@@ -574,8 +620,9 @@
           class="seven__arrow--image"
         />
       </figure>
+      <p class="falta-slider">Me falta activar este slider</p>
       <!-- SLIDER -->
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper mobile">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="opinion-box">
@@ -638,6 +685,69 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
+      <div class="swiper2 mySwiper2 desktop">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="opinion-box">
+              <figure class="opinion-box__quotation">
+                <img
+                  src="src/images/quote.svg"
+                  alt=""
+                  class="opinion-box__quotation--image"
+                />
+              </figure>
+              <p class="opinion-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                quidem, culpa libero ipsam ullam fuga voluptatem minus aut
+                fugiat quia laboriosam vel inventore at atque modi sit non et
+                nesciunt.
+              </p>
+              <h6 class="opinion-box__author">Brenna Beck</h6>
+              <p class="opinion-box__author-rol">Blogger</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="opinion-box">
+              <figure class="opinion-box__quotation">
+                <img
+                  src="src/images/quote.svg"
+                  alt=""
+                  class="opinion-box__quotation--image"
+                />
+              </figure>
+              <p class="opinion-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                quidem, culpa libero ipsam ullam fuga voluptatem minus aut
+                fugiat quia laboriosam vel inventore at atque modi sit non et
+                nesciunt.
+              </p>
+              <h6 class="opinion-box__author">Brenna Beck</h6>
+              <p class="opinion-box__author-rol">Blogger</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="opinion-box">
+              <figure class="opinion-box__quotation">
+                <img
+                  src="src/images/quote.svg"
+                  alt=""
+                  class="opinion-box__quotation--image"
+                />
+              </figure>
+              <p class="opinion-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                quidem, culpa libero ipsam ullam fuga voluptatem minus aut
+                fugiat quia laboriosam vel inventore at atque modi sit non et
+                nesciunt.
+              </p>
+              <h6 class="opinion-box__author">Brenna Beck</h6>
+              <p class="opinion-box__author-rol">Blogger</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next2"></div>
+        <div class="swiper-button-prev2"></div>
+      </div>
     </section>
     <!-- CONTACTO -->
     <section class="section contacto">
@@ -688,6 +798,11 @@
       </div>
     </section>
     <footer class="footer">
+      <img
+        src="src/images/footer-flecha.svg"
+        alt=""
+        class="footer__flecha flecha-izquierda"
+      />
       <div class="footer-container">
         <figure class="footer-container__figure">
           <img
@@ -726,6 +841,16 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+
+        navigation: {
+          nextEl: ".swiper-button-next2",
+          prevEl: ".swiper-button-prev2",
         },
       });
     </script>

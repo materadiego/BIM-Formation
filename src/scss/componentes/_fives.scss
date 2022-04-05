@@ -1,11 +1,15 @@
 .five {
+  // border: 2px solid red;
   padding-bottom: 50px;
   background-color: $color-variacion2;
+  @include media(desktop-s) {
+    padding-top: 8vw;
+  }
 }
 
 .five-container {
   width: 90%;
-
+  //border: 2px solid red;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -13,6 +17,11 @@
   padding-bottom: 0px;
   position: relative;
   top: -21.87vw;
+  @include media(desktop-s) {
+    width: 70%;
+    top: 0;
+    background-color: $color-claro;
+  }
   &__box {
     width: 45%;
     height: 40.62vw;
@@ -24,6 +33,12 @@
     position: relative;
     background-color: $color-claro;
     @include shadow-caja;
+    @include media(desktop-s) {
+      width: 20%;
+      height: 23vw;
+      margin-bottom: 0;
+      box-shadow: none;
+    }
     &--image-cont {
       width: 9.37vw;
       height: 9.37vw;
@@ -31,17 +46,27 @@
       background-size: 80%;
       background-position: center;
       background-repeat: no-repeat;
+      @include media(desktop-s) {
+        width: 4vw;
+        height: 4vw;
+      }
     }
     &--number {
       font-size: 10vw;
       margin: 0;
       color: $color-variacion1;
+      @include media(desktop-s) {
+        font-size: 5vw;
+      }
     }
     &--subtitle {
       font-size: 3vw;
       margin: 0;
       font-weight: 600;
       color: $color-variacion1;
+      @include media(desktop-s) {
+        font-size: 1.5vw;
+      }
     }
     &--button {
       width: 10.93vw;
@@ -51,6 +76,14 @@
       bottom: -6.25vw;
       background-color: $color-variacion1;
       @include basic-flex;
+      @include media(desktop-s) {
+        width: 2.5vw;
+        height: 2.5vw;
+        position: relative;
+        bottom: 0;
+        margin-top: 2vw;
+        background-color: $color-variacion2;
+      }
     }
   }
 }
@@ -73,6 +106,9 @@
   height: 0;
   width: 75%;
   position: absolute;
+  @include media(desktop-s) {
+    border-bottom: 3px solid $color-variacion1;
+  }
 }
 
 .line-two {
@@ -81,4 +117,7 @@
   width: 75%;
   transform: rotateZ(90deg);
   position: absolute;
+  @include media(desktop-s) {
+    border-bottom: 3px solid $color-variacion1;
+  }
 }

@@ -1,13 +1,26 @@
 .contacto {
   background-color: $color-variacion5;
   padding-bottom: 9.37vw;
+  @include media(desktop-s) {
+    position: relative;
+    padding-bottom: 11vw;
+  }
   &__start {
     //border: 2px solid red;
     padding-top: 4.68vw;
     width: 100%;
     display: flex;
+    @include media(desktop-s) {
+      position: relative;
+    }
     &--image {
       width: 52%;
+      @include media(desktop-s) {
+        width: 40%;
+        left: 10%;
+        margin-top: 5vw;
+        position: relative;
+      }
     }
     &--title-cont {
       //border: 2px solid red;
@@ -16,10 +29,21 @@
       align-items: flex-end;
       justify-content: flex-end;
       width: 42%;
+      @include media(desktop-s) {
+        width: 35%;
+        right: 10%;
+        position: absolute;
+      }
+
       &--title {
         text-align: end;
         font-size: 6.25vw;
         color: $color-claro;
+        @include media(desktop-s) {
+          font-size: 3.1vw;
+          text-align: start;
+          width: 100%;
+        }
       }
     }
   }
@@ -27,14 +51,30 @@
     //border: 2px solid red;
     margin: 9.37vw auto 0;
     width: 90%;
+    @include media(desktop-s) {
+      width: 35%;
+      position: absolute;
+      top: 13vw;
+      right: 10%;
+    }
     &--text {
       font-size: 3.12vw;
-      font-weight: 700;
+      font-weight: 600;
       color: $color-claro;
+      @include media(desktop-s) {
+        font-size: 1.35vw;
+        //border: 2px solid red;
+        width: 94%;
+        margin-bottom: 0.5vw;
+      }
     }
     &--subtitle {
       font-size: 5.62vw;
       color: $color-variacion1;
+      @include media(desktop-s) {
+        font-size: 2.5vw;
+        margin-bottom: 1vw;
+      }
     }
   }
 }
@@ -44,18 +84,29 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include media(desktop-s) {
+    justify-content: flex-start;
+  }
   &__input {
     width: 100%;
     margin-bottom: 3.12vw;
     font-size: 3.43vw;
     padding: 10px;
     color: $color-variacion2;
+    @include media(desktop-s) {
+      font-size: 1vw;
+      margin-bottom: 1.3vw;
+      padding: 5px;
+    }
     &::placeholder {
       font-family: "Aventa";
       font-weight: 600;
       font-size: 3.43vw;
       border: none;
       outline: none;
+      @include media(desktop-s) {
+        font-size: 1vw;
+      }
     }
   }
   &__textarea {
@@ -69,11 +120,18 @@
     border: none;
     outline: none;
     color: $color-variacion2;
-
+    @include media(desktop-s) {
+      font-size: 1vw;
+      height: 10vw;
+      margin-bottom: 3vw;
+    }
     &::placeholder {
       font-family: "Aventa";
       font-weight: 600;
       font-size: 3.43vw;
+      @include media(desktop-s) {
+        font-size: 1vw;
+      }
     }
   }
   & button {
@@ -85,10 +143,20 @@
 
     color: $color-claro;
     background-color: $color-variacion1;
+    @include media(desktop-s) {
+      font-size: 1.5vw;
+      width: 13vw;
+      padding: 0.5vw;
+    }
   }
 }
 
 .contacto-arrow {
   width: 7.81vw;
   margin-bottom: 3.12vw;
+  @include media(desktop-s) {
+    width: 18%;
+    position: relative;
+    right: -13%;
+  }
 }

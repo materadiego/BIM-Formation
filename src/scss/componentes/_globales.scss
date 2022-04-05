@@ -12,6 +12,8 @@ $color-transparente: rgba(0, 0, 0, 0);
 
 $color-shadow1: rgba(54, 0, 224, 0.2);
 $color-shadow2: rgba(54, 0, 224, 0.5);
+$color-shadow3: rgba(255, 255, 255, 0.15);
+$color-shadow4: rgba(255, 255, 255, 0.4);
 
 @mixin basic-flex {
   display: flex;
@@ -51,5 +53,18 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 3;
+  }
+}
+
+.mobile {
+  @include media(desktop-s) {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @include media(desktop-s) {
+    display: block;
   }
 }

@@ -1,5 +1,8 @@
 .four {
   padding-bottom: 46.87vw;
+  @include media(desktop-s) {
+    padding-bottom: 5vw;
+  }
   &__container {
     //border: 2px solid red;
     width: 85%;
@@ -7,12 +10,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    @include media(desktop-s) {
+      width: 90%;
+    }
     &--title {
       //border: 2px solid red;
       width: 100%;
       font-size: 6vw;
       text-align: end;
       color: $color-variacion2;
+      @include media(desktop-s) {
+        font-size: 2.8vw;
+      }
       & span {
         color: $color-variacion1;
       }
@@ -24,35 +33,37 @@
       width: 7vw;
       height: 7vw;
       right: 15%;
+      @include media(desktop-s) {
+        width: 4vw;
+        height: 4vw;
+      }
     }
-  }
-}
-
-.rafael {
-  margin-top: -8.5vw;
-  &__image {
-    left: 4.68vw;
-  }
-}
-
-.melissa {
-  &__image {
-    right: 15px;
   }
 }
 
 .admins {
   //border: 2px solid red;
+  @include media(desktop-s) {
+    display: flex;
+  }
   &__img-container {
-    //border: 2px solid red;
+    // border: 2px solid red;
     height: 65.62vw;
     position: relative;
+    @include media(desktop-s) {
+      width: 45%;
+      height: 36.58vw;
+    }
     &--block1 {
       width: 48.43vw;
       height: 48.43vw;
       z-index: 1;
       bottom: 0;
       position: absolute;
+      @include media(desktop-s) {
+        width: 27vw;
+        height: 27vw;
+      }
     }
     &--block2 {
       width: 32.81vw;
@@ -61,6 +72,11 @@
 
       z-index: 2;
       position: absolute;
+      @include media(desktop-s) {
+        width: 18.29vw;
+        height: 18.29vw;
+        bottom: 5.5vw;
+      }
     }
     &--block3 {
       width: 7.81vw;
@@ -68,6 +84,11 @@
       bottom: 2.5vw;
       z-index: 2;
       position: absolute;
+      @include media(desktop-s) {
+        width: 4.35vw;
+        height: 4.35vw;
+        bottom: 1.11vw;
+      }
     }
     &--image {
       width: 62.5vw;
@@ -75,27 +96,44 @@
 
       position: absolute;
       z-index: 4;
+      @include media(desktop-s) {
+        width: 34.84vw;
+      }
     }
   }
   &__container {
     //border: 2px solid red;
     width: 75%;
     margin: 0 auto;
-
+    @include media(desktop-s) {
+      padding: 0 2vw;
+    }
     &--name {
       font-size: 7.5vw;
       margin: 3vw 0 0;
       color: $color-variacion2;
+      @include media(desktop-s) {
+        font-size: 3vw;
+        margin: 12.5vw 0 0;
+      }
     }
     &--subtitle {
       font-size: 4.06vw;
       margin: 0px 0 3.12vw;
       color: $color-variacion1;
+      @include media(desktop-s) {
+        font-size: 1.35vw;
+        margin: 2vw 0 1vw;
+        padding: 0 2vw;
+      }
     }
     &--subcont {
       //border: 2px solid red;
       display: flex;
       flex-wrap: wrap;
+      @include media(desktop-s) {
+        position: relative;
+      }
       &--button {
         width: 26.56vw;
         font-size: 3.12vw;
@@ -111,6 +149,9 @@
         background-repeat: no-repeat;
         background-color: $color-variacion2;
         color: $color-claro;
+        @include media(desktop-s) {
+          display: none;
+        }
       }
       &--link {
         //border: 2px solid red;
@@ -120,6 +161,12 @@
         border-radius: 50px;
         background-color: $color-variacion2;
         @include basic-flex;
+        @include media(desktop-s) {
+          width: 2.2vw;
+          height: 2.2vw;
+          margin-right: 0.5vw;
+          margin-top: 11vw;
+        }
       }
       &--text {
         border: 2px solid red;
@@ -127,6 +174,12 @@
         font-size: 2.8vw;
         font-weight: 600;
         margin-top: 6.25vw;
+        @include media(desktop-s) {
+          font-size: 1.1vw;
+          margin: 0;
+          position: absolute;
+          width: 60%;
+        }
       }
     }
   }
@@ -141,16 +194,47 @@
   margin-right: 0;
 }
 
+.rafael {
+  margin-top: -8.5vw;
+  @include media(desktop-s) {
+    margin-top: -4.73vw;
+  }
+  &__image {
+    left: 4.68vw;
+    @include media(desktop-s) {
+      left: 2.66vw;
+    }
+  }
+}
+
+.melissa {
+  @include media(desktop-s) {
+    flex-direction: row-reverse;
+  }
+  &__image {
+    right: 15px;
+    @include media(desktop-s) {
+      right: 2.66vw;
+    }
+  }
+}
+
 .block-rafael1 {
   background-color: $color-variacion2;
 }
 .block-rafael2 {
   left: 22.81vw;
   background-color: $color-variacion1;
+  @include media(desktop-s) {
+    left: 12.71vw;
+  }
 }
 .block-rafael3 {
   left: 55.62vw;
   background-color: $color-variacion2;
+  @include media(desktop-s) {
+    left: 31vw;
+  }
 }
 
 .block-melissa1 {
@@ -160,10 +244,16 @@
 .block-melissa2 {
   background-color: $color-variacion2;
   right: 22.81vw;
+  @include media(desktop-s) {
+    right: 12.71vw;
+  }
 }
 .block-melissa3 {
   right: 55.62vw;
   background-color: $color-variacion1;
+  @include media(desktop-s) {
+    right: 31vw;
+  }
 }
 
 .subcont-melissa {
@@ -180,4 +270,12 @@
 }
 .admins-color-span {
   color: $color-variacion2;
+}
+
+.falta {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 1.3vw;
+  color: red;
 }

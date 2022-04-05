@@ -1,4 +1,7 @@
 .seven {
+  @include media(desktop-s) {
+    padding-bottom: 10vw;
+  }
   &__title {
     //border: 2px solid red;
     padding: 1.56vw 0 3.12vw 15%;
@@ -6,7 +9,13 @@
     font-size: 6.5vw;
     background-color: $color-variacion2;
     color: $color-claro;
-
+    @include media(desktop-s) {
+      font-size: 2.8vw;
+      // border: 2px solid red;
+      width: 40%;
+      padding-left: 10%;
+      margin-top: -6vw;
+    }
     &--span {
       color: $color-variacion1;
     }
@@ -16,7 +25,11 @@
     width: 7.81vw;
     height: 7.81vw;
     margin: 9vw 0 0 15%;
-
+    @include media(desktop-s) {
+      width: 4vw;
+      height: 4vw;
+      margin: 2vw 0 0 10%;
+    }
     &--image {
       width: 100%;
     }

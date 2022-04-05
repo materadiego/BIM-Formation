@@ -4,6 +4,13 @@
   height: 71.87vw;
 }
 
+.swiper2 {
+  border: 2px solid red;
+  width: 75%;
+  margin: 0 auto;
+  height: 30vw;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 5.62vw;
@@ -29,6 +36,12 @@
   padding: 0 4.68vw;
   position: relative;
   @include shadow-caja;
+  @include media(desktop-s) {
+    height: 20vw;
+    //border: 2px solid red;
+    padding: 0 1vw;
+    width: 80%;
+  }
   &__quotation {
     //border: 2px solid red;
     width: 9.37vw;
@@ -50,6 +63,10 @@
     text-align: left;
     line-height: 115%;
     color: $color-secundario;
+    @include media(desktop-s) {
+      font-size: 1vw;
+      margin: 6vw 0 2vw;
+    }
   }
   &__author {
     text-align: end;
@@ -57,6 +74,10 @@
     margin: 0 0 1.56vw;
     font-weight: 500;
     color: $color-variacion2;
+    @include media(desktop-s) {
+      font-size: 1vw;
+      margin: 0 0 0.6vw;
+    }
   }
   &__author-rol {
     font-size: 3.12vw;
@@ -64,6 +85,9 @@
     font-weight: 600;
     margin: 0;
     color: $color-secundario;
+    @include media(desktop-s) {
+      font-size: 1vw;
+    }
   }
 }
 
@@ -75,4 +99,9 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: $color-variacion2;
+}
+
+.falta-slider {
+  text-align: center;
+  color: red;
 }
