@@ -1,0 +1,104 @@
+.regalo {
+  position: absolute;
+  width: 75%;
+  padding: 9vw 5vw 7vw 10vw;
+  //height: 100vw;
+  //display: none;
+  background-color: $color-claro;
+  z-index: 4;
+  margin-left: -75%;
+  transition: 0.5s;
+  @include media(desktop-s) {
+    margin-left: 0;
+    width: 26%;
+    padding: 2vw 3vw 2vw 3.5vw;
+  }
+  &__title {
+    font-weight: 500;
+    line-height: 85%;
+    font-size: 7vw;
+    margin-bottom: 7vw;
+    color: $color-variacion2;
+    @include media(desktop-s) {
+      font-size: 2vw;
+      margin-bottom: 2.5vw;
+    }
+    & span {
+      font-size: 5.6vw;
+      line-height: 90%;
+
+      color: $color-variacion1;
+      @include media(desktop-s) {
+        font-size: 1.61vw;
+      }
+    }
+  }
+  &__text {
+    font-size: 3.25vw;
+    font-weight: 600;
+    margin-bottom: 5vw;
+    line-height: 105%;
+    color: $color-variacion2;
+    @include media(desktop-s) {
+      font-size: 1.04vw;
+      border: 2px solid red;
+      margin-bottom: 2vw;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    &--input {
+      width: 100%;
+      font-size: 3.12vw;
+      margin-bottom: 1.56vw;
+      padding: 1.56vw;
+      border: none;
+      border: 2px solid #999;
+
+      outline: none;
+      @include media(desktop-s) {
+        font-size: 1vw;
+        padding: 6px;
+        margin-bottom: 0.8vw;
+      }
+      &::placeholder {
+        font-family: "Aventa";
+        font-weight: 600;
+      }
+    }
+    &--submit {
+      font-size: 3.8vw;
+      width: 100%;
+      font-family: "Aventa";
+
+      font-weight: 600;
+      padding: 1.56vw 0;
+      margin-top: 2vw;
+      border: none;
+      outline: none;
+      color: $color-claro;
+      background-color: $color-variacion1;
+      @include media(desktop-s) {
+        font-size: 1vw;
+        margin-top: 0.9vw;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+.regalo__close {
+  width: 5vw;
+  height: 5vw;
+  right: 5px;
+  top: 5px;
+  z-index: 5;
+  display: flex;
+  position: absolute;
+  border: 2px solid red;
+}
+
+.regalo-is-active {
+  margin-left: 0;
+}

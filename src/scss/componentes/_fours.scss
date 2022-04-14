@@ -1,5 +1,5 @@
 .four {
-  padding-bottom: 46.87vw;
+  padding-bottom: 40vw;
   @include media(desktop-s) {
     padding-bottom: 5vw;
   }
@@ -142,15 +142,16 @@
         margin-right: 2.18vw;
         display: flex;
         align-items: center;
-
-        background-image: url(../images/admins-flecha-down.svg);
-        background-size: 1.87vw;
-        background-position: 90% center;
-        background-repeat: no-repeat;
+        justify-content: space-between;
         background-color: $color-variacion2;
         color: $color-claro;
         @include media(desktop-s) {
           display: none;
+        }
+        & img {
+          width: 2.1vw;
+          margin-top: 0.5vw;
+          transition: 0.1s;
         }
       }
       &--link {
@@ -174,9 +175,12 @@
         font-size: 2.8vw;
         font-weight: 600;
         margin-top: 6.25vw;
+        margin-bottom: 0;
+        display: none;
         @include media(desktop-s) {
           font-size: 1.1vw;
           margin: 0;
+
           position: absolute;
           width: 60%;
         }
@@ -278,4 +282,18 @@
   top: 50%;
   font-size: 1.3vw;
   color: red;
+}
+
+.show-text {
+  display: block;
+}
+
+.text-rafael.desktop {
+  @include media(desktop-s) {
+    display: block;
+  }
+}
+
+.saber-mas-active {
+  transform: rotateX(180deg);
 }

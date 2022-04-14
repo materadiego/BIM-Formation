@@ -27,6 +27,7 @@
     <title>BIM FORMATION</title>
   </head>
   <body>
+    <div class="overlay"></div>
     <!-- HEADER -->
     <header id="header" class="header">
       <figure class="header-logo-container">
@@ -41,8 +42,22 @@
           <i class="burger-container--image"></i>
         </div>
         <div class="header-container__redes">
-          <a href="" class="header-container__redes--instagram">Instagram</a>
-          <a href="" class="header-container__redes--facebook">Facebook</a>
+          <a href="" class="header-container__redes--instagram"
+            ><img
+              src="src/images/six-arrow2.svg"
+              alt=""
+              class="header-container__redes--instagram--image"
+            />
+            Instagram
+          </a>
+          <a href="" class="header-container__redes--facebook">
+            <img
+              src="src/images/six-arrow2.svg"
+              alt=""
+              class="header-container__redes--facebook--image"
+            />
+            Facebook
+          </a>
         </div>
         <div class="header-container__buttons">
           <a href="" class="header-container__buttons--contactanos"
@@ -51,6 +66,11 @@
           <a href="" class="header-container__buttons--inscribirme"
             >INSCRIBIRME</a
           >
+          <img
+            src="src/images/header-wsp.svg"
+            alt=""
+            class="header-container__buttons--wsp desktop"
+          />
         </div>
         <div class="header-container__line"></div>
         <div class="header-container__subcontainer">
@@ -87,7 +107,8 @@
       <i class="burger-container--image"></i>
     </div>
     <!-- CHAT -->
-    <div class="chat-container" id="chat-container">
+    <div class="chat-container chat-is-active" id="chat-container">
+      <div class="chat__close desktop" id="chat-close"></div>
       <img src="src/images/chat-wsp.svg" alt="" class="chat-container__img" />
       <h6 class="chat-container__text">
         <span class="chat-container__text--span">PARA MÁS INFO</span> <br />
@@ -95,6 +116,7 @@
         CON NOSOTROS <br />
         POR WHATSAPP
       </h6>
+      <img src="" alt="" class="chat-container__arrow desktop" />
     </div>
     <!-- HERO -->
     <section id="hero" class="section hero">
@@ -110,7 +132,7 @@
       </h1>
       <div class="hero__button">
         <a href="" class="hero__button--one">INSCRIBIRME</a>
-        <a href="" class="hero__button--two">QUIERO SABER MÁS</a>
+        <a href="#formacion" class="hero__button--two">QUIERO SABER MÁS</a>
       </div>
       <!-- Animated figure -->
       <div class="hero__image-container">
@@ -139,17 +161,25 @@
           <div class="lineas-horizontales color2"></div>
           <div class="lineas-horizontales color2"></div>
           <div class="lineas-horizontales color2"></div>
-          <div class="lineas-horizontales color2"></div>
-          <div class="lineas-horizontales color2"></div>
-          <div class="lineas-horizontales color2"></div>
-          <div class="lineas-horizontales color2"></div>
-          <div class="lineas-horizontales color2"></div>
-          <div class="lineas-horizontales color2"></div>
-          <div class="lineas-horizontales color2"></div>
-          <div class="lineas-horizontales color2"></div>
+          <div class="lineas-horizontales mobile color2"></div>
+          <div class="lineas-horizontales mobile color2"></div>
+          <div class="lineas-horizontales mobile color2"></div>
+          <div class="lineas-horizontales mobile color2"></div>
+          <div class="lineas-horizontales mobile color2"></div>
+          <div class="lineas-horizontales mobile color2"></div>
+          <div class="lineas-horizontales mobile color2"></div>
+          <div class="lineas-horizontales mobile color2"></div>
           <div class="lineas-horizontales color1"></div>
           <div class="lineas-horizontales color1"></div>
           <div class="lineas-horizontales color1"></div>
+          <div class="lineas-horizontales desktop color1"></div>
+          <div class="lineas-horizontales desktop color1"></div>
+          <div class="lineas-horizontales desktop color1"></div>
+          <div class="lineas-horizontales desktop color1"></div>
+          <div class="lineas-horizontales desktop color1"></div>
+          <div class="lineas-horizontales desktop color1"></div>
+          <div class="lineas-horizontales desktop color1"></div>
+          <div class="lineas-horizontales desktop color1"></div>
           <div class="lineas-horizontales linea-final"></div>
         </div>
         <div class="hero__grid--vertical">
@@ -161,6 +191,16 @@
             <div class="lineas-verticales color2"></div>
             <div class="lineas-verticales color2"></div>
             <div class="lineas-verticales color2"></div>
+            <div class="lineas-verticales desktop color2"></div>
+            <div class="lineas-verticales desktop color2"></div>
+            <div class="lineas-verticales desktop color2"></div>
+            <div class="lineas-verticales desktop color2"></div>
+            <div class="lineas-verticales desktop color2"></div>
+            <div class="lineas-verticales desktop color2"></div>
+            <div class="lineas-verticales desktop color2"></div>
+            <div class="lineas-verticales desktop color2"></div>
+            <div class="lineas-verticales desktop color2"></div>
+            <div class="lineas-verticales desktop color2"></div>
           </div>
           <div class="hero__grid--vertical--subcont2">
             <div class="lineas-verticales color1"></div>
@@ -170,13 +210,31 @@
             <div class="lineas-verticales color1"></div>
             <div class="lineas-verticales color1"></div>
             <div class="lineas-verticales color1"></div>
+            <div class="lineas-verticales desktop color1"></div>
+            <div class="lineas-verticales desktop color1"></div>
+            <div class="lineas-verticales desktop color1"></div>
+            <div class="lineas-verticales desktop color1"></div>
+            <div class="lineas-verticales desktop color1"></div>
+            <div class="lineas-verticales desktop color1"></div>
+            <div class="lineas-verticales desktop color1"></div>
+            <div class="lineas-verticales desktop color1"></div>
+            <div class="lineas-verticales desktop color1"></div>
+            <div class="lineas-verticales desktop color1"></div>
           </div>
         </div>
       </div>
-      <div class="hero__desktop-media"></div>
+      <div class="hero__desktop-media desktop">
+        <a href="" class="hero__desktop-media--in"
+          ><img src="src/images/footer-in.svg" alt=""
+        /></a>
+        <a href="" class="hero__desktop-media--ig"
+          ><img src="src/images/footer-ig.svg" alt=""
+        /></a>
+      </div>
     </section>
     <!-- SECTION TWO -->
-    <section class="section two">
+    <div class="background-lines bline-one"></div>
+    <section id="formacion" class="section two">
       <div class="two__container">
         <h2 class="two__container--title">
           12 HORAS
@@ -205,11 +263,13 @@
       </div>
       <!-- Animated figure -->
       <figure class="two__figure">
-        <p class="two__figure--text">Imágen tiene fondo</p>
-        <img src="src/images/two-foto.png" alt="" class="two__figure--image" />
+        <img src="src/images/two-casa.png" alt="" class="two__figure--image" />
       </figure>
     </section>
     <!-- SECTION THREE -->
+    <div class="background-lines bline-two"></div>
+    <div class="background-lines bline-three"></div>
+
     <section class="section three">
       <h3 class="three__title">
         ¿Por qué este curso <span> es para ti?</span>
@@ -290,8 +350,13 @@
           <h6 class="admins__container--name">Rafael Gil García</h6>
           <p class="admins__container--subtitle">Arquitecto y BIM Manager</p>
           <div class="admins__container--subcont subcont-rafael">
-            <div href="" class="admins__container--subcont--button">
+            <div id="saber-mas-r" class="admins__container--subcont--button">
               Saber más
+              <img
+                src="src/images/admins-flecha-down.svg"
+                class="saber-mas-flecha-r"
+                alt=""
+              />
             </div>
             <a href="" class="admins__container--subcont--link in"
               ><img src="src/images/in.svg" alt="" class="in-image"
@@ -299,7 +364,7 @@
             <a href="" class="admins__container--subcont--link ig"
               ><img src="src/images/ig.svg" alt="" class="ig-image"
             /></a>
-            <p class="admins__container--subcont--text mobile">
+            <p class="admins__container--subcont--text text-rafael mobile">
               <span class="admins-padding-span"
                 >Cuando desarrollé mi primer proyecto BIM <br
               /></span>
@@ -313,7 +378,7 @@
                 gustado recibir en mis inicios.”</span
               >
             </p>
-            <p class="admins__container--subcont--text desktop">
+            <p class="admins__container--subcont--text text-rafael desktop">
               <span class="admins-padding-span"
                 >Cuando desarrollé mi primer proyecto BIM apenas <br />
               </span>
@@ -356,12 +421,17 @@
               ><img src="src/images/in.svg" alt="" class="in-image"
             /></a>
             <div
-              href=""
+              id="saber-mas-m"
               class="admins__container--subcont--button melissa-saber-mas"
             >
               Saber más
+              <img
+                src="src/images/admins-flecha-down.svg"
+                class="saber-mas-flecha-m"
+                alt=""
+              />
             </div>
-            <p class="admins__container--subcont--text">
+            <p class="admins__container--subcont--text text-melissa">
               <span class="admins-padding-span"
                 >He trabajado en consultorías y en el desarrollo <br />
               </span>
@@ -382,67 +452,302 @@
     <!-- INFO CURSO -->
     <section class="section five">
       <!-- Info box 1 -->
-      <div class="five-container">
+      <div class="five-container five-container-active">
         <div class="five-container__box proyecto">
           <figure class="five-container__box--image-cont box1"></figure>
 
           <h5 class="five-container__box--number" id="box-number1">1</h5>
           <h3 class="five-container__box--subtitle">PROYECTO</h3>
-          <p class="five-container__box--button">
-            <span class="line-one"></span><span class="line-two"></span>
-          </p>
-        </div>
-        <!-- Info box 2 -->
-        <div class="five-container__sub-box">
-          <div class="five-container__sub-box--arrow"></div>
-          <div class="five-container__sub-box--container"></div>
+          <div class="five-container__box--button" id="project-button">
+            <div class="line-one line-one-b1"></div>
+            <div class="line-two line-two-b1"></div>
+          </div>
         </div>
 
-        <div class="five-container__box proyecto">
+        <!-- Info box 2 -->
+
+        <div class="five-container__box modulos">
           <figure class="five-container__box--image-cont box2"></figure>
 
           <h5 class="five-container__box--number" id="box-number2">4</h5>
           <h3 class="five-container__box--subtitle">MÓDULOS</h3>
-          <p class="five-container__box--button">
-            <span class="line-one"></span><span class="line-two"></span>
-          </p>
+          <div class="five-container__box--button" id="modules-button">
+            <div class="line-one line-one-b2"></div>
+            <div class="line-two line-two-b2"></div>
+          </div>
         </div>
-        <div class="five-container__sub-box">
-          <div class="five-container__sub-box--arrow"></div>
-          <div class="five-container__sub-box--container"></div>
-        </div>
+
         <!-- Info box 3 -->
 
-        <div class="five-container__box proyecto">
+        <div class="five-container__box videos">
           <figure class="five-container__box--image-cont box3"></figure>
 
           <h5 class="five-container__box--number" id="box-number3">42</h5>
           <h3 class="five-container__box--subtitle">VIDEOS</h3>
-          <p class="five-container__box--button">
-            <span class="line-one"></span><span class="line-two"></span>
-          </p>
+          <div class="five-container__box--button" id="videos-button">
+            <div class="line-one line-one-b3"></div>
+            <div class="line-two line-two-b3"></div>
+          </div>
         </div>
-        <div class="five-container__sub-box">
-          <div class="five-container__sub-box--arrow"></div>
-          <div class="five-container__sub-box--container"></div>
-        </div>
+
         <!-- Info box 4 -->
 
-        <div class="five-container__box proyecto">
+        <div class="five-container__box horas">
           <figure class="five-container__box--image-cont box4"></figure>
           <h5 class="five-container__box--number" id="box-number4">12</h5>
           <h3 class="five-container__box--subtitle">HORAS</h3>
-          <p class="five-container__box--button">
-            <span class="line-one"></span><span class="line-two"></span>
+          <div class="five-container__box--button" id="hours-button">
+            <div class="line-one line-one-b4"></div>
+            <div class="line-two line-two-b4"></div>
+          </div>
+        </div>
+      </div>
+      <div class="five-subcontainer project-subcont" id="proyecto">
+        <div class="five-subcontainer__square square-l"></div>
+        <h5 class="five-subcontainer__title">1 PROYECTO</h5>
+        <div class="five-subcontainer__info">
+          <p class="five-subcontainer__info--text">
+            <img src="src/images/five-span.svg" alt="" /> Adaptación para ámbito
+            docente de un proyecto real construido.
+          </p>
+          <p class="five-subcontainer__info--text">
+            <img src="src/images/five-span.svg" alt="" /> Diseño correspondiente
+            a una vivienda unifamiliar.
+          </p>
+          <p class="five-subcontainer__info--text">
+            <img src="src/images/five-span.svg" alt="" /> Desarrollo de la
+            práctica desde los primeros pasos hasta conseguir planos de proyecto
+            básico.
           </p>
         </div>
-        <div class="five-container__sub-box">
-          <div class="five-container__sub-box--arrow"></div>
-          <div class="five-container__sub-box--container"></div>
+      </div>
+      <div class="five-subcontainer modules-subcont" id="modulos">
+        <div class="five-subcontainer__square square-r"></div>
+
+        <div class="five-subcontainer__modulos module-active" id="modulo1">
+          <p class="five-subcontainer__modulos--title">
+            <span
+              class="five-subcontainer__modulos--title--span module-span1 module-active-span"
+              >01 -
+            </span>
+            MÓDULO 1.INTRODUCCIÓN AL BIM
+            <img src="" alt="" />
+          </p>
+          <div
+            class="five-subcontainer__modulos--module-container module-container-1 module-container-active"
+          >
+            <p class="module-container-text">¡BIMvenidos!</p>
+            <p class="module-container-text">
+              <span class="module-container-span">0.</span> Objetivos y
+              contenidos del curso
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">1.</span> Del CAD al BIM. Un
+              cambio de metodología
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">2.</span> Comienzos de un
+              proyecto. Primmeros pasos
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+          </div>
+        </div>
+        <div class="five-subcontainer__modulos" id="modulo2">
+          <p class="five-subcontainer__modulos--title">
+            <span class="five-subcontainer__modulos--title--span module-span2"
+              >02 - </span
+            >MÓDULO 2.WORK IN PROGRESS <img src="" alt="" />
+          </p>
+
+          <div
+            class="five-subcontainer__modulos--module-container module-container-2"
+          >
+            <p class="module-container-text">¡BIMvenidos!</p>
+            <p class="module-container-text">
+              <span class="module-container-span">0.</span> Objetivos y
+              contenidos del curso
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">1.</span> Del CAD al BIM. Un
+              cambio de metodología
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">2.</span> Comienzos de un
+              proyecto. Primmeros pasos
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+          </div>
+        </div>
+        <div class="five-subcontainer__modulos" id="modulo3">
+          <p class="five-subcontainer__modulos--title">
+            <span class="five-subcontainer__modulos--title--span module-span3"
+              >03 -
+            </span>
+            MÓDULO 3.GESTIÓN DE LA INFORMACIÓN
+            <img src="" alt="" />
+          </p>
+          <div
+            class="five-subcontainer__modulos--module-container module-container-3"
+          >
+            <p class="module-container-text">¡BIMvenidos!</p>
+            <p class="module-container-text">
+              <span class="module-container-span">0.</span> Objetivos y
+              contenidos del curso
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">1.</span> Del CAD al BIM. Un
+              cambio de metodología
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">2.</span> Comienzos de un
+              proyecto. Primmeros pasos
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+            <p class="module-container-text">
+              <span class="module-container-span">3.11</span> Conociendo el
+              software. Jerarquia en Revit
+            </p>
+          </div>
+        </div>
+        <div class="five-subcontainer__modulos" id="modulo4">
+          <p class="five-subcontainer__modulos--title">
+            <span class="five-subcontainer__modulos--title--span module-span4"
+              >04 -
+            </span>
+            MÓDULO 4.DOCUMENTACIÓN <img src="" alt="" />
+          </p>
+        </div>
+        <div
+          class="five-subcontainer__modulos--module-container module-container-4"
+        >
+          <p class="module-container-text">¡BIMvenidos!</p>
+          <p class="module-container-text">
+            <span class="module-container-span">0.</span> Objetivos y contenidos
+            del curso
+          </p>
+          <p class="module-container-text">
+            <span class="module-container-span">1.</span> Del CAD al BIM. Un
+            cambio de metodología
+          </p>
+          <p class="module-container-text">
+            <span class="module-container-span">2.</span> Comienzos de un
+            proyecto. Primmeros pasos
+          </p>
+          <p class="module-container-text">
+            <span class="module-container-span">3.11</span> Conociendo el
+            software. Jerarquia en Revit
+          </p>
+          <p class="module-container-text">
+            <span class="module-container-span">3.11</span> Conociendo el
+            software. Jerarquia en Revit
+          </p>
+          <p class="module-container-text">
+            <span class="module-container-span">3.11</span> Conociendo el
+            software. Jerarquia en Revit
+          </p>
+          <p class="module-container-text">
+            <span class="module-container-span">3.11</span> Conociendo el
+            software. Jerarquia en Revit
+          </p>
+        </div>
+      </div>
+
+      <div class="five-subcontainer videos-subcont" id="videos">
+        <div class="five-subcontainer__square square-l"></div>
+
+        <h5 class="five-subcontainer__title">42 VIDEOS</h5>
+        <div class="five-subcontainer__info">
+          <p class="five-subcontainer__info--text">
+            <img src="src/images/five-span.svg" alt="" /> Adquisición de
+            conocimientos generales BIM relativos al ámbito profesional.
+          </p>
+          <p class="five-subcontainer__info--text">
+            <img src="src/images/five-span.svg" alt="" /> Empleo de herramientas
+            y procesos de modelado aplicables a proyectos colaborativos.
+          </p>
+          <p class="five-subcontainer__info--text">
+            <img src="src/images/five-span.svg" alt="" />Puesta en práctica de
+            una correcta y ordenada gestión de la información de los elementos
+            del modelo.
+          </p>
+          <p class="five-subcontainer__info--text">
+            <img src="src/images/five-span.svg" alt="" />Entrega al inicio de la
+            práctica de todo el material necesario. Modelo resuelto como guía
+            para trabajar y aprender.
+          </p>
+        </div>
+      </div>
+
+      <div class="five-subcontainer hours-subcont" id="horas">
+        <div class="five-subcontainer__square square-r"></div>
+
+        <h5 class="five-subcontainer__title">12 HORAS</h5>
+        <div class="five-subcontainer__info">
+          <p class="five-subcontainer__info--text">
+            <img src="src/images/five-span.svg" alt="" /> ¡Lo bueno y breve, dos
+            veces bueno!
+          </p>
+          <p class="five-subcontainer__info--text">
+            <img src="src/images/five-span.svg" alt="" /> Hemos condensado un
+            contenido brutal en muy pocas horas. Vídeeos cortos y directos, sin
+            errores ni dudas, para que aprendas BIM rápido y bien.
+          </p>
+          <p class="five-subcontainer__info--text">
+            <img src="src/images/five-span.svg" alt="" /> Estas son las horas de
+            contenido temático. Cuanto más practiques, ¡mejor!
+          </p>
         </div>
       </div>
       <!-- MODULOS -->
       <div class="six">
+        <div class="background-lines bline-four"></div>
+        <div class="background-lines bline-five"></div>
+        <div class="background-lines bline-six"></div>
+        <div class="background-lines bline-seven"></div>
+        <div class="background-lines bline-eight"></div>
+        <div class="background-lines bline-nine"></div>
+
         <div class="six__title-cont">
           <h3 class="six__title-cont--title">
             ¿De qué se trata <br />
@@ -455,6 +760,34 @@
               class="six__title-cont--arrow--image"
             />
           </figure>
+        </div>
+        <div class="regalo regalo-is-active">
+          <div class="regalo__close desktop" id="regalo-close"></div>
+          <p class="regalo__title">
+            <span>¡TE REGALAMOS</span> <br />
+            EL MODULO 1 <br />
+            COMPLETO!
+          </p>
+          <p class="regalo__text">
+            Para que puedas probar la excelencia <br />
+            de nuestro curso, gratis completando <br />
+            este formulario
+          </p>
+          <form action="" class="regalo__form">
+            <input
+              type="text"
+              class="regalo__form--input"
+              placeholder="Nombre y Apellido"
+            />
+            <input
+              type="text"
+              class="regalo__form--input"
+              placeholder="Correo Electrónico"
+            />
+            <button type="submit" class="regalo__form--submit">
+              ACCEDER AL MÓDULO GRATIS
+            </button>
+          </form>
         </div>
 
         <!-- Box 1 -->
@@ -855,5 +1188,9 @@
       });
     </script>
     <script src="src/js/burger.js"></script>
+    <script src="src/js/regalo.js"></script>
+    <script src="src/js/chat.js"></script>
+    <script src="src/js/modules.js"></script>
+    <script src="src/js/admins-text.js"></script>
   </body>
 </html>

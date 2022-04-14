@@ -3,9 +3,9 @@
   height: 118.75vw;
   padding: 21.87vw 0 0;
   @include media(desktop-s) {
-    padding: 8vw 5%;
+    padding: 6vw 5% 0;
     position: relative;
-    height: 38vw;
+    height: 31vw;
   }
   &__container {
     //border: 2px solid red;
@@ -93,10 +93,11 @@
       color: $color-claro;
       //border: 2px solid red;
       @include media(desktop-s) {
-        font-size: 1.5vw;
+        font-size: 1.2vw;
         text-align: start;
         margin: 0;
-        width: 100%;
+        width: 80%;
+        font-weight: 600;
       }
       & span {
         color: $color-variacion1;
@@ -104,30 +105,30 @@
     }
   }
   &__figure {
-    border: 2px solid red;
+    //border: 2px solid red;
     height: 59.37vw;
+    margin-top: 5.4vw;
+    z-index: 2;
     @include basic-flex;
     @include media(desktop-s) {
       font-size: 1vw;
-      width: 48vw;
+      margin-top: 0;
+
+      width: 42vw;
       height: auto;
       position: absolute;
-      right: 0;
-      top: 12vw;
+      right: 4vw;
+      top: 18.8vw;
       overflow: hidden;
     }
     &--image {
       //border: 2px solid red;
-      width: 65%;
+      width: 93%;
+      z-index: 2;
+
       @include media(desktop-s) {
-        width: 150%;
+        width: 100%;
       }
-    }
-    &--text {
-      position: absolute;
-      z-index: 3;
-      color: #b05;
-      font-size: 32px;
     }
   }
 }

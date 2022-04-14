@@ -1,0 +1,83 @@
+.background-lines {
+  position: absolute;
+  z-index: 1;
+}
+
+.bline-one {
+  width: 16%;
+  height: 85vw;
+  top: 243vw;
+  border-top: 2px solid $color-variacion1;
+  border-right: 2px solid $color-variacion1;
+}
+
+.bline-two {
+  width: 16%;
+  height: 25vw;
+  top: 355vw;
+  border-right: 2px solid $color-variacion1;
+}
+
+.bline-three {
+  width: 16%;
+  height: 40vw;
+  top: 475vw;
+  right: 0;
+  border-left: 2px solid $color-variacion1;
+}
+
+.bline-four {
+  width: 10%;
+  height: 2vw;
+  top: 15vw;
+  right: 0;
+  border-top: 2px solid $color-variacion1;
+}
+
+.bline-five {
+  width: 25%;
+  height: 40vw;
+  top: 15vw;
+  left: 14vw;
+  border-top: 2px solid $color-variacion1;
+  border-left: 2px solid $color-variacion1;
+}
+
+.bline-six {
+  width: 72%;
+  height: 84.5vw;
+  top: 69vw;
+  left: 14vw;
+  border-top: 2px solid $color-variacion1;
+  border-right: 2px solid $color-variacion1;
+  border-bottom: 2px solid $color-variacion1;
+}
+
+.bline-seven {
+  width: 72%;
+  height: 85vw;
+  top: 153vw;
+  left: 14vw;
+
+  border-left: 2px solid $color-variacion1;
+  border-bottom: 2px solid $color-variacion1;
+}
+
+.bline-eight {
+  width: 72%;
+  height: 85vw;
+  top: 237.5vw;
+  left: 14vw;
+
+  border-right: 2px solid $color-variacion1;
+  border-bottom: 2px solid $color-variacion1;
+}
+
+.bline-nine {
+  width: 72%;
+  height: 65vw;
+  top: 322vw;
+  left: 14vw;
+
+  border-left: 2px solid $color-variacion1;
+}

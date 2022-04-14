@@ -2,7 +2,7 @@
   padding: 9.37vw 0;
   background-color: $color-primario;
   @include media(desktop-s) {
-    padding: 4vw 0;
+    padding: 30px 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@
     display: none;
     @include media(desktop-s) {
       display: flex;
-      width: 70%;
+      width: 65%;
       height: 5vw;
       //border: 2px solid red;
       position: absolute;
@@ -28,18 +28,30 @@
   align-items: center;
   @include media(desktop-s) {
     width: 50%;
+    justify-content: space-between;
   }
   &__figure {
-    //border: 2px solid red;
+    //  border: 2px solid red;
     width: 50%;
     margin-top: 1.56vw;
-
+    @include media(desktop-s) {
+      width: 160px;
+      margin-left: 3vw;
+    }
     &--image {
+      //    border: 2px solid red;
       width: 70%;
+      @include media(desktop-s) {
+        width: 100%;
+      }
     }
   }
   &__subcont {
     width: 50%;
+    //border: 2px solid red;
+    @include media(desktop-s) {
+      width: 40%;
+    }
     &--links {
       //border: 2px solid red;
       width: 55%;
@@ -47,18 +59,18 @@
       display: flex;
       justify-content: space-between;
       @include media(desktop-s) {
-        margin: 0 0 1vw;
-        width: 40%;
+        margin: 0 0 15px;
+        width: 100px;
       }
       & a {
-        //border: 2px solid red;
+        //   border: 2px solid red;
         width: 6.25vw;
         height: 6.25vw;
         padding: 0;
         margin-bottom: 3.12vw;
         @include media(desktop-s) {
-          width: 2.5vw;
-          height: 2.5vw;
+          width: 25px;
+          height: 25px;
           margin-bottom: 0;
         }
         & img {
@@ -72,10 +84,10 @@
       font-weight: 600;
       color: $color-secundario;
       @include media(desktop-s) {
-        font-size: 1.15vw;
-        margin: 0.5vw 0 1vw;
-
-        width: 80%;
+        font-size: 1.07vw;
+        margin: 0 0 10px;
+        width: 96%;
+        // border: 2px solid red;
       }
     }
     &--email {
@@ -83,7 +95,10 @@
       font-weight: 600;
       color: $color-secundario;
       @include media(desktop-s) {
-        font-size: 1.5vw;
+        font-size: 1.35vw;
+        //   border: 2px solid red;
+        width: 100%;
+        margin-bottom: 0;
       }
     }
   }

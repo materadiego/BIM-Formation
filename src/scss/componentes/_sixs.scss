@@ -1,6 +1,7 @@
 .six {
   background-color: $color-variacion2;
   //border-top: 2px solid red;
+  width: 100%;
   position: relative;
   margin-top: -9.37vw;
   @include media(desktop-s) {
@@ -16,6 +17,7 @@
     &--title {
       text-align: end;
       font-weight: 600;
+      margin-bottom: 3vw;
       width: 100%;
       font-size: 6.5vw;
       color: $color-claro;
@@ -46,6 +48,7 @@
     //border: 2px solid red;
     height: 78.125vw;
     margin-bottom: 6.25vw;
+    z-index: 2;
     position: relative;
     background-color: $color-claro;
     @include media(desktop-s) {
@@ -97,6 +100,7 @@
       z-index: 3;
       right: 11%;
       top: 21.87vw;
+      margin-bottom: 0;
       color: $color-variacion2;
       @include media(desktop-s) {
         font-size: 4vw;
@@ -174,13 +178,17 @@
         }
       }
       &--checkbar {
-        width: 48%;
-        height: 0.8vw;
-        margin-left: 0.5vw;
-        padding: 0;
-        justify-content: space-between;
-        align-items: center;
-        border: 2px solid $color-variacion1;
+        @include media(desktop-s) {
+          width: 48%;
+          height: 0.8vw;
+          margin-left: 0.5vw;
+          padding: 0;
+          justify-content: space-between;
+          align-items: center;
+          border: 2px solid $color-variacion1;
+
+          display: flex;
+        }
       }
     }
     &--title {
@@ -188,6 +196,7 @@
       text-align: center;
       font-size: 3.75vw;
       margin-top: 3vw;
+      margin-bottom: 0;
       font-weight: 500;
       color: $color-variacion2;
       @include media(desktop-s) {
@@ -196,6 +205,7 @@
         position: absolute;
         right: 0;
         top: 2vw;
+        margin-top: 0;
       }
     }
     &--actions {
@@ -211,7 +221,7 @@
         width: 52%;
         position: absolute;
         right: 0;
-        top: 8vw;
+        top: 7vw;
         height: 9vw;
         padding: 0 2%;
       }
@@ -336,12 +346,18 @@
     }
   }
   &__play {
-    border: 4px solid $color-shadow3;
+    @include media(desktop-s) {
+      border: 4px solid $color-shadow3;
+    }
     &--sh1 {
-      border: 4px solid $color-shadow4;
+      @include media(desktop-s) {
+        border: 4px solid $color-shadow4;
+      }
     }
     &--sh2 {
-      border: 4px solid $color-claro;
+      @include media(desktop-s) {
+        border: 4px solid $color-claro;
+      }
     }
   }
 }

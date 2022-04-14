@@ -9,7 +9,7 @@
   @include media(desktop-s) {
     position: relative;
     width: 100%;
-    height: 70px;
+    height: 60px;
     margin: 0;
     padding: 0 5%;
 
@@ -24,7 +24,7 @@
   @include media(desktop-s) {
     display: flex;
     //border: 2px solid red;
-    width: 130px;
+    width: 120px;
     margin: 0;
   }
   &__image {
@@ -44,7 +44,7 @@
     display: flex;
     padding: 0;
     height: 50px;
-    width: 300px;
+    width: 170px;
     margin: 0;
     align-items: center;
   }
@@ -56,7 +56,7 @@
     background: $color-variacion1;
   }
   &__redes {
-    border: 2px solid red;
+    //border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     @include media(desktop-s) {
@@ -64,12 +64,16 @@
     }
     & a {
       width: 100%;
-      padding-left: 6.25vw;
       //border: 2px solid red;
       font-size: 4.06vw;
       font-weight: 600;
       text-decoration: none;
       color: $color-claro;
+      & img {
+        width: 3vw;
+        margin: 1vw 1vw 0 0;
+        transform: rotateZ(180deg);
+      }
     }
   }
   &__buttons {
@@ -77,6 +81,8 @@
     margin-top: 30px;
     @include media(desktop-s) {
       margin: 0;
+      display: flex;
+      align-items: center;
     }
     &--contactanos {
       //border: 2px solid red;
@@ -110,11 +116,16 @@
       color: $color-claro;
       background-color: $color-variacion1;
       @include media(desktop-s) {
-        font-size: 18px;
-        width: 150px;
+        font-size: 15px;
+        width: 110px;
+        padding: 3px 0;
+        margin-right: 20px;
         background-color: $color-transparente;
-        border: 4px solid $color-claro;
+        border: 3px solid $color-claro;
       }
+    }
+    &--wsp {
+      width: 35px;
     }
   }
   &__line {

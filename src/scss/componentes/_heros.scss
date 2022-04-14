@@ -63,7 +63,7 @@
       font-weight: 600;
       padding: 1vw 0;
       font-size: 3.12vw;
-      border: 2px solid red;
+      //border: 2px solid red;
       color: $color-claro;
       background: $color-variacion2;
       @include basic-flex;
@@ -101,6 +101,7 @@
     @include media(desktop-s) {
       margin: -6vw 0 0 18vw;
       width: 80%;
+      transform: rotateZ(-5deg);
     }
     &--img {
       width: 110%;
@@ -120,7 +121,11 @@
 
     display: flex;
     @include media(desktop-s) {
-      display: none;
+      //display: none;
+      // border: 2px solid red;
+      width: 43%;
+      top: 20.1vw;
+      height: 76vw;
     }
     &--horizontal {
       display: flex;
@@ -136,25 +141,43 @@
       &--subcont1 {
         width: 100%;
         height: 85.5%;
-
         display: flex;
+        @include media(desktop-s) {
+          height: 59%;
+        }
       }
       &--subcont2 {
         width: 100%;
         height: 14%;
         display: flex;
+        @include media(desktop-s) {
+          height: 41%;
+        }
       }
     }
   }
   &__desktop-media {
     @include media(desktop-s) {
-      width: 25vw;
-      height: 25vw;
+      width: 23vw;
+      height: 23vw;
       right: 0;
       top: 11vw;
+      z-index: 1;
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
       position: absolute;
+      padding: 0 4vw;
       background-color: $color-variacion2;
+      & a {
+        width: 2.3vw;
+        height: 2.3vw;
+        margin: 5px 0;
+        & img {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -163,11 +186,19 @@
   width: 100%;
   height: 3.57%;
   border-bottom: 0.31vw solid;
+  @include media(desktop-s) {
+    height: 3.7%;
+    border-bottom: 2px solid;
+  }
 }
 
 .lineas-verticales {
   border-right: 0.31vw solid;
   width: 13.2%;
+  @include media(desktop-s) {
+    width: 5.88%;
+    border-right: 2px solid;
+  }
 }
 
 .linea-final {
