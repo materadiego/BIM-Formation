@@ -1,7 +1,11 @@
 .four {
   padding-bottom: 40vw;
+
+  //border: 2px solid red;
   @include media(desktop-s) {
     padding-bottom: 5vw;
+    position: relative;
+    padding-top: 10.75vw;
   }
   &__container {
     //border: 2px solid red;
@@ -12,6 +16,7 @@
     justify-content: flex-end;
     @include media(desktop-s) {
       width: 90%;
+      margin-top: 0;
     }
     &--title {
       //border: 2px solid red;
@@ -106,7 +111,6 @@
     width: 75%;
     margin: 0 auto;
     @include media(desktop-s) {
-      padding: 0 2vw;
     }
     &--name {
       font-size: 7.5vw;
@@ -123,8 +127,10 @@
       color: $color-variacion1;
       @include media(desktop-s) {
         font-size: 1.35vw;
-        margin: 2vw 0 1vw;
-        padding: 0 2vw;
+        margin: 0 0 1vw;
+        padding: 10px 15px 6px;
+
+        // border: 2px solid red;
       }
     }
     &--subcont {
@@ -170,7 +176,7 @@
         }
       }
       &--text {
-        border: 2px solid red;
+        //border: 2px solid red;
         width: 100%;
         font-size: 2.8vw;
         font-weight: 600;
@@ -189,9 +195,26 @@
   }
 }
 
-.melissa-name,
+.rafael-name {
+  border-right: 3px solid $color-variacion1;
+  margin-top: 80px;
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.rafael-subtitle {
+  border-top: 3px solid $color-variacion1;
+  border-left: 3px solid $color-variacion1;
+}
+
+.melissa-name {
+  text-align: end;
+}
 .melissa-subtitle {
   text-align: end;
+  border-right: 3px solid $color-variacion1;
+  border-top: 3px solid $color-variacion1;
 }
 
 .melissa-saber-mas {
@@ -209,6 +232,14 @@
       left: 2.66vw;
     }
   }
+}
+
+.rafael-cont {
+  padding: 0 10vw 0 2vw;
+}
+
+.melissa-cont {
+  padding: 0 2vw 0 0;
 }
 
 .melissa {
@@ -276,14 +307,6 @@
   color: $color-variacion2;
 }
 
-.falta {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  font-size: 1.3vw;
-  color: red;
-}
-
 .show-text {
   display: block;
 }
@@ -296,4 +319,13 @@
 
 .saber-mas-active {
   transform: rotateX(180deg);
+}
+
+.text-melissa {
+  @include media(desktop-s) {
+    display: block;
+    text-align: start;
+    width: 28.3vw;
+    //border: 2px solid red;
+  }
 }

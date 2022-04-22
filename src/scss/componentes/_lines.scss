@@ -9,6 +9,13 @@
   top: 243vw;
   border-top: 2px solid $color-variacion1;
   border-right: 2px solid $color-variacion1;
+  @include media(desktop-s) {
+    top: 92.5vw;
+    height: 220px;
+    width: 10%;
+    border-top: 3px solid $color-variacion1;
+    border-right: 3px solid $color-variacion1;
+  }
 }
 
 .bline-two {
@@ -16,6 +23,13 @@
   height: 25vw;
   top: 355vw;
   border-right: 2px solid $color-variacion1;
+  @include media(desktop-s) {
+    top: 134vw;
+    height: 60px;
+    width: 10%;
+    border-bottom: 3px solid $color-variacion1;
+    border-right: 3px solid $color-variacion1;
+  }
 }
 
 .bline-three {
@@ -24,6 +38,14 @@
   top: 475vw;
   right: 0;
   border-left: 2px solid $color-variacion1;
+  @include media(desktop-s) {
+    top: 104vw;
+    right: 0;
+    height: 130px;
+    width: 38%;
+    border-bottom: 3px solid $color-variacion1;
+    border-left: 3px solid $color-variacion1;
+  }
 }
 
 .bline-four {
@@ -32,6 +54,9 @@
   top: 15vw;
   right: 0;
   border-top: 2px solid $color-variacion1;
+  @include media(desktop-s) {
+    display: none;
+  }
 }
 
 .bline-five {
@@ -41,6 +66,23 @@
   left: 14vw;
   border-top: 2px solid $color-variacion1;
   border-left: 2px solid $color-variacion1;
+  @include media(desktop-s) {
+    top: 85px;
+    left: 28.3%;
+    width: 43.4%;
+    height: 180px;
+  }
+}
+
+.bline-thirteen {
+  display: none;
+  @include media(desktop-s) {
+    right: 0;
+    display: block;
+    width: 8%;
+    top: 85px;
+    border-top: 2px solid $color-variacion1;
+  }
 }
 
 .bline-six {
@@ -51,6 +93,12 @@
   border-top: 2px solid $color-variacion1;
   border-right: 2px solid $color-variacion1;
   border-bottom: 2px solid $color-variacion1;
+  @include media(desktop-s) {
+    top: 290px;
+    left: 28.3%;
+    width: 43.4%;
+    height: 110px;
+  }
 }
 
 .bline-seven {
@@ -61,6 +109,12 @@
 
   border-left: 2px solid $color-variacion1;
   border-bottom: 2px solid $color-variacion1;
+  @include media(desktop-s) {
+    top: 400px;
+    left: 28.3%;
+    width: 43.4%;
+    height: 140px;
+  }
 }
 
 .bline-eight {
@@ -71,6 +125,12 @@
 
   border-right: 2px solid $color-variacion1;
   border-bottom: 2px solid $color-variacion1;
+  @include media(desktop-s) {
+    top: 540px;
+    left: 28.3%;
+    width: 43.4%;
+    height: 110px;
+  }
 }
 
 .bline-nine {
@@ -80,4 +140,35 @@
   left: 14vw;
 
   border-left: 2px solid $color-variacion1;
+  @include media(desktop-s) {
+    top: 650px;
+    left: 28.3%;
+    width: 43.4%;
+    height: 180px;
+  }
 }
+
+.bline-ten {
+  top: 250px;
+  right: 10%;
+  height: 140px;
+  width: 10%;
+  border-top: 3px solid $color-variacion1;
+  border-right: 3px solid $color-variacion1;
+}
+
+.bline-eleven {
+  top: 0;
+  right: 10%;
+  height: 9vw;
+  width: 10%;
+  border-right: 3px solid $color-variacion1;
+}
+
+// .bline-twelve {
+//   top: 10vw;
+//   right: 10%;
+//   height: 9vw;
+//   width: 10%;
+//   border-right: 3px solid $color-variacion1;
+// }

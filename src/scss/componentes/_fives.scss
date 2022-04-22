@@ -4,14 +4,14 @@
   position: relative;
   background-color: $color-variacion2;
   @include media(desktop-s) {
-    padding-top: 8vw;
+    padding-top: 80px;
     transition: 0.5s;
   }
 }
 
 .five-container {
   width: 90%;
-  border: 2px solid red;
+  //border: 2px solid red;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -22,10 +22,12 @@
   top: -21.87vw;
   //padding-bottom: 100vw;
   @include media(desktop-s) {
-    width: 60%;
+    width: 65%;
     top: 0;
     padding-bottom: 0;
-    transition: 0.5s;
+    //transition: 0.5s;
+    top: 250px;
+    justify-content: space-evenly;
     background-color: $color-claro;
     @include shadow-caja;
   }
@@ -42,7 +44,8 @@
     @include shadow-caja;
     @include media(desktop-s) {
       width: 20%;
-      height: 20vw;
+      height: 200px;
+      padding-top: 20px;
       margin-bottom: 0;
       box-shadow: none;
     }
@@ -54,8 +57,8 @@
       background-position: center;
       background-repeat: no-repeat;
       @include media(desktop-s) {
-        width: 4vw;
-        height: 4vw;
+        width: 40px;
+        height: 40px;
       }
     }
     &--number {
@@ -63,7 +66,7 @@
       margin: 0;
       color: $color-variacion1;
       @include media(desktop-s) {
-        font-size: 4vw;
+        font-size: 40px;
       }
     }
     &--subtitle {
@@ -72,7 +75,7 @@
       font-weight: 600;
       color: $color-variacion1;
       @include media(desktop-s) {
-        font-size: 1.3vw;
+        font-size: 12px;
       }
     }
     &--button {
@@ -85,11 +88,11 @@
       background-color: $color-variacion1;
       @include basic-flex;
       @include media(desktop-s) {
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 25px;
+        height: 25px;
         position: relative;
         bottom: 0;
-        margin-top: 2vw;
+        margin-top: 20px;
         background-color: $color-variacion2;
       }
     }
@@ -110,12 +113,10 @@
   background-color: $color-variacion5;
 
   @include media(desktop-s) {
-    border: 2px solid red;
-    height: 20vw;
-    width: 70%;
-    top: 11vw;
-
-    padding: 40px 0;
+    // border: 2px solid red;
+    height: 270px;
+    width: 75%;
+    padding: 30px 0;
 
     position: absolute;
   }
@@ -128,6 +129,11 @@
     z-index: 0;
     //border: 2px solid red;
     background-color: $color-variacion5;
+    @include media(desktop-s) {
+      width: 30px;
+      height: 30px;
+      top: -15px;
+    }
   }
   &__title {
     width: 100%;
@@ -139,45 +145,72 @@
     color: $color-variacion5;
     background-color: $color-variacion1;
     @include media(desktop-s) {
-      border: 2px solid red;
+      // border: 2px solid red;
       width: 170px;
       text-align: center;
-      font-size: 24px;
+      font-size: 18px;
+      padding: 5px 10px;
     }
   }
   &__info {
     //border: 2px solid red;
     margin-top: 1.5vw;
+    border: 2px solid red;
+    @include media(desktop-s) {
+      width: 500px;
+    }
     &--text {
       font-size: 3.3vw;
       margin-bottom: 4vw;
       font-weight: 600;
 
       color: $color-claro;
+      @include media(desktop-s) {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
       & img {
         width: 1.5vw;
         height: 1.5vw;
         margin-right: 0.5vw;
         background-color: $color-variacion1;
+        @include media(desktop-s) {
+          width: 8px;
+          height: 8px;
+        }
       }
     }
   }
   &__modulos {
     width: 100%;
     margin: 1.5vw 0;
-
+    // border: 2px solid red;
     background-color: $color-variacion2;
+    @include media(desktop-s) {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      width: 45%;
+    }
     &--title {
       font-size: 3.4vw;
       margin-bottom: 0;
       font-weight: 600;
       padding: 2vw;
       color: $color-claro;
+      //border: 2px solid red;
+      @include media(desktop-s) {
+        font-size: 12px;
+        width: 100%;
+        padding: 10px;
+      }
       &--span {
         color: $color-variacion1;
       }
     }
     &--module-container {
+      // border: 2px solid white;
+
       display: none;
       width: 100%;
       height: 55vw;
@@ -185,6 +218,23 @@
       overflow: auto;
       box-shadow: inset 0 -10px 10px 0 rgba(255, 255, 255, 0.15);
       background-color: $color-variacion5;
+      @include media(desktop-s) {
+        padding: 10px 0 30px;
+        width: 40%;
+        position: absolute;
+        height: 261px;
+        right: 7%;
+        top: 36px;
+        box-shadow: inset 0 -10px 4px 0 rgba(255, 255, 255, 0.1);
+      }
+      &::-webkit-scrollbar {
+        width: 8px;
+        background: $color-claro;
+        box-shadow: inset 0 0 1px 0px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $color-variacion1;
+      }
     }
   }
 }
@@ -241,37 +291,85 @@
 
 .five-container-active {
   top: -12vw;
+  @include media(desktop-s) {
+    top: 50px;
+  }
 }
 
-.square-l {
+.square-1 {
   left: 19%;
+  @include media(desktop-s) {
+    left: 17%;
+  }
 }
 
-.square-r {
+.square-2 {
   right: 19%;
+  @include media(desktop-s) {
+    left: 38%;
+  }
+}
+
+.square-3 {
+  left: 19%;
+  @include media(desktop-s) {
+    left: 59%;
+  }
+}
+
+.square-4 {
+  right: 19%;
+  @include media(desktop-s) {
+    left: 79.5%;
+  }
 }
 
 .project-subcont {
   top: 43vw;
+  @include media(desktop-s) {
+    top: 370px;
+  }
 }
 
 .modules-subcont {
   top: 43vw;
   height: 109vw;
+  @include media(desktop-s) {
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 5%;
+    height: 300px;
+
+    top: 370px;
+  }
 }
 
 .videos-subcont {
   top: 103vw;
   display: none;
+  @include media(desktop-s) {
+    top: 370px;
+  }
 }
 
 .hours-subcont {
   top: 103vw;
   display: none;
+  @include media(desktop-s) {
+    top: 370px;
+  }
+}
+
+.five-container-module-active {
+  @include media(desktop-s) {
+    margin-bottom: 400px;
+  }
 }
 
 .subcont-is-active {
   display: flex;
+  @include media(desktop-s) {
+  }
 }
 
 .project-box-active {
@@ -283,14 +381,23 @@
 
 .module-box-active {
   margin-bottom: 130vw;
+  @include media(desktop-s) {
+    margin-bottom: 0;
+  }
 }
 
 .video-box-active {
   margin-bottom: 105vw;
+  @include media(desktop-s) {
+    margin-bottom: 0;
+  }
 }
 
 .hours-box-active {
   margin-bottom: 105vw;
+  @include media(desktop-s) {
+    margin-bottom: 0;
+  }
 }
 
 .module-container-active {
@@ -309,7 +416,15 @@
   font-size: 3.2vw;
   margin: 2.5vw 0;
   color: $color-claro;
+  @include media(desktop-s) {
+    font-size: 12px;
+    margin: 10px;
+  }
 }
 .module-container-span {
   color: $color-variacion1;
+}
+
+.module-container-3 {
+  top: 36px;
 }

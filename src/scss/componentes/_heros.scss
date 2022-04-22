@@ -4,11 +4,13 @@
   position: relative;
   @include media(desktop-s) {
     height: 65vw;
+
     padding: 11vw 5% 0;
   }
   &__green-block {
     width: 50%;
-    height: 150vw;
+    height: 152vw;
+
     top: 0;
     right: 0;
     z-index: 0;
@@ -61,31 +63,34 @@
     &--one {
       width: 40.62vw;
       font-weight: 600;
-      padding: 1vw 0;
-      font-size: 3.12vw;
+      padding: 1.5vw 0;
+      font-size: 4.5vw;
       //border: 2px solid red;
       color: $color-claro;
       background: $color-variacion2;
       @include basic-flex;
       @include media(desktop-s) {
         font-size: 1.7vw;
-        width: 17vw;
+        width: 15vw;
         padding: 0.7vw 0;
       }
     }
     &--two {
       width: 40.62vw;
       font-weight: 600;
-      padding: 1vw 0;
+      padding: 1.5vw 2vw;
       margin: 2.5vw 0 0;
       font-size: 3.12vw;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
       color: $color-claro;
       background: $color-variacion1;
-      @include basic-flex;
+
       @include media(desktop-s) {
-        font-size: 1.3vw;
-        width: 17vw;
-        padding: 0.5vw 0 0.5vw 1vw;
+        font-size: 1.2vw;
+        width: 15vw;
+        padding: 0.5vw 0 0.5vw 0.7vw;
         margin: 1vw 0;
         justify-content: flex-start;
       }
@@ -99,8 +104,8 @@
     z-index: 2;
     @include basic-flex;
     @include media(desktop-s) {
-      margin: -6vw 0 0 18vw;
-      width: 80%;
+      margin: -50px 0 0 16vw;
+      width: 70vw;
       transform: rotateZ(-5deg);
     }
     &--img {
@@ -151,17 +156,17 @@
         height: 14%;
         display: flex;
         @include media(desktop-s) {
-          height: 41%;
+          height: 40.9%;
         }
       }
     }
   }
   &__desktop-media {
     @include media(desktop-s) {
-      width: 23vw;
-      height: 23vw;
+      width: 228px;
+      height: 250px;
       right: 0;
-      top: 11vw;
+      top: 130px;
       z-index: 1;
       display: flex;
       flex-direction: column;
@@ -171,8 +176,8 @@
       padding: 0 4vw;
       background-color: $color-variacion2;
       & a {
-        width: 2.3vw;
-        height: 2.3vw;
+        width: 25px;
+        height: 25px;
         margin: 5px 0;
         & img {
           width: 100%;

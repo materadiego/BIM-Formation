@@ -121,11 +121,15 @@
         padding: 3px 0;
         margin-right: 20px;
         background-color: $color-transparente;
-        border: 3px solid $color-claro;
+        border: 3px solid;
+        transition: 0.2s;
       }
     }
     &--wsp {
       width: 35px;
+      & img {
+        width: 100%;
+      }
     }
   }
   &__line {
@@ -195,4 +199,8 @@
   @include media(desktop-s) {
     display: none;
   }
+}
+
+.inscribirme:hover {
+  color: $color-variacion1;
 }

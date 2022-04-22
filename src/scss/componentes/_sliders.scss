@@ -4,9 +4,8 @@
   height: 71.87vw;
 }
 
-.swiper2 {
-  border: 2px solid red;
-  width: 75%;
+.mySwiper2 {
+  width: 90%;
   margin: 0 auto;
   height: 30vw;
 }
@@ -40,7 +39,8 @@
     height: 20vw;
     //border: 2px solid red;
     padding: 0 1vw;
-    width: 80%;
+    width: 65%;
+    margin-left: -5px;
   }
   &__quotation {
     //border: 2px solid red;
@@ -96,9 +96,25 @@
   transform: scale(0.6);
 }
 
+.swiper-button-next {
+  @include media(desktop-s) {
+    transform: scale(0.6) translateX(25px);
+  }
+}
+
+.swiper-button-prev {
+  @include media(desktop-s) {
+    transform: scale(0.6) translateX(-25px);
+  }
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: $color-variacion2;
+  @include media(desktop-s) {
+    left: 0;
+  }
+  left: 0;
 }
 
 .falta-slider {

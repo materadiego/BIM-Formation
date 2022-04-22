@@ -63,14 +63,12 @@
           <a href="" class="header-container__buttons--contactanos"
             ><img src="src/images/redes-wsp.png" alt="" /> ¡Contactanos!</a
           >
-          <a href="" class="header-container__buttons--inscribirme"
+          <a href="" class="header-container__buttons--inscribirme inscribirme"
             >INSCRIBIRME</a
           >
-          <img
-            src="src/images/header-wsp.svg"
-            alt=""
-            class="header-container__buttons--wsp desktop"
-          />
+          <a href="" class="header-container__buttons--wsp desktop">
+            <img src="src/images/header-wsp.svg" alt="" />
+          </a>
         </div>
         <div class="header-container__line"></div>
         <div class="header-container__subcontainer">
@@ -116,7 +114,11 @@
         CON NOSOTROS <br />
         POR WHATSAPP
       </h6>
-      <img src="" alt="" class="chat-container__arrow desktop" />
+      <img
+        src="src/images/chat-flecha.png"
+        alt=""
+        class="chat-container__arrow desktop"
+      />
     </div>
     <!-- HERO -->
     <section id="hero" class="section hero">
@@ -172,7 +174,6 @@
           <div class="lineas-horizontales color1"></div>
           <div class="lineas-horizontales color1"></div>
           <div class="lineas-horizontales color1"></div>
-          <div class="lineas-horizontales desktop color1"></div>
           <div class="lineas-horizontales desktop color1"></div>
           <div class="lineas-horizontales desktop color1"></div>
           <div class="lineas-horizontales desktop color1"></div>
@@ -269,8 +270,9 @@
     <!-- SECTION THREE -->
     <div class="background-lines bline-two"></div>
     <div class="background-lines bline-three"></div>
-
     <section class="section three">
+      <div class="background-lines bline-ten desktop"></div>
+
       <h3 class="three__title">
         ¿Por qué este curso <span> es para ti?</span>
       </h3>
@@ -323,6 +325,9 @@
     </section>
     <!-- ADMINS -->
     <section class="section four">
+      <div class="background-lines bline-eleven desktop"></div>
+      <!-- <div class="background-lines bline-twelve desktop"></div> -->
+
       <div class="four__container">
         <h3 class="four__container--title">
           <span> ¿Quiénes estamos </span><br />
@@ -346,9 +351,11 @@
             class="admins__img-container--image rafael__image"
           />
         </div>
-        <div class="admins__container">
-          <h6 class="admins__container--name">Rafael Gil García</h6>
-          <p class="admins__container--subtitle">Arquitecto y BIM Manager</p>
+        <div class="admins__container rafael-cont">
+          <h6 class="admins__container--name rafael-name">Rafael Gil García</h6>
+          <p class="admins__container--subtitle rafael-subtitle">
+            Arquitecto y BIM Manager
+          </p>
           <div class="admins__container--subcont subcont-rafael">
             <div id="saber-mas-r" class="admins__container--subcont--button">
               Saber más
@@ -393,7 +400,6 @@
                 recibir en mis inicios.”</span
               >
             </p>
-            <p class="falta desktop">Me falta conseguir la fuente en italic</p>
           </div>
         </div>
       </div>
@@ -409,9 +415,12 @@
             class="admins__img-container--image melissa__image"
           />
         </div>
-        <div class="admins__container">
-          <h6 class="admins__container--name melissa-name">
+        <div class="admins__container melissa-cont">
+          <h6 class="admins__container--name melissa-name mobile">
             Melissa Arboccó M.
+          </h6>
+          <h6 class="admins__container--name melissa-name desktop">
+            Melissa Arboccó Murguía
           </h6>
           <p class="admins__container--subtitle melissa-subtitle">
             Arquitecta y BIM Specialist
@@ -503,7 +512,7 @@
         </div>
       </div>
       <div class="five-subcontainer project-subcont" id="proyecto">
-        <div class="five-subcontainer__square square-l"></div>
+        <div class="five-subcontainer__square square-1"></div>
         <h5 class="five-subcontainer__title">1 PROYECTO</h5>
         <div class="five-subcontainer__info">
           <p class="five-subcontainer__info--text">
@@ -522,7 +531,7 @@
         </div>
       </div>
       <div class="five-subcontainer modules-subcont" id="modulos">
-        <div class="five-subcontainer__square square-r"></div>
+        <div class="five-subcontainer__square square-2"></div>
 
         <div class="five-subcontainer__modulos module-active" id="modulo1">
           <p class="five-subcontainer__modulos--title">
@@ -694,7 +703,7 @@
       </div>
 
       <div class="five-subcontainer videos-subcont" id="videos">
-        <div class="five-subcontainer__square square-l"></div>
+        <div class="five-subcontainer__square square-3"></div>
 
         <h5 class="five-subcontainer__title">42 VIDEOS</h5>
         <div class="five-subcontainer__info">
@@ -702,10 +711,14 @@
             <img src="src/images/five-span.svg" alt="" /> Adquisición de
             conocimientos generales BIM relativos al ámbito profesional.
           </p>
-          <p class="five-subcontainer__info--text">
+          <p class="five-subcontainer__info--text mobile">
             <img src="src/images/five-span.svg" alt="" /> Empleo de herramientas
             y procesos de modelado aplicables a proyectos colaborativos.
           </p>
+          <!-- <p class="five-subcontainer__info--text desktop">
+            <img src="src/images/five-span.svg" alt="" /> Empleo de herramientas
+            y procesos de modelado aplicables a proyectos colaborativos.
+          </p> -->
           <p class="five-subcontainer__info--text">
             <img src="src/images/five-span.svg" alt="" />Puesta en práctica de
             una correcta y ordenada gestión de la información de los elementos
@@ -720,7 +733,7 @@
       </div>
 
       <div class="five-subcontainer hours-subcont" id="horas">
-        <div class="five-subcontainer__square square-r"></div>
+        <div class="five-subcontainer__square square-4"></div>
 
         <h5 class="five-subcontainer__title">12 HORAS</h5>
         <div class="five-subcontainer__info">
@@ -728,10 +741,16 @@
             <img src="src/images/five-span.svg" alt="" /> ¡Lo bueno y breve, dos
             veces bueno!
           </p>
-          <p class="five-subcontainer__info--text">
+          <p class="five-subcontainer__info--text mobile">
             <img src="src/images/five-span.svg" alt="" /> Hemos condensado un
-            contenido brutal en muy pocas horas. Vídeeos cortos y directos, sin
+            contenido brutal en muy pocas horas. Vídeos cortos y directos, sin
             errores ni dudas, para que aprendas BIM rápido y bien.
+          </p>
+          <p class="five-subcontainer__info--text desktop">
+            <img src="src/images/five-span.svg" alt="" /> Hemos condensado un
+            contenido brutal en muy pocas horas. Vídeos <br />
+            cortos y directos, sin errores ni dudas, para que aprendas BIM
+            rápido y bien.
           </p>
           <p class="five-subcontainer__info--text">
             <img src="src/images/five-span.svg" alt="" /> Estas son las horas de
@@ -741,6 +760,7 @@
       </div>
       <!-- MODULOS -->
       <div class="six">
+        <div class="background-lines bline-thirteen"></div>
         <div class="background-lines bline-four"></div>
         <div class="background-lines bline-five"></div>
         <div class="background-lines bline-six"></div>
@@ -768,6 +788,11 @@
             EL MODULO 1 <br />
             COMPLETO!
           </p>
+          <img
+            class="regalo__flecha"
+            src="src/images/regalo-flecha.png"
+            alt=""
+          />
           <p class="regalo__text">
             Para que puedas probar la excelencia <br />
             de nuestro curso, gratis completando <br />
@@ -1018,7 +1043,7 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
-      <div class="swiper2 mySwiper2 desktop">
+      <div class="swiper mySwiper2 desktop">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="opinion-box">
@@ -1077,9 +1102,47 @@
               <p class="opinion-box__author-rol">Blogger</p>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="opinion-box">
+              <figure class="opinion-box__quotation">
+                <img
+                  src="src/images/quote.svg"
+                  alt=""
+                  class="opinion-box__quotation--image"
+                />
+              </figure>
+              <p class="opinion-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                quidem, culpa libero ipsam ullam fuga voluptatem minus aut
+                fugiat quia laboriosam vel inventore at atque modi sit non et
+                nesciunt.
+              </p>
+              <h6 class="opinion-box__author">Brenna Beck</h6>
+              <p class="opinion-box__author-rol">Blogger</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="opinion-box">
+              <figure class="opinion-box__quotation">
+                <img
+                  src="src/images/quote.svg"
+                  alt=""
+                  class="opinion-box__quotation--image"
+                />
+              </figure>
+              <p class="opinion-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                quidem, culpa libero ipsam ullam fuga voluptatem minus aut
+                fugiat quia laboriosam vel inventore at atque modi sit non et
+                nesciunt.
+              </p>
+              <h6 class="opinion-box__author">Brenna Beck</h6>
+              <p class="opinion-box__author-rol">Blogger</p>
+            </div>
+          </div>
         </div>
-        <div class="swiper-button-next2"></div>
-        <div class="swiper-button-prev2"></div>
+        <div class="swiper-button-next swiper2-next"></div>
+        <div class="swiper-button-prev swiper2-prev"></div>
       </div>
     </section>
     <!-- CONTACTO -->
@@ -1179,11 +1242,9 @@
 
       var swiper2 = new Swiper(".mySwiper2", {
         slidesPerView: 3,
-        spaceBetween: 0,
-
         navigation: {
-          nextEl: ".swiper-button-next2",
-          prevEl: ".swiper-button-prev2",
+          nextEl: ".swiper2-next",
+          prevEl: ".swiper2-prev",
         },
       });
     </script>

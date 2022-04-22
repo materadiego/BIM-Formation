@@ -49,20 +49,23 @@
     }
   }
   &__arrow {
-    border: 2px solid red;
-    width: 6vw;
-    height: 9vw;
+    //border: 2px solid red;
+    width: 40px;
   }
 }
 
 .chat__close {
-  width: 2vw;
-  height: 2vw;
+  width: 15px;
+  height: 15px;
   left: 5px;
   top: 5px;
   display: flex;
   position: absolute;
-  border: 2px solid red;
+  //border: 2px solid red;
+  background-image: url(../images/close.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .chat-is-active {

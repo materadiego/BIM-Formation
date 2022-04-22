@@ -18,6 +18,7 @@ const lineOneb3 = document.querySelector(".line-one-b3");
 const lineTwob3 = document.querySelector(".line-two-b3");
 const lineOneb4 = document.querySelector(".line-one-b4");
 const lineTwob4 = document.querySelector(".line-two-b4");
+const fiveContainer = document.querySelector(".five-container");
 
 function showProject() {
   if (boxProyecto.classList.contains("project-box-active")) {
@@ -25,6 +26,7 @@ function showProject() {
     module1.classList.remove("subcont-is-active");
     lineOneb1.classList.remove("line1-active");
     lineTwob1.classList.remove("line2-active");
+    fiveContainer.classList.remove("five-container-module-active");
   } else {
     boxProyecto.classList.add("project-box-active");
     lineOneb1.classList.add("line1-active");
@@ -42,6 +44,7 @@ function showProject() {
     lineTwob3.classList.remove("line2-active");
     lineOneb4.classList.remove("line1-active");
     lineTwob4.classList.remove("line2-active");
+    fiveContainer.classList.add("five-container-module-active");
   }
 }
 
@@ -51,6 +54,7 @@ function showModules() {
     module2.classList.remove("subcont-is-active");
     lineOneb2.classList.remove("line1-active");
     lineTwob2.classList.remove("line2-active");
+    fiveContainer.classList.remove("five-container-module-active");
   } else {
     boxModule.classList.add("module-box-active");
     module2.classList.add("subcont-is-active");
@@ -68,6 +72,7 @@ function showModules() {
     lineTwob3.classList.remove("line2-active");
     lineOneb4.classList.remove("line1-active");
     lineTwob4.classList.remove("line2-active");
+    fiveContainer.classList.add("five-container-module-active");
   }
 }
 
@@ -77,6 +82,7 @@ function showVideos() {
     module3.classList.remove("subcont-is-active");
     lineOneb3.classList.remove("line1-active");
     lineTwob3.classList.remove("line2-active");
+    fiveContainer.classList.remove("five-container-module-active");
   } else {
     boxVideo.classList.add("video-box-active");
     module3.classList.add("subcont-is-active");
@@ -94,6 +100,7 @@ function showVideos() {
     lineTwob1.classList.remove("line2-active");
     lineOneb4.classList.remove("line1-active");
     lineTwob4.classList.remove("line2-active");
+    fiveContainer.classList.add("five-container-module-active");
   }
 }
 
@@ -103,6 +110,7 @@ function showHours() {
     module4.classList.remove("subcont-is-active");
     lineOneb4.classList.remove("line1-active");
     lineTwob4.classList.remove("line2-active");
+    fiveContainer.classList.remove("five-container-module-active");
   } else {
     boxHoras.classList.add("hours-box-active");
     module4.classList.add("subcont-is-active");
@@ -120,6 +128,7 @@ function showHours() {
     lineTwob3.classList.remove("line2-active");
     lineOneb1.classList.remove("line1-active");
     lineTwob1.classList.remove("line2-active");
+    fiveContainer.classList.add("five-container-module-active");
   }
 }
 

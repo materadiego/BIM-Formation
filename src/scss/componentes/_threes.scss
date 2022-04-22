@@ -1,4 +1,8 @@
 .three {
+  @include media(desktop-s) {
+    padding-bottom: 40px;
+    position: relative;
+  }
   &__title {
     //border: 2px solid red;
     width: 50vw;
@@ -7,7 +11,7 @@
     line-height: 120%;
     color: $color-variacion1;
     @include media(desktop-s) {
-      font-size: 3.1vw;
+      font-size: 31px;
       width: 26vw;
       margin: 15vw 0 0 10%;
     }
@@ -23,14 +27,14 @@
     opacity: 0.17;
     opacity: 1;
     @include media(desktop-s) {
-      width: 5vw;
-      height: 5vw;
+      width: 40px;
+      height: 40px;
       margin-left: 10%;
       margin-top: 2vw;
     }
   }
   &__container {
-    //border: 2px solid red;
+    // border: 2px solid red;
     width: 95vw;
     margin: 50px auto 0;
     display: flex;
@@ -38,7 +42,7 @@
     justify-content: space-between;
     @include media(desktop-s) {
       width: 67%;
-      margin: 1vw auto 0;
+      margin: 20px auto 0;
     }
     &--box {
       //border: 2px solid red;
@@ -53,6 +57,7 @@
       @include media(desktop-s) {
         width: 15vw;
         padding: 15px 10px 20px;
+        margin-bottom: 0;
       }
       & img {
         //border: 2px solid red;
@@ -60,15 +65,15 @@
         height: 15.62vw;
         margin-bottom: 15px;
         @include media(desktop-s) {
-          width: 4vw;
-          height: 4vw;
+          width: 40px;
+          height: 40px;
         }
       }
       & h6 {
         font-size: 4.2vw;
         color: $color-variacion1;
         @include media(desktop-s) {
-          font-size: 1.5vw;
+          font-size: 15px;
         }
       }
       & p {
@@ -78,7 +83,7 @@
         text-align: center;
         color: $color-claro;
         @include media(desktop-s) {
-          font-size: 1vw;
+          font-size: 10px;
           margin: 0;
         }
       }
