@@ -6,7 +6,7 @@
   @include media(desktop-s) {
     padding-top: 0;
     margin-top: 10em;
-    margin-bottom: 20px;
+    margin-bottom: 3vw;
     position: relative;
   }
 }
@@ -150,7 +150,7 @@
         align-items: center;
         justify-content: space-between;
         right: 0;
-        top: 3.5em;
+        top: 3.7em;
         margin: 0;
         width: 52%;
         padding: 0 2%;
@@ -303,8 +303,8 @@
 .actions-gratis {
   //border: 2px solid red;
   width: 48%;
-  font-size: 3.12vw;
-  padding: 1em 0;
+  font-size: 3vw;
+  padding: 2vw 0;
   margin: 0 0 1.56vw;
   font-weight: 500;
 
@@ -313,6 +313,8 @@
   background-color: $color-variacion1;
   @include media(desktop-s) {
     font-size: 0.9em;
+    padding: 0.5em 0;
+
     margin: 0 0 0.5em;
   }
 }
@@ -320,14 +322,16 @@
 .actions-resumen {
   //border: 2px solid red;
   width: 48%;
-  font-size: 3.125vw;
-  padding: 6px 0;
+  font-size: 3vw;
+  padding: 2vw 0;
+
   font-weight: 600;
   text-align: center;
   color: $color-claro;
   background-color: $color-variacion2;
   @include media(desktop-s) {
     font-size: 1em;
+    padding: 0.5em 0;
   }
 }
 
@@ -374,7 +378,9 @@
 }
 
 .stats-box3 {
-  top: 6em;
+  @include media(desktop-s) {
+    top: 6em;
+  }
 }
 
 .checked {

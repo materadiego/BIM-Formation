@@ -1,4 +1,6 @@
 .three {
+  position: relative;
+  padding-bottom: 28vw;
   @include media(desktop-s) {
     padding-bottom: 40px;
     position: relative;
@@ -6,7 +8,7 @@
   &__title {
     //border: 2px solid red;
     width: 50vw;
-    margin: 100px 0 0 15%;
+    margin: 31.25vw 0 0 15%;
     font-size: 6vw;
     line-height: 120%;
     color: $color-variacion1;

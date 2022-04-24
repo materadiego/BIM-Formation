@@ -37,14 +37,15 @@
 
 .bline-three {
   width: 16%;
-  height: 40vw;
-  top: 475vw;
+  height: 32vw;
+  //top: 475vw;
+  bottom: 0;
   right: 0;
   border-left: 2px solid $color-variacion1;
   @include media(desktop-s) {
-    top: 104vw;
+    top: -15vw;
     right: 0;
-    height: 130px;
+    height: 13vw;
     width: 38%;
     border-bottom: 3px solid $color-variacion1;
     border-left: 3px solid $color-variacion1;
@@ -89,7 +90,7 @@
 
     position: absolute;
 
-    top: 11em;
+    top: 7em;
     border-top: 3px solid $color-variacion1;
   }
 }

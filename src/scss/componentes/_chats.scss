@@ -11,7 +11,7 @@
   background-color: $color-claro;
   @include shadow-caja;
   @include media(desktop-s) {
-    width: 28%;
+    width: 23vw;
     margin-left: 100%;
     bottom: auto;
     top: 12vw;
@@ -55,23 +55,26 @@
 }
 
 .chat__close {
-  width: 15px;
-  height: 15px;
-  left: 5px;
-  top: 5px;
-  display: flex;
-  position: absolute;
-  //border: 2px solid red;
-  background-image: url(../images/close.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: none;
+  @include media(desktop-s) {
+    width: 15px;
+    height: 15px;
+    left: 5px;
+    top: 5px;
+    display: flex;
+    position: absolute;
+    //border: 2px solid red;
+    background-image: url(../images/close.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .chat-is-active {
-  margin-left: 100%;
+  margin-left: 50%;
 
   @include media(desktop-s) {
-    margin-left: 72%;
+    margin-left: 77%;
   }
 }

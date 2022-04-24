@@ -6,6 +6,7 @@
   //display: none;
   background-color: $color-claro;
   z-index: 4;
+  top: 181vw;
   margin-left: -75%;
   transition: 0.5s;
   @include media(desktop-s) {
