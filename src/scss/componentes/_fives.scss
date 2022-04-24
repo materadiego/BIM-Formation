@@ -34,9 +34,9 @@
   }
   &__box {
     width: 45%;
-    height: 40.62em;
+    height: 10.62em;
     padding-top: 1.5em;
-    margin-bottom: 18.75em;
+    margin-bottom: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,7 +158,7 @@
   &__info {
     //border: 2px solid red;
     margin-top: 1.5vw;
-    border: 2px solid red;
+    // border: 2px solid red;
     @include media(desktop-s) {
       width: 50em;
     }
@@ -331,14 +331,14 @@
 }
 
 .project-subcont {
-  top: 43vw;
+  top: 50vw;
   @include media(desktop-s) {
     top: 37vw;
   }
 }
 
 .modules-subcont {
-  top: 43vw;
+  top: 50vw;
   height: 109vw;
   @include media(desktop-s) {
     align-items: flex-start;
@@ -351,7 +351,7 @@
 }
 
 .videos-subcont {
-  top: 103vw;
+  top: 117vw;
   display: none;
   @include media(desktop-s) {
     top: 37em;
@@ -359,7 +359,7 @@
 }
 
 .hours-subcont {
-  top: 103vw;
+  top: 117vw;
   display: none;
   @include media(desktop-s) {
     top: 37em;
@@ -367,6 +367,7 @@
 }
 
 .five-container-module-active {
+  margin-bottom: 20vw;
   @include media(desktop-s) {
     margin-bottom: 40em;
   }

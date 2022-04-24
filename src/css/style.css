@@ -1897,9 +1897,9 @@ a:hover {
       box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); } }
   .five-container__box {
     width: 45%;
-    height: 40.62em;
+    height: 10.62em;
     padding-top: 1.5em;
-    margin-bottom: 18.75em;
+    margin-bottom: 4em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2028,8 +2028,7 @@ a:hover {
         font-size: 1.8em;
         padding: 0.5em 1em; } }
   .five-subcontainer__info {
-    margin-top: 1.5vw;
-    border: 2px solid red; }
+    margin-top: 1.5vw; }
     @media only screen and (min-width: 992px) {
       .five-subcontainer__info {
         width: 50em; } }
@@ -2187,13 +2186,13 @@ a:hover {
       left: 79.5%; } }
 
 .project-subcont {
-  top: 43vw; }
+  top: 50vw; }
   @media only screen and (min-width: 992px) {
     .project-subcont {
       top: 37vw; } }
 
 .modules-subcont {
-  top: 43vw;
+  top: 50vw;
   height: 109vw; }
   @media only screen and (min-width: 992px) {
     .modules-subcont {
@@ -2208,22 +2207,24 @@ a:hover {
       top: 37em; } }
 
 .videos-subcont {
-  top: 103vw;
+  top: 117vw;
   display: none; }
   @media only screen and (min-width: 992px) {
     .videos-subcont {
       top: 37em; } }
 
 .hours-subcont {
-  top: 103vw;
+  top: 117vw;
   display: none; }
   @media only screen and (min-width: 992px) {
     .hours-subcont {
       top: 37em; } }
 
-@media only screen and (min-width: 992px) {
-  .five-container-module-active {
-    margin-bottom: 40em; } }
+.five-container-module-active {
+  margin-bottom: 20vw; }
+  @media only screen and (min-width: 992px) {
+    .five-container-module-active {
+      margin-bottom: 40em; } }
 
 .subcont-is-active {
   display: -webkit-box;
@@ -2434,7 +2435,6 @@ a:hover {
           width: 52%;
           padding: 0 2%; } }
       .six__box--stats--minutes {
-        border: 1px solid red;
         width: 16.25vw;
         font-weight: 600;
         font-size: 3.12vw;
@@ -2457,7 +2457,6 @@ a:hover {
               width: 100%;
               text-align: end; } }
       .six__box--stats--modules {
-        border: 1px solid red;
         width: 12.5vw;
         font-weight: 600;
         font-size: 3.12vw;
