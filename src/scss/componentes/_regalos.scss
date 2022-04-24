@@ -10,6 +10,7 @@
   transition: 0.5s;
   @include media(desktop-s) {
     width: 26%;
+    top: 19vw;
     padding: 2vw 3vw 2vw 3.5vw;
   }
   &__title {

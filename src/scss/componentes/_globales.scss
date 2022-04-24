@@ -33,6 +33,9 @@ body {
   font-weight: 600;
   font-style: normal;
   scroll-behavior: smooth;
+  @include media(desktop-s) {
+    font-size: 1vw;
+  }
 }
 
 body::-webkit-scrollbar {

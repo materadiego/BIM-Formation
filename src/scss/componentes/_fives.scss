@@ -1,10 +1,10 @@
 .five {
   // border: 2px solid red;
-  padding-bottom: 50px;
+  padding-bottom: 4em;
   position: relative;
   background-color: $color-variacion2;
   @include media(desktop-s) {
-    padding-top: 80px;
+    padding-top: 8em;
     transition: 0.5s;
   }
 }
@@ -19,23 +19,24 @@
   padding-bottom: 0px;
 
   position: relative;
-  top: -21.87vw;
+  top: -21.87em;
   //padding-bottom: 100vw;
   @include media(desktop-s) {
-    width: 65%;
+    width: 70%;
     top: 0;
     padding-bottom: 0;
+
     //transition: 0.5s;
-    top: 250px;
+    top: 25em;
     justify-content: space-evenly;
     background-color: $color-claro;
     @include shadow-caja;
   }
   &__box {
     width: 45%;
-    height: 40.62vw;
-    padding-top: 1.5vw;
-    margin-bottom: 18.75vw;
+    height: 40.62em;
+    padding-top: 1.5em;
+    margin-bottom: 18.75em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,9 +45,10 @@
     @include shadow-caja;
     @include media(desktop-s) {
       width: 20%;
-      height: 200px;
-      padding-top: 20px;
+      height: 20em;
+      padding-top: 2em;
       margin-bottom: 0;
+
       box-shadow: none;
     }
     &--image-cont {
@@ -57,8 +59,8 @@
       background-position: center;
       background-repeat: no-repeat;
       @include media(desktop-s) {
-        width: 40px;
-        height: 40px;
+        width: 4em;
+        height: 4em;
       }
     }
     &--number {
@@ -66,7 +68,7 @@
       margin: 0;
       color: $color-variacion1;
       @include media(desktop-s) {
-        font-size: 40px;
+        font-size: 4em;
       }
     }
     &--subtitle {
@@ -75,7 +77,7 @@
       font-weight: 600;
       color: $color-variacion1;
       @include media(desktop-s) {
-        font-size: 12px;
+        font-size: 1.2em;
       }
     }
     &--button {
@@ -88,11 +90,12 @@
       background-color: $color-variacion1;
       @include basic-flex;
       @include media(desktop-s) {
-        width: 25px;
-        height: 25px;
+        cursor: pointer;
+        width: 2.5em;
+        height: 2.5em;
         position: relative;
         bottom: 0;
-        margin-top: 20px;
+        margin-top: 2em;
         background-color: $color-variacion2;
       }
     }
@@ -114,9 +117,9 @@
 
   @include media(desktop-s) {
     // border: 2px solid red;
-    height: 270px;
-    width: 75%;
-    padding: 30px 0;
+    height: 27em;
+    width: 80%;
+    padding: 3em 0;
 
     position: absolute;
   }
@@ -130,9 +133,9 @@
     //border: 2px solid red;
     background-color: $color-variacion5;
     @include media(desktop-s) {
-      width: 30px;
-      height: 30px;
-      top: -15px;
+      width: 3em;
+      height: 3em;
+      top: -1.5em;
     }
   }
   &__title {
@@ -146,10 +149,10 @@
     background-color: $color-variacion1;
     @include media(desktop-s) {
       // border: 2px solid red;
-      width: 170px;
+      width: 17em;
       text-align: center;
-      font-size: 18px;
-      padding: 5px 10px;
+      font-size: 1.8em;
+      padding: 0.5em 1em;
     }
   }
   &__info {
@@ -157,7 +160,7 @@
     margin-top: 1.5vw;
     border: 2px solid red;
     @include media(desktop-s) {
-      width: 500px;
+      width: 50em;
     }
     &--text {
       font-size: 3.3vw;
@@ -166,8 +169,8 @@
 
       color: $color-claro;
       @include media(desktop-s) {
-        font-size: 13px;
-        margin-bottom: 10px;
+        font-size: 1.3em;
+        margin-bottom: 1em;
       }
       & img {
         width: 1.5vw;
@@ -175,8 +178,8 @@
         margin-right: 0.5vw;
         background-color: $color-variacion1;
         @include media(desktop-s) {
-          width: 8px;
-          height: 8px;
+          width: 0.8em;
+          height: 0.8em;
         }
       }
     }
@@ -189,7 +192,7 @@
     @include media(desktop-s) {
       display: flex;
       align-items: center;
-      margin: 5px 0;
+      margin: 0.5em 0;
       width: 45%;
     }
     &--title {
@@ -200,9 +203,9 @@
       color: $color-claro;
       //border: 2px solid red;
       @include media(desktop-s) {
-        font-size: 12px;
+        font-size: 1.3em;
         width: 100%;
-        padding: 10px;
+        padding: 1em;
       }
       &--span {
         color: $color-variacion1;
@@ -219,13 +222,13 @@
       box-shadow: inset 0 -10px 10px 0 rgba(255, 255, 255, 0.15);
       background-color: $color-variacion5;
       @include media(desktop-s) {
-        padding: 10px 0 30px;
+        padding: 1em 0 3em;
         width: 40%;
         position: absolute;
-        height: 261px;
+        height: 26.1em;
         right: 7%;
-        top: 36px;
-        box-shadow: inset 0 -10px 4px 0 rgba(255, 255, 255, 0.1);
+        top: 3.6em;
+        box-shadow: inset 0 -1em 0.4em 0 rgba(255, 255, 255, 0.1);
       }
       &::-webkit-scrollbar {
         width: 8px;
@@ -235,6 +238,9 @@
       &::-webkit-scrollbar-thumb {
         background: $color-variacion1;
       }
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
 }
@@ -292,7 +298,7 @@
 .five-container-active {
   top: -12vw;
   @include media(desktop-s) {
-    top: 50px;
+    top: 5em;
   }
 }
 
@@ -327,7 +333,7 @@
 .project-subcont {
   top: 43vw;
   @include media(desktop-s) {
-    top: 370px;
+    top: 37vw;
   }
 }
 
@@ -338,9 +344,9 @@
     align-items: flex-start;
     justify-content: center;
     padding-left: 5%;
-    height: 300px;
+    height: 30em;
 
-    top: 370px;
+    top: 37em;
   }
 }
 
@@ -348,7 +354,7 @@
   top: 103vw;
   display: none;
   @include media(desktop-s) {
-    top: 370px;
+    top: 37em;
   }
 }
 
@@ -356,13 +362,13 @@
   top: 103vw;
   display: none;
   @include media(desktop-s) {
-    top: 370px;
+    top: 37em;
   }
 }
 
 .five-container-module-active {
   @include media(desktop-s) {
-    margin-bottom: 400px;
+    margin-bottom: 40em;
   }
 }
 
@@ -417,8 +423,8 @@
   margin: 2.5vw 0;
   color: $color-claro;
   @include media(desktop-s) {
-    font-size: 12px;
-    margin: 10px;
+    font-size: 1.2em;
+    margin: 1em;
   }
 }
 .module-container-span {
@@ -426,5 +432,5 @@
 }
 
 .module-container-3 {
-  top: 36px;
+  top: 3.6em;
 }

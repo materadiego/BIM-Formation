@@ -1,13 +1,30 @@
-.six {
+.six-container {
+  // border: 2px solid red;
   background-color: $color-variacion2;
-  //border-top: 2px solid red;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  @include media(desktop-s) {
+    padding-top: 0;
+    margin-top: 10em;
+    margin-bottom: 20px;
+    position: relative;
+  }
+}
+.six {
+  // border: 2px solid $color-variacion1;
   width: 100%;
   position: relative;
-  margin-top: -9.37vw;
+  //margin-top: -9.37vw;
   @include media(desktop-s) {
-    margin-top: 200px;
-    padding-top: 40px;
-    padding-bottom: 150px;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    width: 80%;
+    height: 80em;
+
+    margin: 0 auto 0;
   }
   &__title-cont {
     //border: 2px solid red;
@@ -16,6 +33,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    @include media(desktop-s) {
+      margin: 0 0 2em auto;
+      width: 100%;
+      height: 14em;
+    }
 
     &--title {
       text-align: end;
@@ -25,7 +47,7 @@
       font-size: 6.5vw;
       color: $color-claro;
       @include media(desktop-s) {
-        font-size: 30px;
+        font-size: 3em;
         margin-bottom: 0px;
       }
       &--span {
@@ -37,8 +59,8 @@
       width: 7.81vw;
       height: 7.81vw;
       @include media(desktop-s) {
-        width: 40px;
-        height: 40px;
+        width: 4em;
+        height: 4em;
       }
       &--image {
         width: 100%;
@@ -56,11 +78,13 @@
     position: relative;
     background-color: $color-claro;
     @include media(desktop-s) {
-      width: 380px;
-      height: 170px;
-      margin: 0;
+      width: 47%;
+      height: 16em;
+      margin: 0 0;
+      position: absolute;
       overflow: hidden;
     }
+
     &--background1 {
       width: 85%;
       height: 34.37vw;
@@ -69,7 +93,7 @@
       background-color: $color-variacion1;
       @include media(desktop-s) {
         width: 35%;
-        height: 150px;
+        height: 15em;
         left: 13%;
       }
     }
@@ -81,8 +105,8 @@
       background-color: $color-variacion1;
       @include media(desktop-s) {
         width: 13%;
-        height: 20px;
-        top: 150px;
+        height: 2em;
+        top: 15em;
       }
     }
     &--image {
@@ -107,9 +131,9 @@
       margin-bottom: 0;
       color: $color-variacion2;
       @include media(desktop-s) {
-        font-size: 40px;
-        top: 84px;
-        right: 220px;
+        font-size: 4em;
+        top: 8.4em;
+        right: 22em;
         color: $color-variacion2;
       }
     }
@@ -126,13 +150,13 @@
         align-items: center;
         justify-content: space-between;
         right: 0;
-        top: 50px;
+        top: 3.5em;
         margin: 0;
         width: 52%;
         padding: 0 2%;
       }
       &--minutes {
-        //border: 1px solid red;
+        border: 1px solid red;
         width: 16.25vw;
         font-weight: 600;
         font-size: 3.12vw;
@@ -143,14 +167,14 @@
         background-repeat: no-repeat;
         color: $color-variacion2;
         @include media(desktop-s) {
-          background-size: 10px;
-          background-position: left 1px;
-          width: 25%;
+          background-size: 0.35em;
+          background-position: left center;
+          width: 26%;
         }
         & p {
           margin: 0;
           @include media(desktop-s) {
-            font-size: 9px;
+            font-size: 0.29em;
             width: 100%;
             text-align: end;
             //border: 1px solid red;
@@ -158,7 +182,7 @@
         }
       }
       &--modules {
-        //border: 1px solid red;
+        border: 1px solid red;
         width: 12.5vw;
         font-weight: 600;
         font-size: 3.12vw;
@@ -170,22 +194,23 @@
         background-repeat: no-repeat;
         color: $color-variacion2;
         @include media(desktop-s) {
-          background-size: 12px;
-          width: 17%;
+          background-size: 0.4em;
+          background-position: left center;
+          width: 18%;
           margin: 0;
         }
         & p {
           margin: 0;
           @include media(desktop-s) {
-            font-size: 9px;
+            font-size: 0.3em;
           }
         }
       }
       &--checkbar {
         @include media(desktop-s) {
-          width: 48%;
-          height: 8px;
-          margin-left: 5px;
+          width: 45%;
+          height: 0.8em;
+          margin-left: 0.5em;
           padding: 0;
           justify-content: space-between;
           align-items: center;
@@ -204,12 +229,14 @@
       font-weight: 500;
       color: $color-variacion2;
       @include media(desktop-s) {
-        font-size: 15px;
+        font-size: 1.5em;
         width: 52%;
         position: absolute;
+        text-align: start;
         right: 0;
-        top: 20px;
+        top: 1em;
         margin-top: 0;
+        padding: 0 2%;
       }
     }
     &--actions {
@@ -225,9 +252,10 @@
         width: 52%;
         position: absolute;
         right: 0;
-        top: 70px;
-        height: 90px;
+        top: 6em;
+        height: 9em;
         padding: 0 2%;
+        justify-content: flex-end;
       }
     }
   }
@@ -236,15 +264,39 @@
 .box-l {
   left: 5%;
   @include media(desktop-s) {
-    left: 10%;
+    left: 0;
     margin: 0 0 0;
   }
 }
 .box-r {
   left: 40%;
   @include media(desktop-s) {
+    right: 0%;
     left: 53%;
-    margin-top: -90px;
+    right: auto;
+    //margin-top: -90px;
+  }
+}
+
+.six-box1 {
+  @include media(desktop-s) {
+    top: 19vw;
+  }
+}
+
+.six-box2 {
+  @include media(desktop-s) {
+    top: 26vw;
+  }
+}
+.six-box3 {
+  @include media(desktop-s) {
+    top: 44vw;
+  }
+}
+.six-box4 {
+  @include media(desktop-s) {
+    top: 51vw;
   }
 }
 
@@ -252,7 +304,7 @@
   //border: 2px solid red;
   width: 48%;
   font-size: 3.12vw;
-  padding: 4px 0;
+  padding: 1em 0;
   margin: 0 0 1.56vw;
   font-weight: 500;
 
@@ -260,8 +312,8 @@
   color: $color-variacion2;
   background-color: $color-variacion1;
   @include media(desktop-s) {
-    font-size: 9px;
-    margin: 0 0 5px;
+    font-size: 0.9em;
+    margin: 0 0 0.5em;
   }
 }
 
@@ -275,7 +327,7 @@
   color: $color-claro;
   background-color: $color-variacion2;
   @include media(desktop-s) {
-    font-size: 10px;
+    font-size: 1em;
   }
 }
 
@@ -285,8 +337,8 @@
   height: 20.31vw;
   border-radius: 300px;
   @include media(desktop-s) {
-    width: 70px;
-    height: 70px;
+    width: 7vw;
+    height: 7em;
   }
   &--shadow1 {
     border: 4px solid $color-shadow2;
@@ -308,8 +360,8 @@
   transform: rotateZ(270deg);
   margin: 0 0 0 1.87vw;
   @include media(desktop-s) {
-    width: 35px;
-    margin: 0 0 0 8px;
+    width: 3.5em;
+    margin: 0 0 0 0.8em;
   }
 }
 
@@ -319,6 +371,10 @@
   display: flex;
   margin: 0;
   padding: 0;
+}
+
+.stats-box3 {
+  top: 6em;
 }
 
 .checked {
