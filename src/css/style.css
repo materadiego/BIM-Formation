@@ -942,11 +942,16 @@ a:hover {
       font-size: 3.8vw;
       width: 100%;
       font-family: "Aventa";
+      cursor: pointer;
       font-weight: 600;
       padding: 1.56vw 0;
       margin-top: 2vw;
       border: none;
       outline: none;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      will-change: background-color;
       color: #fff;
       background-color: #2fe6b0; }
       @media only screen and (min-width: 992px) {
@@ -954,6 +959,8 @@ a:hover {
           font-size: 1vw;
           margin-top: 0.9vw;
           padding: 10px 0; } }
+      .regalo__form--submit:hover {
+        background-color: #3600e0; }
 
 .regalo__close {
   width: 5vw;
@@ -1004,7 +1011,7 @@ a:hover {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); }
   @media only screen and (min-width: 992px) {
     .chat-container {
-      width: 23vw;
+      width: 26.4vw;
       margin-left: 100%;
       bottom: auto;
       top: 12vw;
@@ -1062,7 +1069,7 @@ a:hover {
   margin-left: 50%; }
   @media only screen and (min-width: 992px) {
     .chat-is-active {
-      margin-left: 77%; } }
+      margin-left: 73.6%; } }
 
 .hero {
   height: 179.68vw;
@@ -1129,6 +1136,10 @@ a:hover {
       font-weight: 600;
       padding: 1.5vw 0;
       font-size: 4.5vw;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      will-change: color background-color;
       color: #fff;
       background: #3600e0;
       display: -webkit-box;
@@ -1145,6 +1156,9 @@ a:hover {
           font-size: 1.7vw;
           width: 15vw;
           padding: 0.7vw 0; } }
+      .hero__button--one:hover {
+        background-color: #090060;
+        color: #2fe6b0; }
     .hero__button--two {
       width: 40.62vw;
       font-weight: 600;
@@ -1160,6 +1174,10 @@ a:hover {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      will-change: color;
       color: #fff;
       background: #2fe6b0; }
       @media only screen and (min-width: 992px) {
@@ -1171,6 +1189,8 @@ a:hover {
           -webkit-box-pack: start;
           -ms-flex-pack: start;
           justify-content: flex-start; } }
+      .hero__button--two:hover {
+        color: #3600e0; }
   .hero__image-container {
     width: 100%;
     margin: 18.75vw auto 0;
@@ -1268,13 +1288,23 @@ a:hover {
       align-items: flex-end;
       position: absolute;
       padding: 0 4vw;
-      background-color: #3600e0; }
-      .hero__desktop-media a {
-        width: 30px;
-        height: 30px;
-        margin: 5px 0; }
-        .hero__desktop-media a img {
-          width: 100%; } }
+      background-color: #3600e0; } }
+  @media only screen and (min-width: 992px) {
+    .hero__desktop-media a {
+      width: 30px;
+      height: 30px;
+      margin: 5px 0;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      will-change: transform; } }
+  .hero__desktop-media a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+  @media only screen and (min-width: 992px) {
+    .hero__desktop-media a img {
+      width: 100%; } }
 
 .lineas-horizontales {
   width: 100%;

@@ -65,6 +65,8 @@
       font-weight: 600;
       padding: 1.5vw 0;
       font-size: 4.5vw;
+      transition: 0.3s;
+      will-change: color background-color;
       //border: 2px solid red;
       color: $color-claro;
       background: $color-variacion2;
@@ -73,6 +75,10 @@
         font-size: 1.7vw;
         width: 15vw;
         padding: 0.7vw 0;
+      }
+      &:hover {
+        background-color: $color-variacion5;
+        color: $color-variacion1;
       }
     }
     &--two {
@@ -84,6 +90,9 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      transition: 0.3s;
+      will-change: color;
+
       color: $color-claro;
       background: $color-variacion1;
 
@@ -93,6 +102,9 @@
         padding: 0.5vw 0 0.5vw 0.7vw;
         margin: 1vw 0;
         justify-content: flex-start;
+      }
+      &:hover {
+        color: $color-variacion2;
       }
     }
   }
@@ -175,11 +187,21 @@
       position: absolute;
       padding: 0 4vw;
       background-color: $color-variacion2;
-      & a {
+    }
+
+    & a {
+      @include media(desktop-s) {
         width: 30px;
         height: 30px;
         margin: 5px 0;
-        & img {
+        transition: 0.5s;
+        will-change: transform;
+      }
+      &:hover {
+        transform: scale(1.2);
+      }
+      & img {
+        @include media(desktop-s) {
           width: 100%;
         }
       }

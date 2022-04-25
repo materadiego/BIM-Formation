@@ -11,7 +11,7 @@
   background-color: $color-claro;
   @include shadow-caja;
   @include media(desktop-s) {
-    width: 23vw;
+    width: 26.4vw;
     margin-left: 100%;
     bottom: auto;
     top: 12vw;
@@ -76,6 +76,6 @@
   margin-left: 50%;
 
   @include media(desktop-s) {
-    margin-left: 77%;
+    margin-left: 73.6%;
   }
 }

@@ -78,18 +78,23 @@
       font-size: 3.8vw;
       width: 100%;
       font-family: "Aventa";
-
+      cursor: pointer;
       font-weight: 600;
       padding: 1.56vw 0;
       margin-top: 2vw;
       border: none;
       outline: none;
+      transition: 0.3s;
+      will-change: background-color;
       color: $color-claro;
       background-color: $color-variacion1;
       @include media(desktop-s) {
         font-size: 1vw;
         margin-top: 0.9vw;
         padding: 10px 0;
+      }
+      &:hover {
+        background-color: $color-variacion2;
       }
     }
   }
