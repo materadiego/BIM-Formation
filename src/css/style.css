@@ -2111,6 +2111,7 @@ a:hover {
   .five-subcontainer__modulos {
     width: 100%;
     margin: 1.5vw 0;
+    z-index: 2;
     background-color: #3600e0; }
     @media only screen and (min-width: 992px) {
       .five-subcontainer__modulos {
@@ -2244,13 +2245,13 @@ a:hover {
       left: 79.8%; } }
 
 .project-subcont {
-  top: 54vw; }
+  top: 55vw; }
   @media only screen and (min-width: 992px) {
     .project-subcont {
       top: 37vw; } }
 
 .modules-subcont {
-  top: 54vw;
+  top: 55vw;
   height: 109vw; }
   @media only screen and (min-width: 992px) {
     .modules-subcont {

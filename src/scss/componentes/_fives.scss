@@ -194,6 +194,7 @@
   &__modulos {
     width: 100%;
     margin: 1.5vw 0;
+    z-index: 2;
     // border: 2px solid red;
     background-color: $color-variacion2;
     @include media(desktop-s) {
@@ -338,14 +339,14 @@
 }
 
 .project-subcont {
-  top: 54vw;
+  top: 55vw;
   @include media(desktop-s) {
     top: 37vw;
   }
 }
 
 .modules-subcont {
-  top: 54vw;
+  top: 55vw;
   height: 109vw;
   @include media(desktop-s) {
     align-items: flex-start;
