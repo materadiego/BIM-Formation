@@ -338,14 +338,14 @@
 }
 
 .project-subcont {
-  top: 50vw;
+  top: 54vw;
   @include media(desktop-s) {
     top: 37vw;
   }
 }
 
 .modules-subcont {
-  top: 50vw;
+  top: 54vw;
   height: 109vw;
   @include media(desktop-s) {
     align-items: flex-start;
@@ -358,7 +358,7 @@
 }
 
 .videos-subcont {
-  top: 117vw;
+  top: 128vw;
   display: none;
   @include media(desktop-s) {
     top: 37em;
@@ -366,7 +366,7 @@
 }
 
 .hours-subcont {
-  top: 117vw;
+  top: 128vw;
   display: none;
   @include media(desktop-s) {
     top: 37em;
