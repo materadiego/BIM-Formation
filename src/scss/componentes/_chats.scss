@@ -59,6 +59,7 @@
   @include media(desktop-s) {
     width: 15px;
     height: 15px;
+    cursor: pointer;
     left: 5px;
     top: 5px;
     display: flex;

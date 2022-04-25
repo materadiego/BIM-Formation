@@ -965,6 +965,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  cursor: pointer;
   background-image: url(../images/close.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1045,6 +1046,7 @@ a:hover {
     .chat__close {
       width: 15px;
       height: 15px;
+      cursor: pointer;
       left: 5px;
       top: 5px;
       display: -webkit-box;
