@@ -1268,8 +1268,8 @@ a:hover {
       padding: 0 4vw;
       background-color: #3600e0; }
       .hero__desktop-media a {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         margin: 5px 0; }
         .hero__desktop-media a img {
           width: 100%; } }
@@ -1742,8 +1742,8 @@ a:hover {
 @media only screen and (min-width: 992px) {
   .rafael-name {
     border-right: 3px solid #2fe6b0;
-    margin-top: 80px;
-    height: 60px;
+    margin-top: 8vw;
+    height: 6vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1768,6 +1768,9 @@ a:hover {
 
 .melissa-saber-mas {
   margin-right: 0; }
+
+.in-melissa {
+  margin-top: 7vw; }
 
 .rafael {
   margin-top: -8.5vw; }
@@ -1890,7 +1893,10 @@ a:hover {
   justify-content: space-between;
   padding-bottom: 0px;
   position: relative;
-  top: -21.87em; }
+  top: -21.87em;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
   @media only screen and (min-width: 992px) {
     .five-container {
       width: 70%;
@@ -1981,7 +1987,15 @@ a:hover {
           position: relative;
           bottom: 0;
           margin-top: 2em;
-          background-color: #3600e0; } }
+          background-color: #3600e0;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          will-change: transform; } }
+      .five-container__box--button:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
 
 .five-subcontainer {
   margin: 0 auto;
@@ -1999,7 +2013,11 @@ a:hover {
   flex-direction: column;
   position: absolute;
   top: 110vw;
-  background-color: #090060; }
+  background-color: #090060;
+  opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
   @media only screen and (min-width: 992px) {
     .five-subcontainer {
       height: 27em;
@@ -2173,25 +2191,25 @@ a:hover {
   left: 19%; }
   @media only screen and (min-width: 992px) {
     .square-1 {
-      left: 17%; } }
+      left: 16.6%; } }
 
 .square-2 {
   right: 19%; }
   @media only screen and (min-width: 992px) {
     .square-2 {
-      left: 38%; } }
+      left: 37.7%; } }
 
 .square-3 {
   left: 19%; }
   @media only screen and (min-width: 992px) {
     .square-3 {
-      left: 59%; } }
+      left: 58.7%; } }
 
 .square-4 {
   right: 19%; }
   @media only screen and (min-width: 992px) {
     .square-4 {
-      left: 79.5%; } }
+      left: 79.8%; } }
 
 .project-subcont {
   top: 50vw; }
@@ -2237,7 +2255,11 @@ a:hover {
 .subcont-is-active {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  opacity: 1;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
 
 .project-box-active {
   margin-bottom: 80vw; }
@@ -3070,6 +3092,10 @@ a:hover {
         display: flex;
         width: 65%;
         height: 5vw;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        will-change: width;
         position: absolute; } }
 
 .footer-container {
@@ -3148,3 +3174,6 @@ a:hover {
           font-size: 1.35vw;
           width: 100%;
           margin-bottom: 0; } }
+
+.footer:hover .footer__flecha {
+  width: 60%; }

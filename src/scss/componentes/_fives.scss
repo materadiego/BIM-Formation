@@ -20,6 +20,7 @@
 
   position: relative;
   top: -21.87em;
+  transition: 0.5s;
   //padding-bottom: 100vw;
   @include media(desktop-s) {
     width: 70%;
@@ -97,6 +98,11 @@
         bottom: 0;
         margin-top: 2em;
         background-color: $color-variacion2;
+        transition: 0.3s;
+        will-change: transform;
+      }
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }
@@ -114,7 +120,8 @@
   position: absolute;
   top: 110vw;
   background-color: $color-variacion5;
-
+  opacity: 0;
+  transition: 1s;
   @include media(desktop-s) {
     // border: 2px solid red;
     height: 27em;
@@ -305,28 +312,28 @@
 .square-1 {
   left: 19%;
   @include media(desktop-s) {
-    left: 17%;
+    left: 16.6%;
   }
 }
 
 .square-2 {
   right: 19%;
   @include media(desktop-s) {
-    left: 38%;
+    left: 37.7%;
   }
 }
 
 .square-3 {
   left: 19%;
   @include media(desktop-s) {
-    left: 59%;
+    left: 58.7%;
   }
 }
 
 .square-4 {
   right: 19%;
   @include media(desktop-s) {
-    left: 79.5%;
+    left: 79.8%;
   }
 }
 
@@ -375,6 +382,8 @@
 
 .subcont-is-active {
   display: flex;
+  opacity: 1;
+  transition: 1s;
   @include media(desktop-s) {
   }
 }

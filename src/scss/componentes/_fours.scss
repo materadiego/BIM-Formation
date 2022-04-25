@@ -199,8 +199,8 @@
 .rafael-name {
   @include media(desktop-s) {
     border-right: 3px solid $color-variacion1;
-    margin-top: 80px;
-    height: 60px;
+    margin-top: 8vw;
+    height: 6vw;
     display: flex;
     align-items: flex-end;
   }
@@ -229,6 +229,10 @@
 
 .melissa-saber-mas {
   margin-right: 0;
+}
+
+.in-melissa {
+  margin-top: 7vw;
 }
 
 .rafael {

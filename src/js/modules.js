@@ -188,7 +188,7 @@ function showModule2() {
 }
 
 function showModule3() {
-  if (moduleContainer1.classList.contains("module-container-active")) {
+  if (moduleContainer3.classList.contains("module-container-active")) {
   } else {
     moduleContainer3.classList.add("module-container-active");
     moduleButton3.classList.add("module-active");
@@ -207,7 +207,7 @@ function showModule3() {
 }
 
 function showModule4() {
-  if (moduleContainer1.classList.contains("module-container-active")) {
+  if (moduleContainer4.classList.contains("module-container-active")) {
   } else {
     moduleContainer4.classList.add("module-container-active");
     moduleButton4.classList.add("module-active");
