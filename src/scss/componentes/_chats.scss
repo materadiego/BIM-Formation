@@ -2,12 +2,14 @@
   display: flex;
   position: fixed;
   align-items: center;
-  margin-left: 50%;
-
+  opacity: 0;
+  margin-left: 82%;
   padding: 10px 0;
   bottom: 15vh;
   width: 50%;
+  transition: 0.5s ease-in-out;
   z-index: 5;
+  animation: chatAparece 1s ease-in-out 2s 1 forwards;
   background-color: $color-claro;
   @include shadow-caja;
   @include media(desktop-s) {
@@ -16,7 +18,6 @@
     bottom: auto;
     top: 12vw;
     padding-left: 2.3vw;
-    transition: 0.5s;
   }
   &__img {
     width: 13vw;
@@ -55,7 +56,11 @@
 }
 
 .chat__close {
-  display: none;
+  width: 18vw;
+  height: 18vw;
+  z-index: 6;
+  position: absolute;
+  // border: 2px solid red;
   @include media(desktop-s) {
     width: 15px;
     height: 15px;
@@ -69,6 +74,25 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@keyframes chatAparece {
+  0% {
+    display: flex;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 

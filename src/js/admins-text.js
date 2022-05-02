@@ -9,9 +9,11 @@ function desplegarTextoR() {
   if (textRafael.classList.contains("show-text")) {
     textRafael.classList.remove("show-text");
     saberMasFlechaR.classList.remove("saber-mas-active");
+    saberMasR.classList.remove("saber-mas-active-color");
   } else {
     textRafael.classList.add("show-text");
     saberMasFlechaR.classList.add("saber-mas-active");
+    saberMasR.classList.add("saber-mas-active-color");
   }
 }
 
@@ -19,9 +21,11 @@ function desplegarTextoM() {
   if (textMelissa.classList.contains("show-text")) {
     textMelissa.classList.remove("show-text");
     saberMasFlechaM.classList.remove("saber-mas-active");
+    saberMasM.classList.remove("saber-mas-active-color");
   } else {
     textMelissa.classList.add("show-text");
     saberMasFlechaM.classList.add("saber-mas-active");
+    saberMasM.classList.add("saber-mas-active-color");
   }
 }
 

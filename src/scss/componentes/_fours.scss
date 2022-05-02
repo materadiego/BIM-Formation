@@ -24,6 +24,7 @@
       width: 100%;
       font-size: 6vw;
       text-align: end;
+      line-height: 110%;
       color: $color-variacion2;
       @include media(desktop-s) {
         font-size: 2.8vw;
@@ -115,6 +116,7 @@
     }
     &--name {
       font-size: 7.5vw;
+      font-weight: 300;
       margin: 3vw 0 0;
       color: $color-variacion2;
       @include media(desktop-s) {
@@ -143,6 +145,7 @@
       }
       &--button {
         width: 26.56vw;
+        height: 7vw;
         font-size: 3.12vw;
         font-weight: 600;
         padding: 1vw 3.12vw;
@@ -150,7 +153,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: $color-variacion2;
+        transition: 0.3s ease-in-out;
+        background-color: $color-variacion1;
         color: $color-claro;
         @include media(desktop-s) {
           display: none;
@@ -158,13 +162,14 @@
         & img {
           width: 2.1vw;
           margin-top: 0.5vw;
-          transition: 0.1s;
+          transition: 0.5s ease-in-out;
         }
       }
       &--link {
         //border: 2px solid red;
-        width: 6.25vw;
-        height: 6.25vw;
+        width: 6.5vw;
+        height: 6.5vw;
+        margin-top: 0.1vw;
         margin-right: 2.18vw;
         border-radius: 50px;
         background-color: $color-variacion2;
@@ -177,13 +182,21 @@
         }
       }
       &--text {
-        //border: 2px solid red;
+        // border: 2px solid red;
         width: 100%;
-        font-size: 2.8vw;
+        font-size: 3vw;
         font-weight: 600;
         margin-top: 6.25vw;
         margin-bottom: 0;
+        font-weight: 600;
+        line-height: 120%;
         display: none;
+        background-image: url(../images/quotes.svg);
+        background-size: 4.5vw;
+        background-position: left top;
+        background-repeat: no-repeat;
+        color: $color-secundario2;
+        font-family: $Fuente2;
         @include media(desktop-s) {
           font-size: 1.1vw;
           margin: 0;
@@ -232,7 +245,9 @@
 }
 
 .in-melissa {
-  margin-top: 7vw;
+  @include media(desktop-s) {
+    margin-top: 7vw;
+  }
 }
 
 .rafael {
@@ -249,7 +264,7 @@
 }
 
 .rafael-cont {
-  padding: 0 10vw 0 2vw;
+  padding: 0 0 0 2vw;
 }
 
 .melissa-cont {
@@ -332,14 +347,18 @@
 }
 
 .saber-mas-active {
-  transform: rotateX(180deg);
+  transform: rotateZ(180deg);
+}
+
+.saber-mas-active-color {
+  background-color: $color-variacion2;
 }
 
 .text-melissa {
   @include media(desktop-s) {
     display: block;
     text-align: start;
-    width: 28.3vw;
+    width: 22.9.3vw;
     //border: 2px solid red;
   }
 }

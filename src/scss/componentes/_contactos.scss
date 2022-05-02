@@ -38,6 +38,7 @@
       &--title {
         text-align: end;
         font-size: 6.25vw;
+        line-height: 120%;
         color: $color-claro;
         @include media(desktop-s) {
           font-size: 3.1vw;

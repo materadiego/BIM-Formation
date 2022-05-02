@@ -47,8 +47,10 @@
     }
     &--text {
       width: 100%;
-      font-size: 4.3vw;
+      font-size: 4.6vw;
       font-weight: 600;
+      font-family: $Fuente2;
+      font-weight: 400;
       color: $color-claro;
       @include media(desktop-s) {
         font-size: 2vw;
@@ -84,11 +86,13 @@
       }
     }
     &--text {
-      font-size: 3.4vw;
+      font-size: 3.8vw;
       width: 50vw;
       font-weight: 600;
       text-align: end;
       margin: 0 0 0 3.12vw;
+      font-family: $Fuente2;
+      font-weight: 400;
 
       color: $color-claro;
       //border: 2px solid red;

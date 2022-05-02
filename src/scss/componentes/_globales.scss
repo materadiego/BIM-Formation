@@ -3,6 +3,8 @@ $color-primario2: #383838;
 $color-primario3: #808080;
 $color-claro: #fff;
 $color-secundario: #b3b3b3;
+$color-secundario2: #999999;
+
 $color-variacion1: #2fe6b0;
 $color-variacion2: #3600e0;
 $color-variacion3: #1a00ad;
@@ -15,6 +17,9 @@ $color-shadow2: rgba(54, 0, 224, 0.5);
 $color-shadow3: rgba(255, 255, 255, 0.15);
 $color-shadow4: rgba(255, 255, 255, 0.4);
 $color-shadow5: rgba(0, 0, 0, 0.5);
+
+$Fuente1: "Aventa";
+$Fuente2: "Acumin Pro";
 
 @mixin basic-flex {
   display: flex;
@@ -29,7 +34,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Aventa";
+  font-family: $Fuente1;
   font-weight: 600;
   font-style: normal;
   scroll-behavior: smooth;
