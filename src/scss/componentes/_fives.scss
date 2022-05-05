@@ -4,7 +4,7 @@
   position: relative;
   background-color: $color-variacion2;
   @include media(desktop-s) {
-    padding-top: 8em;
+    padding-top: 6em;
     transition: 0.5s;
   }
 }

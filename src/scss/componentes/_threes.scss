@@ -13,8 +13,8 @@
     line-height: 120%;
     color: $color-variacion1;
     @include media(desktop-s) {
-      font-size: 31px;
-      width: 26vw;
+      font-size: 40px;
+      width: 400px;
       margin: 15vw 0 0 10%;
     }
     & span {
@@ -57,9 +57,17 @@
       align-items: center;
       justify-content: flex-start;
       @include media(desktop-s) {
-        width: 15vw;
-        padding: 15px 10px 20px;
+        width: 150px;
+        padding: 15px 5px 20px;
         margin-bottom: 0;
+      }
+      @include media(desktop-m) {
+        width: 190px;
+        padding: 25px 5px 30px;
+      }
+      @include media(desktop-l) {
+        width: 230px;
+        padding: 35px 5px 40px;
       }
       & img {
         //border: 2px solid red;
@@ -70,12 +78,26 @@
           width: 40px;
           height: 40px;
         }
+        @include media(desktop-m) {
+          width: 45px;
+          height: 45px;
+        }
+        @include media(desktop-l) {
+          width: 55px;
+          height: 55px;
+        }
       }
       & h6 {
         font-size: 4.2vw;
         color: $color-variacion1;
         @include media(desktop-s) {
           font-size: 15px;
+        }
+        @include media(desktop-m) {
+          font-size: 17px;
+        }
+        @include media(desktop-l) {
+          font-size: 20px;
         }
       }
       & p {
@@ -85,8 +107,14 @@
         text-align: center;
         color: $color-claro;
         @include media(desktop-s) {
-          font-size: 10px;
+          font-size: 11px;
           margin: 0;
+        }
+        @include media(desktop-m) {
+          font-size: 13px;
+        }
+        @include media(desktop-l) {
+          font-size: 15px;
         }
       }
     }

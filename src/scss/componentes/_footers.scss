@@ -2,7 +2,7 @@
   padding: 9.37vw 0;
   background-color: $color-primario;
   @include media(desktop-s) {
-    padding: 30px 0;
+    padding: 3vw 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@
     width: 50%;
     margin-top: 1.56vw;
     @include media(desktop-s) {
-      width: 160px;
+      width: 16vw;
       margin-left: 3vw;
     }
     &--image {
@@ -62,7 +62,7 @@
       justify-content: space-between;
       @include media(desktop-s) {
         margin: 0 0 15px;
-        width: 100px;
+        width: 10vw;
       }
       & a {
         //   border: 2px solid red;
@@ -71,8 +71,8 @@
         padding: 0;
         margin-bottom: 3.12vw;
         @include media(desktop-s) {
-          width: 25px;
-          height: 25px;
+          width: 2.5vw;
+          height: 2.5vw;
           margin-bottom: 0;
         }
         & img {

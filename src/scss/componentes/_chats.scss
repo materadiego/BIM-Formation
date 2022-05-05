@@ -13,11 +13,14 @@
   background-color: $color-claro;
   @include shadow-caja;
   @include media(desktop-s) {
-    width: 26.4vw;
+    width: 28vw;
     margin-left: 100%;
     bottom: auto;
-    top: 12vw;
-    padding-left: 2.3vw;
+    top: 8vw;
+    padding: 1vw 0 1vw 2.5vw;
+    // animation: none;
+    display: flex;
+    opacity: 0;
   }
   &__img {
     width: 13vw;
@@ -51,7 +54,8 @@
   }
   &__arrow {
     //border: 2px solid red;
-    width: 40px;
+    width: 2.5vw;
+    margin-left: 1.5vw;
   }
 }
 
@@ -100,6 +104,6 @@
   margin-left: 50%;
 
   @include media(desktop-s) {
-    margin-left: 73.6%;
+    margin-left: 72%;
   }
 }

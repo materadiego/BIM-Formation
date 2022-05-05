@@ -121,6 +121,8 @@
       color: $color-variacion2;
       @include media(desktop-s) {
         font-size: 3vw;
+        font-weight: 500;
+
         margin: 12.5vw 0 0;
       }
     }
@@ -131,6 +133,7 @@
       @include media(desktop-s) {
         font-size: 1.35vw;
         margin: 0 0 1vw;
+        font-weight: 500;
         padding: 10px 15px 6px;
 
         // border: 2px solid red;
@@ -200,7 +203,7 @@
         @include media(desktop-s) {
           font-size: 1.1vw;
           margin: 0;
-
+          background-size: 2.3vw;
           position: absolute;
           width: 60%;
         }
@@ -211,7 +214,7 @@
 
 .rafael-name {
   @include media(desktop-s) {
-    border-right: 3px solid $color-variacion1;
+    border-right: 4px solid $color-variacion1;
     margin-top: 8vw;
     height: 6vw;
     display: flex;
@@ -221,8 +224,8 @@
 
 .rafael-subtitle {
   @include media(desktop-s) {
-    border-top: 3px solid $color-variacion1;
-    border-left: 3px solid $color-variacion1;
+    border-top: 4px solid $color-variacion1;
+    border-left: 4px solid $color-variacion1;
   }
 }
 
@@ -235,8 +238,8 @@
   text-align: end;
 
   @include media(desktop-s) {
-    border-right: 3px solid $color-variacion1;
-    border-top: 3px solid $color-variacion1;
+    border-right: 4px solid $color-variacion1;
+    border-top: 4px solid $color-variacion1;
   }
 }
 
@@ -265,6 +268,9 @@
 
 .rafael-cont {
   padding: 0 0 0 2vw;
+  @include media(desktop-s) {
+    padding-right: 10vw;
+  }
 }
 
 .melissa-cont {
@@ -331,6 +337,9 @@
 
 .admins-padding-span {
   padding-left: 20px;
+  @include media(desktop-s) {
+    padding-left: 2.7vw;
+  }
 }
 .admins-color-span {
   color: $color-variacion2;
@@ -358,7 +367,7 @@
   @include media(desktop-s) {
     display: block;
     text-align: start;
-    width: 22.9.3vw;
+    width: 27vw;
     //border: 2px solid red;
   }
 }

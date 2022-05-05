@@ -17,7 +17,7 @@
       width: 52%;
       @include media(desktop-s) {
         width: 40%;
-        left: 10%;
+        left: 9.5%;
         margin-top: 5vw;
         position: relative;
       }
@@ -100,7 +100,7 @@
     @include media(desktop-s) {
       font-size: 1vw;
       margin-bottom: 1.3vw;
-      padding: 5px;
+      padding: 1vw;
     }
     &::placeholder {
       font-family: "Aventa";
@@ -170,4 +170,19 @@
     position: relative;
     right: -13%;
   }
+}
+
+.input-nombre {
+  width: 48%;
+  margin-right: 4%;
+}
+.input-apellido {
+  width: 48%;
+}
+
+.contacto-grilla {
+  width: 33%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }

@@ -109,8 +109,27 @@
     </div>
 
     <!-- CHAT -->
-    <div class="chat-container" id="chat-container">
+    <div class="chat-container mobile" id="chat-container">
       <div class="chat__close" id="chat-close"></div>
+      <img src="src/images/chat-wsp.svg" alt="" class="chat-container__img" />
+      <h6 class="chat-container__text">
+        <span class="chat-container__text--span">PARA MÁS INFO</span> <br />
+        PUEDES CHATEAR <br />
+        CON NOSOTROS <br />
+        POR WHATSAPP
+      </h6>
+      <img
+        src="src/images/chat-flecha.png"
+        alt=""
+        class="chat-container__arrow desktop"
+      />
+    </div>
+
+    <div
+      class="chat-container chat-container2 chat-is-active desktop"
+      id="chat-container2"
+    >
+      <div class="chat__close" id="chat-close2"></div>
       <img src="src/images/chat-wsp.svg" alt="" class="chat-container__img" />
       <h6 class="chat-container__text">
         <span class="chat-container__text--span">PARA MÁS INFO</span> <br />
@@ -473,6 +492,8 @@
     <!-- INFO CURSO -->
     <section class="section five">
       <!-- Info box 1 -->
+      <div class="background-lines bline-fourteen"></div>
+
       <div class="five-container five-container-active">
         <div class="five-container__box proyecto">
           <figure class="five-container__box--image-cont box1"></figure>
@@ -1236,6 +1257,7 @@
 
     <!-- CONTACTO -->
     <section class="section contacto">
+      <img src="src/images/grilla.png" alt="" class="contacto-grilla desktop" />
       <div class="contacto__start">
         <img
           src="src/images/contacto-foto.png"
@@ -1262,8 +1284,18 @@
         <form action="" class="form">
           <input
             type="text"
-            class="form__input"
+            class="form__input mobile"
             placeholder="Nombre y Apellido"
+          />
+          <input
+            type="text"
+            class="form__input input-nombre desktop"
+            placeholder="Nombre"
+          />
+          <input
+            type="text"
+            class="form__input input-apellido desktop"
+            placeholder="Apellido"
           />
           <input
             type="text"

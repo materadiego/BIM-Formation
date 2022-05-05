@@ -37,10 +37,10 @@
   position: relative;
   @include shadow-caja;
   @include media(desktop-s) {
-    height: 20vw;
+    height: 18vw;
     //border: 2px solid red;
     padding: 0 1vw;
-    width: 70%;
+    width: 75%;
     margin-left: -5px;
   }
   &__quotation {
@@ -50,6 +50,11 @@
     position: absolute;
     top: -10.25vw;
     left: 0;
+    @include media(desktop-s) {
+      width: 5vw;
+      height: 5vw;
+      top: 0;
+    }
     &--image {
       width: 100%;
       position: absolute;
@@ -65,8 +70,8 @@
     line-height: 115%;
     color: $color-secundario;
     @include media(desktop-s) {
-      font-size: 1vw;
-      margin: 6vw 0 2vw;
+      font-size: 1.1vw;
+      margin: 4vw 0 2vw;
     }
   }
   &__author {
@@ -76,8 +81,8 @@
     font-weight: 500;
     color: $color-variacion2;
     @include media(desktop-s) {
-      font-size: 1vw;
-      margin: 0 0 0.6vw;
+      font-size: 1.2vw;
+      margin: 0 0 0.4vw;
     }
   }
   &__author-rol {

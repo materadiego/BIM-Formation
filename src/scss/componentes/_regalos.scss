@@ -11,7 +11,7 @@
   transition: 0.5s;
   @include media(desktop-s) {
     width: 26%;
-    top: 19vw;
+    top: 14vw;
     padding: 2vw 3vw 2vw 3.5vw;
   }
   &__title {
@@ -36,9 +36,9 @@
   }
   &__flecha {
     position: absolute;
-    top: 50px;
-    right: 30px;
-    width: 60px;
+    top: 6vw;
+    right: 3vw;
+    width: 6vw;
   }
   &__text {
     font-size: 3.25vw;
@@ -68,10 +68,13 @@
         font-size: 1vw;
         padding: 6px;
         margin-bottom: 0.8vw;
+        background-color: $color-secundario3;
+        border: none;
       }
       &::placeholder {
         font-family: "Aventa";
         font-weight: 600;
+        color: $color-secundario;
       }
     }
     &--submit {
@@ -89,9 +92,10 @@
       color: $color-claro;
       background-color: $color-variacion1;
       @include media(desktop-s) {
-        font-size: 1vw;
-        margin-top: 0.9vw;
+        font-size: 0.9vw;
+        margin-top: 0.7vw;
         padding: 10px 0;
+        width: 75%;
       }
       &:hover {
         background-color: $color-variacion2;

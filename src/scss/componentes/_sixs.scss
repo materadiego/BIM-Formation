@@ -85,6 +85,7 @@
       margin: 0 0;
       position: absolute;
       overflow: hidden;
+      transition: 0.3s ease-in-out;
     }
 
     &--background1 {
@@ -134,8 +135,10 @@
       color: $color-variacion2;
       @include media(desktop-s) {
         font-size: 4em;
-        top: 8.4em;
-        right: 22em;
+        top: 2em;
+        right: 5.4em;
+        transition: 0.3s ease-in-out;
+        z-index: 4;
         color: $color-variacion2;
       }
     }
@@ -146,6 +149,7 @@
       display: flex;
       justify-content: flex-end;
       position: relative;
+
       z-index: 3;
       @include media(desktop-s) {
         position: absolute;
@@ -156,6 +160,7 @@
         margin: 0;
         width: 52%;
         padding: 0 2%;
+        transition: 0.3s ease-in-out;
       }
       &--minutes {
         //border: 1px solid red;
@@ -239,6 +244,7 @@
         top: 1em;
         margin-top: 0;
         padding: 0 2%;
+        transition: 0.3s ease-in-out;
       }
     }
     &--actions {
@@ -254,8 +260,8 @@
         width: 52%;
         position: absolute;
         right: 0;
-        top: 6em;
-        height: 9em;
+        top: 8em;
+        height: 7em;
         padding: 0 2%;
         justify-content: flex-end;
       }
@@ -316,6 +322,7 @@
   @include media(desktop-s) {
     font-size: 0.9em;
     padding: 0.5em 0;
+    transition: 0.3s ease-in-out;
 
     margin: 0 0 0.5em;
   }
@@ -343,14 +350,17 @@
   height: 20.31vw;
   border-radius: 300px;
   @include media(desktop-s) {
-    width: 7vw;
-    height: 7em;
+    width: 5vw;
+    transition: 0.3s ease-in-out;
+
+    height: 5em;
   }
   &--shadow1 {
     border: 4px solid $color-shadow2;
     width: 100%;
     height: 100%;
     border-radius: 300px;
+    transition: 0.3s ease-in-out;
   }
   &--shadow2 {
     border: 4px solid $color-variacion2;
@@ -358,6 +368,7 @@
     height: 100%;
     border-radius: 300px;
     @include basic-flex;
+    transition: 0.3s ease-in-out;
   }
 }
 
@@ -366,8 +377,8 @@
   transform: rotateZ(270deg);
   margin: 0 0 0 1.87vw;
   @include media(desktop-s) {
-    width: 3.5em;
-    margin: 0 0 0 0.8em;
+    width: 2.5em;
+    margin: 0 0 0 0.5em;
   }
 }
 
@@ -389,43 +400,45 @@
   background-color: $color-variacion2;
 }
 
-.dark-box {
+.six__box:hover {
   @include media(desktop-s) {
     background-color: $color-variacion5;
   }
-  &__number {
-    @include media(desktop-s) {
-      color: $color-claro;
-    }
+}
+
+.six__box:hover .six__box--number {
+  @include media(desktop-s) {
+    color: $color-claro;
   }
-  &__title {
-    @include media(desktop-s) {
-      color: $color-claro;
-    }
+}
+.six__box:hover .six__box--title {
+  @include media(desktop-s) {
+    color: $color-claro;
   }
-  &__stats {
-    @include media(desktop-s) {
-      color: $color-claro;
-    }
+}
+.six__box:hover .six__box--stats {
+  @include media(desktop-s) {
+    color: $color-claro;
   }
-  &__gratis {
-    @include media(desktop-s) {
-      color: $color-claro;
-    }
+}
+.six__box:hover .actions-gratis {
+  @include media(desktop-s) {
+    color: $color-claro;
   }
-  &__play {
-    @include media(desktop-s) {
-      border: 4px solid $color-shadow3;
-    }
-    &--sh1 {
-      @include media(desktop-s) {
-        border: 4px solid $color-shadow4;
-      }
-    }
-    &--sh2 {
-      @include media(desktop-s) {
-        border: 4px solid $color-claro;
-      }
-    }
+}
+.six__box:hover .actions-play {
+  @include media(desktop-s) {
+    border: 4px solid $color-shadow3;
+  }
+}
+
+.six__box:hover .actions-play--shadow1 {
+  @include media(desktop-s) {
+    border: 4px solid $color-shadow4;
+  }
+}
+.six__box:hover .actions-play--shadow2 {
+  @include media(desktop-s) {
+    border: 4px solid $color-claro;
   }
 }

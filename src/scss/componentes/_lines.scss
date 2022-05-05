@@ -11,10 +11,10 @@
   border-right: 2px solid $color-variacion1;
   @include media(desktop-s) {
     top: 92.5vw;
-    height: 20vw;
+    height: 16vw;
     width: 10%;
-    border-top: 3px solid $color-variacion1;
-    border-right: 3px solid $color-variacion1;
+    border-top: 4px solid $color-variacion1;
+    border-right: 4px solid $color-variacion1;
   }
 }
 
@@ -27,8 +27,8 @@
     top: 135vw;
     height: 6vw;
     width: 10%;
-    border-bottom: 3px solid $color-variacion1;
-    border-right: 3px solid $color-variacion1;
+    border-bottom: 4px solid $color-variacion1;
+    border-right: 4px solid $color-variacion1;
   }
   @include media(desktop-m) {
     top: 130vw;
@@ -47,8 +47,8 @@
     right: 0;
     height: 13vw;
     width: 38%;
-    border-bottom: 3px solid $color-variacion1;
-    border-left: 3px solid $color-variacion1;
+    border-bottom: 4px solid $color-variacion1;
+    border-left: 4px solid $color-variacion1;
   }
 }
 
@@ -171,8 +171,20 @@
   right: 10%;
   height: 140px;
   width: 10%;
-  border-top: 3px solid $color-variacion1;
-  border-right: 3px solid $color-variacion1;
+  border-top: 4px solid $color-variacion1;
+  border-right: 4px solid $color-variacion1;
+  @include media(desktop-s) {
+    top: 240px;
+    height: 170px;
+  }
+  @include media(desktop-m) {
+    top: 280px;
+    height: 170px;
+  }
+  @include media(desktop-l) {
+    top: 310px;
+    height: 195px;
+  }
 }
 
 .bline-eleven {
@@ -180,7 +192,15 @@
   right: 10%;
   height: 9vw;
   width: 10%;
-  border-right: 3px solid $color-variacion1;
+  border-right: 4px solid $color-variacion1;
+}
+
+.bline-fourteen {
+  border-top: 4px solid $color-variacion1;
+  border-right: 4px solid $color-variacion1;
+  width: 25vw;
+  z-index: 0;
+  height: 9vw;
 }
 
 // .bline-twelve {

@@ -512,10 +512,10 @@ a:hover {
   @media only screen and (min-width: 992px) {
     .bline-one {
       top: 92.5vw;
-      height: 20vw;
+      height: 16vw;
       width: 10%;
-      border-top: 3px solid #2fe6b0;
-      border-right: 3px solid #2fe6b0; } }
+      border-top: 4px solid #2fe6b0;
+      border-right: 4px solid #2fe6b0; } }
 
 .bline-two {
   width: 16%;
@@ -527,8 +527,8 @@ a:hover {
       top: 135vw;
       height: 6vw;
       width: 10%;
-      border-bottom: 3px solid #2fe6b0;
-      border-right: 3px solid #2fe6b0; } }
+      border-bottom: 4px solid #2fe6b0;
+      border-right: 4px solid #2fe6b0; } }
   @media only screen and (min-width: 1200px) {
     .bline-two {
       top: 130vw; } }
@@ -545,8 +545,8 @@ a:hover {
       right: 0;
       height: 13vw;
       width: 38%;
-      border-bottom: 3px solid #2fe6b0;
-      border-left: 3px solid #2fe6b0; } }
+      border-bottom: 4px solid #2fe6b0;
+      border-left: 4px solid #2fe6b0; } }
 
 .bline-four {
   width: 10%;
@@ -655,15 +655,34 @@ a:hover {
   right: 10%;
   height: 140px;
   width: 10%;
-  border-top: 3px solid #2fe6b0;
-  border-right: 3px solid #2fe6b0; }
+  border-top: 4px solid #2fe6b0;
+  border-right: 4px solid #2fe6b0; }
+  @media only screen and (min-width: 992px) {
+    .bline-ten {
+      top: 240px;
+      height: 170px; } }
+  @media only screen and (min-width: 1200px) {
+    .bline-ten {
+      top: 280px;
+      height: 170px; } }
+  @media only screen and (min-width: 1480px) {
+    .bline-ten {
+      top: 310px;
+      height: 195px; } }
 
 .bline-eleven {
   top: 0;
   right: 10%;
   height: 9vw;
   width: 10%;
-  border-right: 3px solid #2fe6b0; }
+  border-right: 4px solid #2fe6b0; }
+
+.bline-fourteen {
+  border-top: 4px solid #2fe6b0;
+  border-right: 4px solid #2fe6b0;
+  width: 25vw;
+  z-index: 0;
+  height: 9vw; }
 
 .header {
   position: fixed;
@@ -909,7 +928,7 @@ a:hover {
   @media only screen and (min-width: 992px) {
     .regalo {
       width: 26%;
-      top: 19vw;
+      top: 14vw;
       padding: 2vw 3vw 2vw 3.5vw; } }
   .regalo__title {
     font-weight: 500;
@@ -930,9 +949,9 @@ a:hover {
           font-size: 1.61vw; } }
   .regalo__flecha {
     position: absolute;
-    top: 50px;
-    right: 30px;
-    width: 60px; }
+    top: 6vw;
+    right: 3vw;
+    width: 6vw; }
   .regalo__text {
     font-size: 3.25vw;
     font-weight: 600;
@@ -961,19 +980,25 @@ a:hover {
         .regalo__form--input {
           font-size: 1vw;
           padding: 6px;
-          margin-bottom: 0.8vw; } }
+          margin-bottom: 0.8vw;
+          background-color: #eeeeee;
+          border: none; } }
       .regalo__form--input::-webkit-input-placeholder {
         font-family: "Aventa";
-        font-weight: 600; }
+        font-weight: 600;
+        color: #b3b3b3; }
       .regalo__form--input:-ms-input-placeholder {
         font-family: "Aventa";
-        font-weight: 600; }
+        font-weight: 600;
+        color: #b3b3b3; }
       .regalo__form--input::-ms-input-placeholder {
         font-family: "Aventa";
-        font-weight: 600; }
+        font-weight: 600;
+        color: #b3b3b3; }
       .regalo__form--input::placeholder {
         font-family: "Aventa";
-        font-weight: 600; }
+        font-weight: 600;
+        color: #b3b3b3; }
     .regalo__form--submit {
       font-size: 3.8vw;
       width: 100%;
@@ -992,9 +1017,10 @@ a:hover {
       background-color: #2fe6b0; }
       @media only screen and (min-width: 992px) {
         .regalo__form--submit {
-          font-size: 1vw;
-          margin-top: 0.9vw;
-          padding: 10px 0; } }
+          font-size: 0.9vw;
+          margin-top: 0.7vw;
+          padding: 10px 0;
+          width: 75%; } }
       .regalo__form--submit:hover {
         background-color: #3600e0; }
 
@@ -1053,11 +1079,15 @@ a:hover {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); }
   @media only screen and (min-width: 992px) {
     .chat-container {
-      width: 26.4vw;
+      width: 28vw;
       margin-left: 100%;
       bottom: auto;
-      top: 12vw;
-      padding-left: 2.3vw; } }
+      top: 8vw;
+      padding: 1vw 0 1vw 2.5vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      opacity: 0; } }
   .chat-container__img {
     width: 13vw;
     height: 13vw;
@@ -1084,7 +1114,8 @@ a:hover {
         .chat-container__text--span {
           font-size: 1.2vw; } }
   .chat-container__arrow {
-    width: 40px; }
+    width: 2.5vw;
+    margin-left: 1.5vw; }
 
 .chat__close {
   width: 18vw;
@@ -1136,7 +1167,7 @@ a:hover {
   margin-left: 50%; }
   @media only screen and (min-width: 992px) {
     .chat-is-active {
-      margin-left: 73.6%; } }
+      margin-left: 72%; } }
 
 .hero {
   height: 179.68vw;
@@ -1249,7 +1280,7 @@ a:hover {
       background: #2fe6b0; }
       @media only screen and (min-width: 992px) {
         .hero__button--two {
-          font-size: 1.2vw;
+          font-size: 1.15vw;
           width: 15vw;
           padding: 0.5vw 0 0.5vw 0.7vw;
           margin: 1vw 0;
@@ -1265,6 +1296,11 @@ a:hover {
         -webkit-transform: rotateZ(270deg);
         -ms-transform: rotate(270deg);
         transform: rotateZ(270deg); }
+        @media only screen and (min-width: 992px) {
+          .hero__button--two img {
+            width: 1vw;
+            height: 1vw;
+            margin-left: 1vw; } }
   .hero__image-container {
     width: 100%;
     margin: 18.75vw auto 0;
@@ -1345,7 +1381,7 @@ a:hover {
       width: 228px;
       height: 250px;
       right: 0;
-      top: 130px;
+      top: 13vw;
       z-index: 1;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1571,8 +1607,8 @@ a:hover {
     color: #2fe6b0; }
     @media only screen and (min-width: 992px) {
       .three__title {
-        font-size: 31px;
-        width: 26vw;
+        font-size: 40px;
+        width: 400px;
         margin: 15vw 0 0 10%; } }
     .three__title span {
       color: #3600e0; }
@@ -1623,9 +1659,17 @@ a:hover {
       justify-content: flex-start; }
       @media only screen and (min-width: 992px) {
         .three__container--box {
-          width: 15vw;
-          padding: 15px 10px 20px;
+          width: 150px;
+          padding: 15px 5px 20px;
           margin-bottom: 0; } }
+      @media only screen and (min-width: 1200px) {
+        .three__container--box {
+          width: 190px;
+          padding: 25px 5px 30px; } }
+      @media only screen and (min-width: 1480px) {
+        .three__container--box {
+          width: 230px;
+          padding: 35px 5px 40px; } }
       .three__container--box img {
         width: 15.62vw;
         height: 15.62vw;
@@ -1634,12 +1678,26 @@ a:hover {
           .three__container--box img {
             width: 40px;
             height: 40px; } }
+        @media only screen and (min-width: 1200px) {
+          .three__container--box img {
+            width: 45px;
+            height: 45px; } }
+        @media only screen and (min-width: 1480px) {
+          .three__container--box img {
+            width: 55px;
+            height: 55px; } }
       .three__container--box h6 {
         font-size: 4.2vw;
         color: #2fe6b0; }
         @media only screen and (min-width: 992px) {
           .three__container--box h6 {
             font-size: 15px; } }
+        @media only screen and (min-width: 1200px) {
+          .three__container--box h6 {
+            font-size: 17px; } }
+        @media only screen and (min-width: 1480px) {
+          .three__container--box h6 {
+            font-size: 20px; } }
       .three__container--box p {
         font-size: 3vw;
         font-weight: 600;
@@ -1647,8 +1705,14 @@ a:hover {
         color: #fff; }
         @media only screen and (min-width: 992px) {
           .three__container--box p {
-            font-size: 10px;
+            font-size: 11px;
             margin: 0; } }
+        @media only screen and (min-width: 1200px) {
+          .three__container--box p {
+            font-size: 13px; } }
+        @media only screen and (min-width: 1480px) {
+          .three__container--box p {
+            font-size: 15px; } }
 
 .three-box1 {
   background-color: #090060; }
@@ -1771,6 +1835,7 @@ a:hover {
     @media only screen and (min-width: 992px) {
       .admins__container--name {
         font-size: 3vw;
+        font-weight: 500;
         margin: 12.5vw 0 0; } }
   .admins__container--subtitle {
     font-size: 4.06vw;
@@ -1780,6 +1845,7 @@ a:hover {
       .admins__container--subtitle {
         font-size: 1.35vw;
         margin: 0 0 1vw;
+        font-weight: 500;
         padding: 10px 15px 6px; } }
   .admins__container--subcont {
     display: -webkit-box;
@@ -1861,12 +1927,13 @@ a:hover {
         .admins__container--subcont--text {
           font-size: 1.1vw;
           margin: 0;
+          background-size: 2.3vw;
           position: absolute;
           width: 60%; } }
 
 @media only screen and (min-width: 992px) {
   .rafael-name {
-    border-right: 3px solid #2fe6b0;
+    border-right: 4px solid #2fe6b0;
     margin-top: 8vw;
     height: 6vw;
     display: -webkit-box;
@@ -1878,8 +1945,8 @@ a:hover {
 
 @media only screen and (min-width: 992px) {
   .rafael-subtitle {
-    border-top: 3px solid #2fe6b0;
-    border-left: 3px solid #2fe6b0; } }
+    border-top: 4px solid #2fe6b0;
+    border-left: 4px solid #2fe6b0; } }
 
 .melissa-name {
   text-align: end; }
@@ -1888,8 +1955,8 @@ a:hover {
   text-align: end; }
   @media only screen and (min-width: 992px) {
     .melissa-subtitle {
-      border-right: 3px solid #2fe6b0;
-      border-top: 3px solid #2fe6b0; } }
+      border-right: 4px solid #2fe6b0;
+      border-top: 4px solid #2fe6b0; } }
 
 .melissa-saber-mas {
   margin-right: 0; }
@@ -1911,6 +1978,9 @@ a:hover {
 
 .rafael-cont {
   padding: 0 0 0 2vw; }
+  @media only screen and (min-width: 992px) {
+    .rafael-cont {
+      padding-right: 10vw; } }
 
 .melissa-cont {
   padding: 0 2vw 0 0; }
@@ -1974,6 +2044,9 @@ a:hover {
 
 .admins-padding-span {
   padding-left: 20px; }
+  @media only screen and (min-width: 992px) {
+    .admins-padding-span {
+      padding-left: 2.7vw; } }
 
 .admins-color-span {
   color: #3600e0; }
@@ -1997,7 +2070,7 @@ a:hover {
   .text-melissa {
     display: block;
     text-align: start;
-    width: 22.9 0.3vw; } }
+    width: 27vw; } }
 
 .five {
   padding-bottom: 1em;
@@ -2005,7 +2078,7 @@ a:hover {
   background-color: #3600e0; }
   @media only screen and (min-width: 992px) {
     .five {
-      padding-top: 8em;
+      padding-top: 6em;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; } }
@@ -2523,7 +2596,10 @@ a:hover {
         height: 16em;
         margin: 0 0;
         position: absolute;
-        overflow: hidden; } }
+        overflow: hidden;
+        -webkit-transition: 0.3s ease-in-out;
+        -o-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; } }
     .six__box--background1 {
       width: 85%;
       height: 34.37vw;
@@ -2568,8 +2644,12 @@ a:hover {
       @media only screen and (min-width: 992px) {
         .six__box--number {
           font-size: 4em;
-          top: 8.4em;
-          right: 22em;
+          top: 2em;
+          right: 5.4em;
+          -webkit-transition: 0.3s ease-in-out;
+          -o-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+          z-index: 4;
           color: #3600e0; } }
     .six__box--stats {
       width: 80%;
@@ -2595,7 +2675,10 @@ a:hover {
           top: 3.7em;
           margin: 0;
           width: 52%;
-          padding: 0 2%; } }
+          padding: 0 2%;
+          -webkit-transition: 0.3s ease-in-out;
+          -o-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; } }
       .six__box--stats--minutes {
         width: 16.25vw;
         font-weight: 600;
@@ -2672,7 +2755,10 @@ a:hover {
           right: 0;
           top: 1em;
           margin-top: 0;
-          padding: 0 2%; } }
+          padding: 0 2%;
+          -webkit-transition: 0.3s ease-in-out;
+          -o-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out; } }
     .six__box--actions {
       width: 90%;
       margin: 0 auto;
@@ -2694,8 +2780,8 @@ a:hover {
           width: 52%;
           position: absolute;
           right: 0;
-          top: 6em;
-          height: 9em;
+          top: 8em;
+          height: 7em;
           padding: 0 2%;
           -webkit-box-pack: end;
           -ms-flex-pack: end;
@@ -2745,6 +2831,9 @@ a:hover {
     .actions-gratis {
       font-size: 0.9em;
       padding: 0.5em 0;
+      -webkit-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
       margin: 0 0 0.5em; } }
 
 .actions-resumen {
@@ -2767,13 +2856,19 @@ a:hover {
   border-radius: 300px; }
   @media only screen and (min-width: 992px) {
     .actions-play {
-      width: 7vw;
-      height: 7em; } }
+      width: 5vw;
+      -webkit-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      height: 5em; } }
   .actions-play--shadow1 {
     border: 4px solid rgba(54, 0, 224, 0.5);
     width: 100%;
     height: 100%;
-    border-radius: 300px; }
+    border-radius: 300px;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
   .actions-play--shadow2 {
     border: 4px solid #3600e0;
     width: 100%;
@@ -2787,7 +2882,10 @@ a:hover {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
 
 .actions-play-image {
   width: 7.81vw;
@@ -2797,8 +2895,8 @@ a:hover {
   margin: 0 0 0 1.87vw; }
   @media only screen and (min-width: 992px) {
     .actions-play-image {
-      width: 3.5em;
-      margin: 0 0 0 0.8em; } }
+      width: 2.5em;
+      margin: 0 0 0 0.5em; } }
 
 .checkbar-module {
   width: 25%;
@@ -2817,35 +2915,35 @@ a:hover {
   background-color: #3600e0; }
 
 @media only screen and (min-width: 992px) {
-  .dark-box {
+  .six__box:hover {
     background-color: #090060; } }
 
 @media only screen and (min-width: 992px) {
-  .dark-box__number {
+  .six__box:hover .six__box--number {
     color: #fff; } }
 
 @media only screen and (min-width: 992px) {
-  .dark-box__title {
+  .six__box:hover .six__box--title {
     color: #fff; } }
 
 @media only screen and (min-width: 992px) {
-  .dark-box__stats {
+  .six__box:hover .six__box--stats {
     color: #fff; } }
 
 @media only screen and (min-width: 992px) {
-  .dark-box__gratis {
+  .six__box:hover .actions-gratis {
     color: #fff; } }
 
 @media only screen and (min-width: 992px) {
-  .dark-box__play {
+  .six__box:hover .actions-play {
     border: 4px solid rgba(255, 255, 255, 0.15); } }
 
 @media only screen and (min-width: 992px) {
-  .dark-box__play--sh1 {
+  .six__box:hover .actions-play--shadow1 {
     border: 4px solid rgba(255, 255, 255, 0.4); } }
 
 @media only screen and (min-width: 992px) {
-  .dark-box__play--sh2 {
+  .six__box:hover .actions-play--shadow2 {
     border: 4px solid #fff; } }
 
 @media only screen and (min-width: 992px) {
@@ -2856,6 +2954,7 @@ a:hover {
   padding: 1.56vw 0 3.12vw 15%;
   font-weight: 600;
   font-size: 6.5vw;
+  line-height: 120%;
   background-color: #3600e0;
   color: #fff; }
   @media only screen and (min-width: 992px) {
@@ -2917,9 +3016,9 @@ a:hover {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); }
   @media only screen and (min-width: 992px) {
     .opinion-box {
-      height: 20vw;
+      height: 18vw;
       padding: 0 1vw;
-      width: 70%;
+      width: 75%;
       margin-left: -5px; } }
   .opinion-box__quotation {
     width: 13vw;
@@ -2927,6 +3026,11 @@ a:hover {
     position: absolute;
     top: -10.25vw;
     left: 0; }
+    @media only screen and (min-width: 992px) {
+      .opinion-box__quotation {
+        width: 5vw;
+        height: 5vw;
+        top: 0; } }
     .opinion-box__quotation--image {
       width: 100%;
       position: absolute;
@@ -2941,8 +3045,8 @@ a:hover {
     color: #b3b3b3; }
     @media only screen and (min-width: 992px) {
       .opinion-box__text {
-        font-size: 1vw;
-        margin: 6vw 0 2vw; } }
+        font-size: 1.1vw;
+        margin: 4vw 0 2vw; } }
   .opinion-box__author {
     text-align: end;
     font-size: 4.06vw;
@@ -2951,8 +3055,8 @@ a:hover {
     color: #3600e0; }
     @media only screen and (min-width: 992px) {
       .opinion-box__author {
-        font-size: 1vw;
-        margin: 0 0 0.6vw; } }
+        font-size: 1.2vw;
+        margin: 0 0 0.4vw; } }
   .opinion-box__author-rol {
     font-size: 3.12vw;
     text-align: end;
@@ -3016,7 +3120,7 @@ a:hover {
       @media only screen and (min-width: 992px) {
         .contacto__start--image {
           width: 40%;
-          left: 10%;
+          left: 9.5%;
           margin-top: 5vw;
           position: relative; } }
     .contacto__start--title-cont {
@@ -3102,7 +3206,7 @@ a:hover {
       .form__input {
         font-size: 1vw;
         margin-bottom: 1.3vw;
-        padding: 5px; } }
+        padding: 1vw; } }
     .form__input::-webkit-input-placeholder {
       font-family: "Aventa";
       font-weight: 600;
@@ -3200,12 +3304,25 @@ a:hover {
       position: relative;
       right: -13%; } }
 
+.input-nombre {
+  width: 48%;
+  margin-right: 4%; }
+
+.input-apellido {
+  width: 48%; }
+
+.contacto-grilla {
+  width: 33%;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
 .footer {
   padding: 9.37vw 0;
   background-color: #1a1a1a; }
   @media only screen and (min-width: 992px) {
     .footer {
-      padding: 30px 0;
+      padding: 3vw 0;
       position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3251,7 +3368,7 @@ a:hover {
     margin-top: 1.56vw; }
     @media only screen and (min-width: 992px) {
       .footer-container__figure {
-        width: 160px;
+        width: 16vw;
         margin-left: 3vw; } }
     .footer-container__figure--image {
       width: 70%; }
@@ -3275,7 +3392,7 @@ a:hover {
       @media only screen and (min-width: 992px) {
         .footer-container__subcont--links {
           margin: 0 0 15px;
-          width: 100px; } }
+          width: 10vw; } }
       .footer-container__subcont--links a {
         width: 6.25vw;
         height: 6.25vw;
@@ -3283,8 +3400,8 @@ a:hover {
         margin-bottom: 3.12vw; }
         @media only screen and (min-width: 992px) {
           .footer-container__subcont--links a {
-            width: 25px;
-            height: 25px;
+            width: 2.5vw;
+            height: 2.5vw;
             margin-bottom: 0; } }
         .footer-container__subcont--links a img {
           width: 100%; }
