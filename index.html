@@ -36,7 +36,7 @@
         <img
           src="src/images/logo.svg"
           alt=""
-          class="header-logo-container__image"
+          class="header-logo-container__image mobile"
         />
       </figure>
       <div class="header-container">
@@ -69,7 +69,7 @@
             >INSCRIBIRME</a
           >
           <a href="" class="header-container__buttons--wsp desktop">
-            <img src="src/images/header-wsp2.svg" alt="" />
+            <figure></figure>
           </a>
         </div>
         <div class="header-container__line"></div>
@@ -151,6 +151,11 @@
         <img src="src/images/logo.svg" alt="" class="mobile-logo__image" />
       </figure>
       <div class="hero__green-block"></div>
+      <!-- 
+      <h1 class="hero__title">
+        ¿Eres arquitecto y estás en búsqueda de empleo? <br />
+        <span class="hero__title--span">Este curso es para ti.</span>
+      </h1> -->
 
       <h1 class="hero__title">
         ¿Eres arquitecto y estás en búsqueda de empleo? <br />
@@ -158,7 +163,7 @@
       </h1>
       <div class="hero__button">
         <a href="" class="hero__button--one">INSCRIBIRME</a>
-        <a href="#formacion" class="hero__button--two"
+        <a href="#content" class="hero__button--two"
           >QUIERO SABER MÁS <img src="src/images/six-arrow2.svg" alt=""
         /></a>
       </div>
@@ -251,18 +256,19 @@
         </div>
       </div>
       <div class="hero__desktop-media desktop">
-        <a href="" class="hero__desktop-media--in"
-          ><img src="src/images/footer-in.svg" alt=""
-        /></a>
-        <a href="" class="hero__desktop-media--ig"
-          ><img src="src/images/footer-ig.svg" alt=""
-        /></a>
+        <a href="" class="hero__desktop-media--in">
+          <figure class="linked-in-logo"></figure
+        ></a>
+        <a href="" class="hero__desktop-media--ig">
+          <figure class="instagram-logo"></figure
+        ></a>
       </div>
     </section>
 
     <!-- SECTION TWO -->
     <div class="background-lines bline-one"></div>
     <section id="formacion" class="section two">
+      <div id="content"></div>
       <div class="two__container">
         <h2 class="two__container--title">
           12 HORAS
@@ -1371,6 +1377,7 @@
       });
     </script>
     <script src="src/js/burger.js"></script>
+    <script src="src/js/header.js"></script>
     <script src="src/js/regalo.js"></script>
     <script src="src/js/chat.js"></script>
     <script src="src/js/modules.js"></script>

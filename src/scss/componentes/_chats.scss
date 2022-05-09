@@ -9,7 +9,7 @@
   width: 50%;
   transition: 0.5s ease-in-out;
   z-index: 5;
-  animation: chatAparece 1s ease-in-out 2s 1 forwards;
+  animation: chatAparece 1s ease-in-out 3s 1 forwards;
   background-color: $color-claro;
   @include shadow-caja;
   @include media(desktop-s) {
