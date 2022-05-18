@@ -26,8 +26,10 @@
     width: 7vw;
     height: 7vw;
     margin-left: 15%;
-    opacity: 0.17;
     opacity: 1;
+    transform: scale(1);
+    transition: $scroll-transition2;
+    will-change: opacity transform margin;
     @include media(desktop-s) {
       width: 40px;
       height: 40px;
@@ -52,6 +54,9 @@
       margin-bottom: 4vw;
       padding: 15px 10px;
       z-index: 2;
+      transition: $scroll-transition2;
+      will-change: transform opacity;
+      opacity: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -123,13 +128,43 @@
 
 .three-box1 {
   background-color: $color-variacion5;
+  transform: translateY(0);
 }
 .three-box2 {
   background-color: $color-variacion4;
+  transform: translateY(0);
 }
 .three-box3 {
   background-color: $color-variacion3;
+  transform: translateY(0);
 }
 .three-box4 {
   background-color: $color-variacion2;
+  transform: translateY(0);
+}
+
+.scroll-three .scroll-three-box1 {
+  transform: translateY(20%);
+  opacity: 0.25;
+}
+
+.scroll-three .scroll-three-box2 {
+  transform: translateY(40%);
+  opacity: 0.25;
+}
+
+.scroll-three .scroll-three-box3 {
+  transform: translateY(50%);
+  opacity: 0.25;
+}
+
+.scroll-three .scroll-three-box4 {
+  transform: translateY(60%);
+  opacity: 0.25;
+}
+
+.scroll-three-arrow {
+  opacity: 0.17;
+  transform: scale(0.9);
+  margin-left: 12%;
 }

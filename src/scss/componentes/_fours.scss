@@ -35,11 +35,13 @@
     }
     &--arrow {
       //border: 2px solid red;
-      opacity: 0.19;
       opacity: 1;
       width: 7vw;
       height: 7vw;
       right: 15%;
+      margin-right: 0%;
+      will-change: transform margin;
+      transition: $scroll-transition2;
       @include media(desktop-s) {
         width: 4vw;
         height: 4vw;
@@ -187,7 +189,7 @@
       &--text {
         // border: 2px solid red;
         width: 100%;
-        font-size: 3vw;
+        font-size: 2.9vw;
         font-weight: 600;
         margin-top: 6.25vw;
         margin-bottom: 0;
@@ -205,7 +207,8 @@
           margin: 0;
           background-size: 2.3vw;
           position: absolute;
-          width: 60%;
+          width: 56%;
+          display: block;
         }
       }
     }
@@ -226,6 +229,78 @@
   @include media(desktop-s) {
     border-top: 4px solid $color-variacion1;
     border-left: 4px solid $color-variacion1;
+  }
+}
+
+.rafael {
+  //border: 2px solid red;
+  margin-top: -8.5vw;
+  @include media(desktop-s) {
+    margin-top: -4.73vw;
+  }
+  &__image {
+    left: 4.68vw;
+    //border: 2px solid red;
+    will-change: left;
+    transition: $scroll-transition2;
+    @include media(desktop-s) {
+      left: 2.66vw;
+    }
+  }
+}
+
+.rafael-cont {
+  padding: 0 0 0 2vw;
+  @include media(desktop-s) {
+    padding-right: 10vw;
+  }
+}
+
+.block-rafael1 {
+  background-color: $color-variacion2;
+  will-change: left;
+  transition: $scroll-transition2;
+  left: 0;
+}
+.block-rafael2 {
+  left: 22.81vw;
+  background-color: $color-variacion1;
+  will-change: left;
+  transition: $scroll-transition2;
+  @include media(desktop-s) {
+    left: 12.71vw;
+  }
+}
+
+.block-rafael3 {
+  left: 55.62vw;
+  background-color: $color-variacion2;
+  will-change: left;
+  transition: $scroll-transition2;
+  @include media(desktop-s) {
+    left: 31vw;
+  }
+}
+
+.scroll-four .rafael__image {
+  left: -36%;
+}
+
+.scroll-four .block-rafael1 {
+  left: -26%;
+}
+
+.scroll-four .block-rafael2 {
+  left: -26%;
+}
+
+.scroll-four .block-rafael3 {
+  left: 10%;
+}
+
+.text-rafael.desktop {
+  @include media(desktop-s) {
+    display: block;
   }
 }
 
@@ -253,26 +328,6 @@
   }
 }
 
-.rafael {
-  margin-top: -8.5vw;
-  @include media(desktop-s) {
-    margin-top: -4.73vw;
-  }
-  &__image {
-    left: 4.68vw;
-    @include media(desktop-s) {
-      left: 2.66vw;
-    }
-  }
-}
-
-.rafael-cont {
-  padding: 0 0 0 2vw;
-  @include media(desktop-s) {
-    padding-right: 10vw;
-  }
-}
-
 .melissa-cont {
   padding: 0 2vw 0 0;
 }
@@ -283,37 +338,26 @@
   }
   &__image {
     right: 15px;
+    width: 67vw;
+    will-change: right;
+    transition: $scroll-transition2;
     @include media(desktop-s) {
       right: 2.66vw;
     }
   }
 }
 
-.block-rafael1 {
-  background-color: $color-variacion2;
-}
-.block-rafael2 {
-  left: 22.81vw;
-  background-color: $color-variacion1;
-  @include media(desktop-s) {
-    left: 12.71vw;
-  }
-}
-.block-rafael3 {
-  left: 55.62vw;
-  background-color: $color-variacion2;
-  @include media(desktop-s) {
-    left: 31vw;
-  }
-}
-
 .block-melissa1 {
   background-color: $color-variacion1;
   right: 0;
+  will-change: right;
+  transition: $scroll-transition2;
 }
 .block-melissa2 {
   background-color: $color-variacion2;
   right: 22.81vw;
+  will-change: right;
+  transition: $scroll-transition2;
   @include media(desktop-s) {
     right: 12.71vw;
   }
@@ -321,13 +365,40 @@
 .block-melissa3 {
   right: 55.62vw;
   background-color: $color-variacion1;
+  will-change: right;
+  transition: $scroll-transition2;
   @include media(desktop-s) {
     right: 31vw;
   }
 }
 
+.scroll-four .melissa__image {
+  right: -42%;
+}
+
+.scroll-four .block-melissa1 {
+  right: -22%;
+}
+
+.scroll-four .block-melissa2 {
+  right: -22%;
+}
+
+.scroll-four .block-melissa3 {
+  right: 18%;
+}
+
 .subcont-melissa {
   justify-content: flex-end;
+}
+
+.text-melissa {
+  @include media(desktop-s) {
+    display: block;
+    text-align: start;
+    width: 27vw;
+    //border: 2px solid red;
+  }
 }
 
 .ig-image,
@@ -349,12 +420,6 @@
   display: block;
 }
 
-.text-rafael.desktop {
-  @include media(desktop-s) {
-    display: block;
-  }
-}
-
 .saber-mas-active {
   transform: rotateZ(180deg);
 }
@@ -363,11 +428,9 @@
   background-color: $color-variacion2;
 }
 
-.text-melissa {
-  @include media(desktop-s) {
-    display: block;
-    text-align: start;
-    width: 27vw;
-    //border: 2px solid red;
-  }
+.scroll-four .four__container--arrow {
+  opacity: 0.19;
+  transform: scale(0.9);
+  margin-right: -5%;
+  margin-top: -4%;
 }

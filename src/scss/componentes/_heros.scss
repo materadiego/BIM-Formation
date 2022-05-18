@@ -1,6 +1,6 @@
 .hero {
   height: 179.68vw;
-  padding: 4.68vw 5% 0;
+  padding: 4.68vw 0 0;
   position: relative;
   @include media(desktop-s) {
     height: 65vw;
@@ -146,33 +146,39 @@
   }
   &__image-container {
     width: 100%;
-    margin: 18.75vw auto 0;
-    //border: 2px solid red;
+    margin: 0vw 0 0;
+    // border: 2px solid red;
     position: relative;
     z-index: 2;
+    overflow: hidden;
     opacity: 0;
     animation-name: herocarga;
     animation-duration: 0.5s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
+    padding-top: 10vw;
+    will-change: transform opacity;
     @include basic-flex;
     @include media(desktop-s) {
       margin: -12vw 0 0 16vw;
       width: 70vw;
+      padding-top: 0;
+      overflow: visible;
       transform: rotateZ(-8deg);
     }
     &--img {
-      width: 110%;
-      // border: 2px solid red;
+      width: 112%;
+      //border: 2px solid green;
+      animation-name: heroimage;
+      animation-duration: 1s;
+      animation-delay: 2s;
+      animation-timing-function: ease-in;
+      animation-fill-mode: forwards;
+      will-change: transform;
+      transform: rotateZ(12deg);
       @include media(desktop-s) {
         width: 100%;
-        animation-name: heroimage;
-        animation-duration: 0.5s;
-        animation-delay: 1s;
-        animation-timing-function: ease-in;
-        animation-fill-mode: forwards;
-        will-change: transform;
       }
     }
   }
@@ -322,7 +328,7 @@
 
 .mobile-logo {
   width: 28.12vw;
-  margin: 1.56vw 0 0;
+  margin: 1.56vw 0 0 5%;
   //border: 2px solid red;
   @include media(desktop-s) {
     display: none;
@@ -346,6 +352,6 @@
   }
 
   100% {
-    transform: rotateZ(-10deg) translateY(-4.2vw) translateX(1.5vw);
+    transform: rotateZ(-9deg) translateY(-4.2vw) translateX(1.5vw);
   }
 }

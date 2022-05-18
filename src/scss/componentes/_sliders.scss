@@ -37,11 +37,14 @@
   position: relative;
   @include shadow-caja;
   @include media(desktop-s) {
-    height: 18vw;
+    height: 22vw;
     //border: 2px solid red;
     padding: 0 1vw;
     width: 75%;
     margin-left: -5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
   &__quotation {
     //border: 2px solid red;
@@ -72,6 +75,8 @@
     @include media(desktop-s) {
       font-size: 1.1vw;
       margin: 4vw 0 2vw;
+      position: absolute;
+      top: 0;
     }
   }
   &__author {
@@ -93,6 +98,7 @@
     color: $color-secundario;
     @include media(desktop-s) {
       font-size: 1vw;
+      margin-bottom: 1em;
     }
   }
 }

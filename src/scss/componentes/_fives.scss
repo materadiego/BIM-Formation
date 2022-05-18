@@ -46,8 +46,8 @@
     @include shadow-caja;
     @include media(desktop-s) {
       width: 20%;
-      height: 20em;
-      padding-top: 2em;
+      height: 15em;
+      padding-top: 1.5em;
       margin-bottom: 0;
 
       box-shadow: none;
@@ -60,8 +60,8 @@
       background-position: center;
       background-repeat: no-repeat;
       @include media(desktop-s) {
-        width: 4em;
-        height: 4em;
+        width: 3em;
+        height: 3em;
       }
     }
     &--number {
@@ -69,7 +69,7 @@
       margin: 0;
       color: $color-variacion1;
       @include media(desktop-s) {
-        font-size: 4em;
+        font-size: 2.5em;
       }
     }
     &--subtitle {
@@ -78,9 +78,10 @@
       font-weight: 600;
       color: $color-variacion1;
       @include media(desktop-s) {
-        font-size: 1.2em;
+        font-size: 1em;
       }
     }
+
     &--button {
       width: 9vw;
       height: 9vw;
@@ -92,11 +93,11 @@
       @include basic-flex;
       @include media(desktop-s) {
         cursor: pointer;
-        width: 2.5em;
-        height: 2.5em;
+        width: 2em;
+        height: 2em;
         position: relative;
         bottom: 0;
-        margin-top: 2em;
+        margin-top: 1em;
         background-color: $color-variacion2;
         transition: 0.3s;
         will-change: transform;
@@ -156,10 +157,10 @@
     background-color: $color-variacion1;
     @include media(desktop-s) {
       // border: 2px solid red;
-      width: 17em;
+      width: 14em;
       text-align: center;
-      font-size: 1.8em;
-      padding: 0.5em 1em;
+      font-size: 1.5em;
+      padding: 0.4em 1em;
     }
   }
   &__info {
@@ -176,7 +177,7 @@
 
       color: $color-claro;
       @include media(desktop-s) {
-        font-size: 1.3em;
+        font-size: 1em;
         margin-bottom: 1em;
       }
       & img {
@@ -211,9 +212,9 @@
       color: $color-claro;
       //border: 2px solid red;
       @include media(desktop-s) {
-        font-size: 1.3em;
+        font-size: 1em;
         width: 100%;
-        padding: 1em;
+        padding: 0.8em;
       }
       &--span {
         color: $color-variacion1;
@@ -233,9 +234,9 @@
         padding: 1em 0 3em;
         width: 40%;
         position: absolute;
-        height: 26.1em;
+        height: 17.7em;
         right: 7%;
-        top: 3.6em;
+        top: 2.3em;
         box-shadow: inset 0 -1em 0.4em 0 rgba(255, 255, 255, 0.1);
       }
       &::-webkit-scrollbar {
@@ -341,7 +342,7 @@
 .project-subcont {
   top: 42vw;
   @include media(desktop-s) {
-    top: 37vw;
+    top: 29vw;
   }
 }
 
@@ -352,9 +353,9 @@
     align-items: flex-start;
     justify-content: center;
     padding-left: 5%;
-    height: 30em;
+    height: 20em;
 
-    top: 37em;
+    top: 29em;
   }
 }
 
@@ -362,7 +363,7 @@
   top: 102vw;
   display: none;
   @include media(desktop-s) {
-    top: 37em;
+    top: 29em;
   }
 }
 
@@ -370,7 +371,7 @@
   top: 102vw;
   display: none;
   @include media(desktop-s) {
-    top: 37em;
+    top: 29em;
   }
 }
 
@@ -434,7 +435,7 @@
   margin: 2.5vw 0;
   color: $color-claro;
   @include media(desktop-s) {
-    font-size: 1.2em;
+    font-size: 0.9em;
     margin: 1em;
   }
 }
@@ -443,5 +444,66 @@
 }
 
 .module-container-3 {
-  top: 3.6em;
+  top: 2.3em;
+}
+
+.five-button-shadow1 {
+  width: 10vw;
+  height: 10vw;
+  margin: 0;
+  position: absolute;
+  // bottom: -6.25vw;
+  z-index: 4;
+  animation-name: button-shadow;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: width opacity height;
+  border-radius: 2px;
+  border: 2px solid $color-variacion1;
+}
+
+.five-button-shadow2 {
+  width: 10vw;
+  height: 10vw;
+  margin: 0;
+  position: absolute;
+  opacity: 0;
+  // bottom: -6.25vw;
+  z-index: 4;
+  animation-name: button-shadow;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 0.6s;
+  will-change: transform opacity;
+  border-radius: 2px;
+
+  border: 2px solid $color-variacion1;
+}
+
+@keyframes button-shadow {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  10% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  70% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+
+  100% {
+    opacity: 0;
+
+    transform: scale(1.7);
+  }
 }

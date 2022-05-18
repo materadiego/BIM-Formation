@@ -8,11 +8,15 @@
     height: 31vw;
   }
   &__container {
-    //border: 2px solid red;
+    // border: 2px solid red;
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    transition: $scroll-transition;
+    transform: translateX(0%);
+    will-change: opacity transform;
     @include media(desktop-s) {
       width: 37%;
       margin: 0 0 0 15%;
@@ -22,7 +26,11 @@
       width: 60%;
       font-size: 11vw;
       line-height: 90%;
+      margin-left: 0;
+      position: relative;
+
       color: $color-variacion1;
+
       @include media(desktop-s) {
         font-size: 4.7vw;
         width: 70%;
@@ -39,6 +47,10 @@
     &--image {
       width: 17vw;
       height: 17vw;
+      position: relative;
+      right: 0;
+      transition: $scroll-transition;
+      will-change: opacity right;
       //border: 2px solid red;
       @include media(desktop-s) {
         width: 7vw;
@@ -51,6 +63,10 @@
       font-weight: 600;
       font-family: $Fuente2;
       font-weight: 400;
+      margin-left: 0;
+
+      position: relative;
+
       color: $color-claro;
       @include media(desktop-s) {
         font-size: 2vw;
@@ -64,6 +80,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
+    transition: $scroll-transition;
+    will-change: opacity transform;
     @include media(desktop-s) {
       width: 37%;
       margin: 0 0 0 15%;
@@ -76,7 +95,11 @@
       height: 10vw;
       opacity: 0.25;
       opacity: 1;
+      left: 0;
+      transition: $scroll-transition;
+      will-change: left opacity;
 
+      position: relative;
       //border: 2px solid red;
       @include media(desktop-s) {
         width: 2vw;
@@ -101,9 +124,10 @@
         text-align: start;
         margin: 0;
         width: 80%;
-        font-weight: 600;
+        font-weight: 400;
       }
       & span {
+        font-weight: 600;
         color: $color-variacion1;
       }
     }
@@ -129,7 +153,8 @@
       //border: 2px solid red;
       width: 93%;
       z-index: 2;
-
+      transition: $scroll-transition2;
+      will-change: margin opacity;
       @include media(desktop-s) {
         width: 100%;
       }
@@ -143,4 +168,27 @@
   height: 0px;
   position: absolute;
   top: -8vw;
+}
+
+.scroll-two-title {
+  opacity: 0.3;
+
+  transform: translateX(-45%);
+}
+.scroll-two-title-image {
+  right: -70%;
+}
+
+.scroll-two-container2 {
+  transform: translateX(38%);
+  opacity: 0.3;
+}
+
+.scroll-two-container2-arrow {
+  left: -50%;
+}
+
+.scroll-two-figure-image {
+  margin-top: 22%;
+  opacity: 0.3;
 }
