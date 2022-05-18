@@ -8,7 +8,8 @@
   z-index: 4;
   top: 34vw;
   margin-left: -75%;
-  transition: 0.5s;
+  transition: 1s ease-in-out;
+  will-change: margin;
   @include media(desktop-s) {
     width: 26%;
     top: 14vw;
@@ -134,4 +135,8 @@
 
 .regalo-is-active {
   margin-left: 0;
+}
+
+.scroll-six .regalo {
+  margin-left: -75%;
 }

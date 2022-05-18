@@ -44,7 +44,7 @@
     &--title {
       text-align: end;
       font-weight: 600;
-      margin-bottom: 3vw;
+      margin-bottom: 1vw;
       width: 100%;
       font-size: 6.5vw;
       color: $color-claro;
@@ -60,6 +60,8 @@
       //border: 2px solid red;
       width: 7.81vw;
       height: 7.81vw;
+      will-change: opacity transform;
+      transition: $scroll-transition;
       @include media(desktop-s) {
         width: 4em;
         height: 4em;
@@ -75,9 +77,12 @@
     width: 60%;
     //border: 2px solid red;
     height: 78.125vw;
-    margin-bottom: 6.25vw;
+    // margin-bottom: 6.25vw;
     z-index: 2;
+    top: 0;
     position: relative;
+    transition: $scroll-transition2;
+    will-change: top opacity;
     background-color: $color-claro;
     @include media(desktop-s) {
       width: 47%;
@@ -277,7 +282,7 @@
   }
 }
 .box-r {
-  left: 40%;
+  left: 35%;
   @include media(desktop-s) {
     right: 0%;
     left: 53%;
@@ -287,22 +292,28 @@
 }
 
 .six-box1 {
+  top: 2vw;
+
   @include media(desktop-s) {
     top: 19vw;
   }
 }
 
 .six-box2 {
+  top: 7vw;
   @include media(desktop-s) {
     top: 26vw;
   }
 }
 .six-box3 {
+  top: 14vw;
+
   @include media(desktop-s) {
     top: 44vw;
   }
 }
 .six-box4 {
+  top: 20vw;
   @include media(desktop-s) {
     top: 51vw;
   }
@@ -349,6 +360,7 @@
   width: 20.31vw;
   height: 20.31vw;
   border-radius: 300px;
+
   @include media(desktop-s) {
     width: 5vw;
     transition: 0.3s ease-in-out;
@@ -441,4 +453,29 @@
   @include media(desktop-s) {
     border: 4px solid $color-claro;
   }
+}
+
+.scroll-six.six__title-cont--arrow {
+  opacity: 0.19;
+  transform: scale(0.9);
+  margin-right: -5%;
+  margin-top: -4%;
+}
+
+.scroll-six.six-box1 {
+  opacity: 0.3;
+  top: 25vw;
+}
+
+.scroll-six.six-box2 {
+  opacity: 0.3;
+  top: 40vw;
+}
+.scroll-six.six-box3 {
+  opacity: 0.3;
+  top: 55vw;
+}
+.scroll-six.six-box4 {
+  opacity: 0.3;
+  top: 75vw;
 }

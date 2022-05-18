@@ -59,6 +59,7 @@
     // border: 2px solid red;
     height: 65.62vw;
     position: relative;
+    overflow: hidden;
     @include media(desktop-s) {
       width: 45%;
       height: 36.58vw;
@@ -343,6 +344,7 @@
     transition: $scroll-transition2;
     @include media(desktop-s) {
       right: 2.66vw;
+      width: 35vw;
     }
   }
 }

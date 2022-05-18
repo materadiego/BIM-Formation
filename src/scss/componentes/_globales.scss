@@ -19,8 +19,8 @@ $color-shadow3: rgba(255, 255, 255, 0.15);
 $color-shadow4: rgba(255, 255, 255, 0.4);
 $color-shadow5: rgba(0, 0, 0, 0.5);
 
-$scroll-transition: 1.5s ease-in-out;
-$scroll-transition2: 1s ease-in-out;
+$scroll-transition: 1.5s linear;
+$scroll-transition2: 1s linear;
 
 $Fuente1: "Aventa";
 $Fuente2: "Acumin Pro";
@@ -34,7 +34,17 @@ $Fuente2: "Acumin Pro";
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
 }
 
-html,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: $Fuente1;
+  font-weight: 600;
+  font-style: normal;
+  scroll-behavior: smooth;
+  @include media(desktop-s) {
+    font-size: 1vw;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -111,4 +121,30 @@ a:hover {
 .overlay-active {
   margin-left: 0;
   z-index: 3;
+}
+
+@keyframes button-shadow {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  10% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  70% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+
+  100% {
+    opacity: 0;
+
+    transform: scale(1.7);
+  }
 }
