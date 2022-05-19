@@ -1,13 +1,21 @@
 .seven {
+  position: relative;
   @include media(desktop-s) {
     padding-bottom: 10vw;
   }
   &__title {
-    //border: 2px solid red;
-    padding: 1.56vw 0 3.12vw 15%;
+    // border: 2px solid red;
+    width: 80%;
+    padding: 0 0 3.12vw 15%;
     font-weight: 600;
     font-size: 6.5vw;
     line-height: 120%;
+    margin-top: 0;
+    top: -8vw;
+    z-index: 2;
+    position: relative;
+    will-change: top;
+    transition: $scroll-transition;
     background-color: $color-variacion2;
     color: $color-claro;
     @include media(desktop-s) {
@@ -15,7 +23,7 @@
       // border: 2px solid red;
       width: 40%;
       padding-left: 10%;
-      margin-top: -6vw;
+      top: -3vw;
       position: relative;
     }
     &--span {
@@ -26,7 +34,11 @@
     //border: 2px solid red;
     width: 7.81vw;
     height: 7.81vw;
-    margin: 9vw 0 0 15%;
+    margin: -5vw 0 1vw 15%;
+    transition: $scroll-transition;
+    will-change: opacity transform;
+    opacity: 1;
+    transform: translateX(70%) translateY77(70%);
     @include media(desktop-s) {
       width: 4vw;
       height: 4vw;
@@ -36,4 +48,16 @@
       width: 100%;
     }
   }
+}
+
+.scroll-seven.seven-title {
+  top: -25vw;
+  @include media(desktop-s) {
+    top: -10vw;
+  }
+}
+
+.scroll-seven.seven__arrow {
+  transform: translateX(-70%) translateY(-100%);
+  opacity: 0.25;
 }

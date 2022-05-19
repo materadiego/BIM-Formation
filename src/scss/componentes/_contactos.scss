@@ -142,11 +142,12 @@
     border: none;
     outline: none;
     border-radius: 0;
-    padding: 1.56vw 0;
+    padding: 0.56vw 0;
     width: 43.75vw;
     font-size: 5.62vw;
     cursor: pointer;
     color: $color-claro;
+    border: 3px solid $color-variacion1;
     background-color: $color-variacion1;
     @include media(desktop-s) {
       font-size: 1.5vw;
@@ -158,6 +159,9 @@
       @include media(desktop-s) {
         background-color: $color-variacion2;
       }
+    }
+    &:active {
+      background-color: $color-variacion5;
     }
   }
 }

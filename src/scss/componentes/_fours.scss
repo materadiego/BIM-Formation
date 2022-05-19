@@ -178,6 +178,8 @@
         margin-top: 0.1vw;
         margin-right: 2.18vw;
         border-radius: 50px;
+        will-change: background-color;
+        transition: 0.3s;
         background-color: $color-variacion2;
         @include basic-flex;
         @include media(desktop-s) {
@@ -185,6 +187,9 @@
           height: 2.2vw;
           margin-right: 0.5vw;
           margin-top: 11vw;
+        }
+        &:hover {
+          background-color: $color-variacion1;
         }
       }
       &--text {

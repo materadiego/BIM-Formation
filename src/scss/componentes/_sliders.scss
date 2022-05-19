@@ -1,7 +1,7 @@
 .swiper {
   // border: 2px solid red;
   width: 100%;
-  height: 71.87vw;
+  height: 101.87vw;
 }
 
 .mySwiper2 {
@@ -32,9 +32,12 @@
 
 .opinion-box {
   width: 55%;
-  height: 48.43vw;
-  padding: 0 4.68vw;
+  height: 65.43vw;
+  padding: 0 4.68vw 4vw;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   @include shadow-caja;
   @include media(desktop-s) {
     height: 22vw;
@@ -42,9 +45,6 @@
     padding: 0 1vw;
     width: 75%;
     margin-left: -5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
   }
   &__quotation {
     //border: 2px solid red;
@@ -66,17 +66,18 @@
     }
   }
   &__text {
-    font-size: 3.12vw;
+    font-size: 3.4vw;
+    width: 85%;
     font-weight: 600;
-    margin: 9.37vw 0 3.12vw;
+    margin: 9.37vw auto 3.12vw;
     text-align: left;
     line-height: 115%;
+    position: absolute;
+    top: 0;
     color: $color-secundario;
     @include media(desktop-s) {
       font-size: 1.1vw;
       margin: 4vw 0 2vw;
-      position: absolute;
-      top: 0;
     }
   }
   &__author {
@@ -127,10 +128,4 @@
     left: 0;
   }
   left: 0;
-}
-
-.falta-slider {
-  text-align: center;
-  color: red;
-  display: none;
 }

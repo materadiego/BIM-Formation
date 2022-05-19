@@ -62,13 +62,23 @@
           </a>
         </div>
         <div class="header-container__buttons">
-          <a href="" class="header-container__buttons--contactanos"
+          <a
+            href="https://wa.me/34639330455"
+            target="_blank"
+            class="header-container__buttons--contactanos"
             ><img src="src/images/redes-wsp.png" alt="" /> ¡Contactanos!</a
           >
-          <a href="" class="header-container__buttons--inscribirme inscribirme"
+          <a
+            href="https://hotmart.com/es/marketplace/productos/bimformation-curso-iniciacion-bim-para-el-mundo-laboral/X42984110C"
+            target="_blank"
+            class="header-container__buttons--inscribirme inscribirme"
             >INSCRIBIRME</a
           >
-          <a href="" class="header-container__buttons--wsp desktop">
+          <a
+            href="https://wa.me/34639330455"
+            target="_blank"
+            class="header-container__buttons--wsp desktop"
+          >
             <figure></figure>
           </a>
         </div>
@@ -84,16 +94,20 @@
             de nuestro curso, gratis completando <br />
             este formulario
           </p>
-          <form action="" class="header-form">
+          <form action="regalo.php" method="post" class="header-form">
             <input
               type="text"
+              name="nombreApellido2"
               class="header-form__input"
               placeholder="Nombre y Apellido"
+              required
             />
             <input
               type="text"
+              name="email2"
               class="header-form__input"
               placeholder="Correo Electrónico"
+              required
             />
             <button type="submit" class="header-form__submit">
               ACCEDER AL MÓDULO GRATIS
@@ -109,21 +123,26 @@
     </div>
 
     <!-- CHAT -->
-    <div class="chat-container mobile" id="chat-container">
-      <div class="chat__close" id="chat-close"></div>
-      <img src="src/images/chat-wsp.svg" alt="" class="chat-container__img" />
-      <h6 class="chat-container__text">
-        <span class="chat-container__text--span">PARA MÁS INFO</span> <br />
-        PUEDES CHATEAR <br />
-        CON NOSOTROS <br />
-        POR WHATSAPP
-      </h6>
-      <img
-        src="src/images/chat-flecha.png"
-        alt=""
-        class="chat-container__arrow desktop"
-      />
-    </div>
+    <a href="https://wa.me/34639330455" target="_blank">
+      <div
+        class="chat-container scroll-chat animado mobile"
+        id="chat-container"
+      >
+        <div class="chat__close" id="chat-close"></div>
+        <img src="src/images/chat-wsp.svg" alt="" class="chat-container__img" />
+        <h6 class="chat-container__text">
+          <span class="chat-container__text--span">PARA MÁS INFO</span> <br />
+          PUEDES CHATEAR <br />
+          CON NOSOTROS <br />
+          POR WHATSAPP
+        </h6>
+        <img
+          src="src/images/chat-flecha.png"
+          alt=""
+          class="chat-container__arrow desktop"
+        />
+      </div>
+    </a>
 
     <div
       class="chat-container chat-container2 chat-is-active desktop"
@@ -162,7 +181,12 @@
         <span class="hero__title--span">Este curso es para ti.</span>
       </h1>
       <div class="hero__button">
-        <a href="" class="hero__button--one">INSCRIBIRME</a>
+        <a
+          href="https://hotmart.com/es/marketplace/productos/bimformation-curso-iniciacion-bim-para-el-mundo-laboral/X42984110C"
+          target="_blank"
+          class="hero__button--one"
+          >INSCRIBIRME</a
+        >
         <a href="#content" class="hero__button--two"
           >QUIERO SABER MÁS <img src="src/images/six-arrow2.svg" alt=""
         /></a>
@@ -256,10 +280,18 @@
         </div>
       </div>
       <div class="hero__desktop-media desktop">
-        <a href="" class="hero__desktop-media--in">
+        <a
+          href="https://www.linkedin.com/company/bim-formation-curso-iniciaci%C3%B3n-bim-al-mundo-laboral/"
+          target="_blank"
+          class="hero__desktop-media--in"
+        >
           <figure class="linked-in-logo"></figure
         ></a>
-        <a href="" class="hero__desktop-media--ig">
+        <a
+          href="https://www.instagram.com/bimformation.es/"
+          target="_blank"
+          class="hero__desktop-media--ig"
+        >
           <figure class="instagram-logo"></figure
         ></a>
       </div>
@@ -416,10 +448,16 @@
                 alt=""
               />
             </div>
-            <a href="" class="admins__container--subcont--link in"
+            <a
+              href="https://www.linkedin.com/in/rafael-gil-garc%C3%ADa-15018310b/"
+              target="_blank"
+              class="admins__container--subcont--link in"
               ><img src="src/images/in.svg" alt="" class="in-image"
             /></a>
-            <a href="" class="admins__container--subcont--link ig"
+            <a
+              href="https://www.instagram.com/rafa_xerez/"
+              target="_blank"
+              class="admins__container--subcont--link ig"
               ><img src="src/images/ig.svg" alt="" class="ig-image"
             /></a>
             <p class="admins__container--subcont--text text-rafael">
@@ -462,7 +500,10 @@
             Arquitecta y BIM Specialist
           </p>
           <div class="admins__container--subcont subcont-melissa">
-            <a href="" class="admins__container--subcont--link in in-melissa"
+            <a
+              href="https://www.linkedin.com/in/melissa-arbocc%C3%B3-murgu%C3%ADa-7355b9158/"
+              target="_blank"
+              class="admins__container--subcont--link in in-melissa"
               ><img src="src/images/in.svg" alt="" class="in-image"
             /></a>
             <div
@@ -504,7 +545,13 @@
         <div class="five-container__box proyecto">
           <figure class="five-container__box--image-cont box1"></figure>
 
-          <h5 class="five-container__box--number" id="box-number1">1</h5>
+          <h5
+            class="five-container__box--number box-number1"
+            data-target="1"
+            id="box-number1"
+          >
+            1
+          </h5>
           <h3 class="five-container__box--subtitle">PROYECTO</h3>
 
           <div class="five-container__box--button" id="project-button">
@@ -520,7 +567,13 @@
         <div class="five-container__box modulos">
           <figure class="five-container__box--image-cont box2"></figure>
 
-          <h5 class="five-container__box--number" id="box-number2">4</h5>
+          <h5
+            class="five-container__box--number box-number1"
+            data-target="4"
+            id="box-number2"
+          >
+            4
+          </h5>
           <h3 class="five-container__box--subtitle">MÓDULOS</h3>
           <div class="five-container__box--button" id="modules-button">
             <div class="line-one line-one-b2"></div>
@@ -535,7 +588,13 @@
         <div class="five-container__box videos">
           <figure class="five-container__box--image-cont box3"></figure>
 
-          <h5 class="five-container__box--number" id="box-number3">42</h5>
+          <h5
+            class="five-container__box--number box-number2"
+            data-target="42"
+            id="box-number3"
+          >
+            42
+          </h5>
           <h3 class="five-container__box--subtitle">VIDEOS</h3>
           <div class="five-container__box--button" id="videos-button">
             <div class="line-one line-one-b3"></div>
@@ -549,7 +608,13 @@
 
         <div class="five-container__box horas">
           <figure class="five-container__box--image-cont box4"></figure>
-          <h5 class="five-container__box--number" id="box-number4">12</h5>
+          <h5
+            class="five-container__box--number box-number1"
+            data-target="12"
+            id="box-number4"
+          >
+            12
+          </h5>
           <h3 class="five-container__box--subtitle">HORAS</h3>
           <div class="five-container__box--button" id="hours-button">
             <div class="line-one line-one-b4"></div>
@@ -873,16 +938,20 @@
             de nuestro curso, gratis completando <br />
             este formulario
           </p>
-          <form action="" class="regalo__form">
+          <form action="regalo.php" method="post" class="regalo__form">
             <input
               type="text"
+              name="nombreApellido2"
               class="regalo__form--input"
               placeholder="Nombre y Apellido"
+              required
             />
             <input
               type="text"
+              name="email2"
               class="regalo__form--input"
               placeholder="Correo Electrónico"
+              required
             />
             <button type="submit" class="regalo__form--submit">
               ACCEDER AL MÓDULO GRATIS
@@ -924,7 +993,7 @@
             <h4 class="six__box--number dark-box__number">.1</h4>
             <div class="six__box--stats">
               <div class="six__box--stats--minutes">
-                <p class="dark-box__stats">10 min.</p>
+                <p class="dark-box__stats">38 seg.</p>
               </div>
               <div class="six__box--stats--modules">
                 <p class="dark-box__stats">1/4</p>
@@ -942,7 +1011,10 @@
               <p class="actions-gratis desktop dark-box__gratis">
                 MÓDULO GRATIS
               </p>
-              <a href="" class="actions-resumen dark-box__resumen"
+              <a
+                href="https://www.youtube.com/watch?v=qx8WpRkgqzI"
+                target="_blank"
+                class="actions-resumen dark-box__resumen"
                 >VER RESUMEN</a
               >
               <a href="" class="actions-play dark-box__play">
@@ -975,7 +1047,7 @@
             <h4 class="six__box--number">.2</h4>
             <div class="six__box--stats">
               <div class="six__box--stats--minutes">
-                <p>10 min.</p>
+                <p>44 seg.</p>
               </div>
               <div class="six__box--stats--modules">
                 <p>2/4</p>
@@ -989,8 +1061,16 @@
             </div>
             <h6 class="six__box--title">WORK IN PROGRESS</h6>
             <div class="six__box--actions">
-              <a href="" class="actions-resumen">VER RESUMEN</a>
-              <a href="" class="actions-play"
+              <a
+                href="https://www.youtube.com/watch?v=UchCV19_iM0"
+                target="_blank"
+                class="actions-resumen"
+                >VER RESUMEN</a
+              >
+              <a
+                href="https://www.youtube.com/watch?v=UchCV19_iM0"
+                target="_blank"
+                class="actions-play"
                 ><div class="actions-play--shadow1">
                   <div class="actions-play--shadow2">
                     <img
@@ -1014,7 +1094,7 @@
             <h4 class="six__box--number">.3</h4>
             <div class="six__box--stats stats-box3">
               <div class="six__box--stats--minutes">
-                <p>10 min.</p>
+                <p>41 seg.</p>
               </div>
               <div class="six__box--stats--modules">
                 <p>3/4</p>
@@ -1033,8 +1113,16 @@
             </h6>
 
             <div class="six__box--actions">
-              <a href="" class="actions-resumen">VER RESUMEN</a>
-              <a href="" class="actions-play"
+              <a
+                href="https://www.youtube.com/watch?v=4X5TK4vMoYM"
+                target="_blank"
+                class="actions-resumen"
+                >VER RESUMEN</a
+              >
+              <a
+                href="https://www.youtube.com/watch?v=4X5TK4vMoYM"
+                target="_blank"
+                class="actions-play"
                 ><div class="actions-play--shadow1">
                   <div class="actions-play--shadow2">
                     <img
@@ -1058,7 +1146,7 @@
             <h4 class="six__box--number">.4</h4>
             <div class="six__box--stats">
               <div class="six__box--stats--minutes">
-                <p>10 min.</p>
+                <p>43 seg.</p>
               </div>
               <div class="six__box--stats--modules">
                 <p>4/4</p>
@@ -1072,8 +1160,16 @@
             </div>
             <h6 class="six__box--title">DOCUMENTACIÓN</h6>
             <div class="six__box--actions">
-              <a href="" class="actions-resumen">VER RESUMEN</a>
-              <a href="" class="actions-play"
+              <a
+                href="https://www.youtube.com/watch?v=WJd2tprH6NY"
+                target="_blank"
+                class="actions-resumen"
+                >VER RESUMEN</a
+              >
+              <a
+                href="https://www.youtube.com/watch?v=WJd2tprH6NY"
+                target="_blank"
+                class="actions-play"
                 ><div class="actions-play--shadow1">
                   <div class="actions-play--shadow2">
                     <img
@@ -1091,18 +1187,17 @@
 
     <!-- OPINIONES -->
     <section class="section seven opiniones">
-      <h3 class="seven__title">
+      <h3 class="seven__title seven-title scroll-seven animado">
         <span class="seven__title--span">¿Qué opinan</span> <br />
         nuestros alumnos?
       </h3>
-      <figure class="seven__arrow">
+      <figure class="seven__arrow scroll-seven animado">
         <img
           src="src/images/three-arrow.svg"
           alt=""
           class="seven__arrow--image"
         />
       </figure>
-      <p class="falta-slider">Me falta activar este slider</p>
       <!-- SLIDER -->
       <div class="swiper mySwiper mobile">
         <div class="swiper-wrapper">
@@ -1116,13 +1211,13 @@
                 />
               </figure>
               <p class="opinion-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                quidem, culpa libero ipsam ullam fuga voluptatem minus aut
-                fugiat quia laboriosam vel inventore at atque modi sit non et
-                nesciunt.
+                Es un curso rápido con los tips necesarios para entrar a
+                trabajar en un despacho que trabajen con revit. A mi me ha
+                ayudado mucho. Es un curso muy completo y fácil de realizar.
+                Recomiendo 100%
               </p>
-              <h6 class="opinion-box__author">Brenna Beck</h6>
-              <p class="opinion-box__author-rol">Blogger</p>
+              <h6 class="opinion-box__author">María Victoria</h6>
+              <p class="opinion-box__author-rol">Estudiante de arquitectura</p>
             </div>
           </div>
           <div class="swiper-slide">
@@ -1135,13 +1230,14 @@
                 />
               </figure>
               <p class="opinion-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                quidem, culpa libero ipsam ullam fuga voluptatem minus aut
-                fugiat quia laboriosam vel inventore at atque modi sit non et
-                nesciunt.
+                Muy buen curso, con todos los contenidos condensados en 12h.
+                Tienes todos los conceptos bien explicados y clasificados en 4
+                módulos para seguirlo sin perderte. Es un curso muy completo,
+                desde el inicio al final! Lo bueno es que lo puedes hacer en tu
+                tiempo libre y a tu ritmo!
               </p>
-              <h6 class="opinion-box__author">Brenna Beck</h6>
-              <p class="opinion-box__author-rol">Blogger</p>
+              <h6 class="opinion-box__author">Miriam</h6>
+              <p class="opinion-box__author-rol">Arquitecta y BIM Manager</p>
             </div>
           </div>
           <div class="swiper-slide">
@@ -1154,13 +1250,35 @@
                 />
               </figure>
               <p class="opinion-box__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                quidem, culpa libero ipsam ullam fuga voluptatem minus aut
-                fugiat quia laboriosam vel inventore at atque modi sit non et
-                nesciunt.
+                ¡Genial! Me ha parecido un curso que se puede hacer rápido y que
+                me ha proporcionado la confianza y los conocimientos necesarios
+                para aplicar para un trabajo de estas características en
+                cualquier empresa de arquitectura e ingeniería. ¡Por otro lado,
+                mi enhorabuena a los tutores que han estado superatentos!
               </p>
-              <h6 class="opinion-box__author">Brenna Beck</h6>
-              <p class="opinion-box__author-rol">Blogger</p>
+              <h6 class="opinion-box__author">Javier</h6>
+              <p class="opinion-box__author-rol">Arquitecto y BIM Manager</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="opinion-box">
+              <figure class="opinion-box__quotation">
+                <img
+                  src="src/images/quote.svg"
+                  alt=""
+                  class="opinion-box__quotation--image"
+                />
+              </figure>
+              <p class="opinion-box__text">
+                "Un curso muy bien estructurado y ordenado. Me gusta que los
+                tutores insistan en la gestión de información de los modelos,
+                además del modelado, y que nos enseñen a hacerlo siguiendo
+                metodologías que se usan en despacho. ¡Muy recomendable y de
+                precio genial en comparación con los cursos que hay en el
+                mercado
+              </p>
+              <h6 class="opinion-box__author">Xabier</h6>
+              <p class="opinion-box__author-rol">Arquitecto y BIM Manager</p>
             </div>
           </div>
         </div>
@@ -1169,7 +1287,7 @@
       </div>
       <div class="swiper mySwiper2 desktop">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <!-- <div class="swiper-slide">
             <div class="opinion-box">
               <figure class="opinion-box__quotation">
                 <img
@@ -1179,24 +1297,19 @@
                 />
               </figure>
               <p class="opinion-box__text">
-                El curso está muy bien, tiene todo lo necesario para empezar con
-                el mundo BIM. Me gusta que no sólo profundizan en el modelado
-                (normalmente otros cursos paran ahí), sino que también tienen
-                mucho contenido sobre la gestión de la información y
-                documentación (super interesante) y que todo lo explican tal y
-                como se aplica luego en un entorno BIM en colaboración con el
-                manager. En cuanto a los descargables que dan, son idóneos para
-                seguir el curso, es un modelo de una casa muy completa. Te dan
-                además la plantilla que te puede servir para practicar con otros
-                proyectos. E incluyen el modelo final en el que puedes consultar
-                cómo debería acabar el tuyo. Por lo demás, son muy rápidos y
-                resolutivos a la hora de contestar tanto en la plataforma como
-                si les escribes a ellos directamente
+                El curso tiene todo lo necesario para empezar con el mundo BIM.
+                Me gustó que profundiza en el modelado mientras que también
+                brinda información sobre la gestión de la información y
+                documentación, todo se explica tal y como se aplica luego en un
+                entorno BIM. En cuanto a los descargables que dan, son idóneos
+                para seguir el curso, es un modelo de una casa muy completa. Por
+                lo demás, son muy rápidos y resolutivos a la hora de contestar
+                tanto en la plataforma como si les escribes a ellos directamente.
               </p>
               <h6 class="opinion-box__author">Ane</h6>
               <p class="opinion-box__author-rol">Arquitecta y renderista</p>
             </div>
-          </div>
+          </div> -->
           <div class="swiper-slide">
             <div class="opinion-box">
               <figure class="opinion-box__quotation">
@@ -1309,34 +1422,43 @@
           no dudes en escribirnos.
         </p>
         <h6 class="contacto__container--subtitle">¡Estamos para ayudarte!</h6>
-        <form action="" class="form">
+        <form action="consulta.php" method="post" class="form">
           <input
             type="text"
+            name="nombreApellido"
             class="form__input mobile"
             placeholder="Nombre y Apellido"
+            required
           />
           <input
             type="text"
+            name="nombre"
             class="form__input input-nombre desktop"
             placeholder="Nombre"
+            required
           />
           <input
             type="text"
+            name="apellido"
             class="form__input input-apellido desktop"
             placeholder="Apellido"
+            required
           />
           <input
             type="text"
             class="form__input"
+            name="email"
             placeholder="Correo Electrónico"
+            required
           />
           <textarea
-            name=""
+            name="mensaje"
             id=""
             cols="30"
             rows="10"
             class="form__textarea"
             placeholder="Consulta:"
+            required
           ></textarea>
           <button type="submit">ENVIAR</button>
         </form>
@@ -1359,13 +1481,19 @@
         </figure>
         <div class="footer-container__subcont">
           <div class="footer-container__subcont--links">
-            <a href="" class="media"
+            <a
+              href="https://www.linkedin.com/company/bim-formation-curso-iniciaci%C3%B3n-bim-al-mundo-laboral/"
+              target="_blank"
+              class="media"
               ><img src="src/images/footer-in.svg" alt=""
             /></a>
-            <a href="" class="media"
+            <a href="https://wa.me/34639330455" target="_blank" class="media"
               ><img src="src/images/footer-wsp.svg" alt=""
             /></a>
-            <a href="" class="media"
+            <a
+              href="https://www.instagram.com/bimformation.es/"
+              target="_blank"
+              class="media"
               ><img src="src/images/footer-ig.svg" alt=""
             /></a>
           </div>
@@ -1405,5 +1533,6 @@
     <script src="src/js/modules.js"></script>
     <script src="src/js/admins-text.js"></script>
     <script src="src/js/scroll-animation.js"></script>
+    <!-- <script src="src/js/animation-suma.js"></script> -->
   </body>
 </html>
