@@ -29,7 +29,7 @@
         //border: 2px solid red;
         width: 60%;
         font-size: 11vw;
-        line-height: 90%;
+        line-height: 70%;
         margin-left: 0;
         position: relative;
 
@@ -42,7 +42,7 @@
         & span {
           font-size: 6.7vw;
           font-weight: 600;
-          line-height: 90%;
+          line-height: 70%;
           @include media(desktop-s) {
             font-size: 2.85vw;
           }
@@ -65,8 +65,8 @@
         width: 100%;
         font-size: 4.6vw;
         font-weight: 600;
-        font-family: $Fuente2;
-        font-weight: 400;
+        font-family: $Fuente1;
+        font-weight: 300;
         margin-left: 0;
 
         position: relative;
@@ -74,6 +74,7 @@
         color: $color-claro;
         @include media(desktop-s) {
           font-size: 2vw;
+          margin-top: 0.5vw;
         }
       }
     }
@@ -118,16 +119,16 @@
         font-weight: 600;
         text-align: end;
         margin: 0 0 0 3.12vw;
-        font-family: $Fuente2;
+        font-family: $Fuente1;
         font-weight: 400;
 
         color: $color-claro;
         //border: 2px solid red;
         @include media(desktop-s) {
-          font-size: 1.2vw;
+          font-size: 1.3vw;
           text-align: start;
           margin: 0;
-          width: 80%;
+          width: 90%;
           font-weight: 400;
         }
         & span {
@@ -151,7 +152,7 @@
       height: auto;
       position: absolute;
       right: 4vw;
-      top: 18.8vw;
+      top: 13.4vw;
       overflow: hidden;
     }
     &--image {

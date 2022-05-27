@@ -68,7 +68,7 @@
   &__text {
     font-size: 3.4vw;
     width: 85%;
-    font-weight: 600;
+    font-weight: 300;
     margin: 9.37vw auto 3.12vw;
     text-align: left;
     line-height: 115%;
@@ -77,14 +77,14 @@
     color: $color-secundario;
     @include media(desktop-s) {
       font-size: 1.1vw;
-      margin: 4vw 0 2vw;
+      margin: 3vw 0 2vw;
     }
   }
   &__author {
     text-align: end;
     font-size: 4.06vw;
     margin: 0 0 1.56vw;
-    font-weight: 500;
+    font-weight: 600;
     color: $color-variacion2;
     @include media(desktop-s) {
       font-size: 1.2vw;

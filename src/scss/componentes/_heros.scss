@@ -33,7 +33,7 @@
     margin: 18.75vw auto 0;
     z-index: 2;
     font-size: 6.67vw;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 110%;
     position: relative;
     will-change: opacity;
@@ -352,6 +352,6 @@
   }
 
   100% {
-    transform: rotateZ(-9deg) translateY(-4.2vw) translateX(1.5vw);
+    transform: rotateZ(-6deg) translateY(-4.2vw) translateX(1.5vw);
   }
 }

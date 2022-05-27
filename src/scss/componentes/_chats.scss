@@ -10,8 +10,8 @@
   transition: 0.5s ease-in-out;
   z-index: 5;
 
-  background-color: $color-claro;
-  @include shadow-caja;
+  background-color: rgba(255, 255, 255, 0);
+
   @include media(desktop-s) {
     width: 28vw;
     margin-left: 100%;
@@ -27,6 +27,8 @@
     height: 13vw;
     margin-left: 10px;
     //border: 2px solid red;
+    border-radius: 100px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
     @include media(desktop-s) {
       display: none;
     }
@@ -34,7 +36,7 @@
   &__text {
     font-family: "Aventa";
     //border: 2px solid red;
-    font-weight: 500;
+    font-weight: 6 00;
     padding: 0 6px 0 10px;
     font-size: 3vw;
     margin: 0;
@@ -97,14 +99,20 @@
   10% {
     opacity: 1;
     margin-left: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    @include shadow-caja;
   }
 
   50% {
+    background-color: rgba(255, 255, 255, 1);
+    @include shadow-caja;
   }
 
   90% {
     opacity: 1;
     margin-left: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    @include shadow-caja;
   }
 
   100% {
@@ -124,7 +132,8 @@
 
 .chat-is-active {
   margin-left: 50%;
-
+  background-color: rgba(255, 255, 255, 1);
+  @include shadow-caja;
   @include media(desktop-s) {
     margin-left: 72%;
   }

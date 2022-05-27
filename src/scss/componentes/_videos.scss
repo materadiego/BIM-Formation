@@ -1,0 +1,30 @@
+.youtube-video-container {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 15;
+  top: 0;
+  background-color: $color-shadow6;
+  //border: 2px solid red;
+}
+
+.video1,
+.video2,
+.video3,
+.video4 {
+  display: none;
+  width: 95vw;
+  height: 53.43vw;
+  @include media(desktop-s) {
+    width: 62.22vw;
+    height: 35vw;
+    // border: 2px solid red;
+  }
+}
+
+.youtube-video-active {
+  display: flex;
+}

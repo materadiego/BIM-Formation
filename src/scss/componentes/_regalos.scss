@@ -7,8 +7,13 @@
   background-color: $color-claro;
   z-index: 4;
   top: 34vw;
+  opacity: 0;
   margin-left: -75%;
   transition: 1s ease-in-out;
+  animation-name: regaloscarga;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
   will-change: margin;
   @include media(desktop-s) {
     width: 26%;
@@ -16,7 +21,7 @@
     padding: 2vw 3vw 2vw 3.5vw;
   }
   &__title {
-    font-weight: 500;
+    font-weight: 600;
     line-height: 85%;
     font-size: 7vw;
     margin-bottom: 7vw;
@@ -139,4 +144,13 @@
 
 .scroll-six .regalo {
   margin-left: -75%;
+}
+
+@keyframes regaloscarga {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -119,12 +119,12 @@
     }
     &--name {
       font-size: 7.5vw;
-      font-weight: 300;
+      font-weight: 700;
       margin: 3vw 0 0;
       color: $color-variacion2;
       @include media(desktop-s) {
         font-size: 3vw;
-        font-weight: 500;
+        font-weight: 700;
 
         margin: 12.5vw 0 0;
       }
@@ -132,11 +132,12 @@
     &--subtitle {
       font-size: 4.06vw;
       margin: 0px 0 3.12vw;
+      font-weight: 700;
+
       color: $color-variacion1;
       @include media(desktop-s) {
         font-size: 1.35vw;
         margin: 0 0 1vw;
-        font-weight: 500;
         padding: 10px 15px 6px;
 
         // border: 2px solid red;
@@ -207,7 +208,9 @@
         background-position: left top;
         background-repeat: no-repeat;
         color: $color-secundario2;
-        font-family: $Fuente2;
+        font-family: $Fuente1;
+        font-style: italic;
+        font-weight: 200;
         @include media(desktop-s) {
           font-size: 1.1vw;
           margin: 0;
@@ -403,7 +406,7 @@
   @include media(desktop-s) {
     display: block;
     text-align: start;
-    width: 27vw;
+    width: 29vw;
     //border: 2px solid red;
   }
 }

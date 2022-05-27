@@ -44,7 +44,10 @@
           <i class="burger-container--image"></i>
         </div>
         <div class="header-container__redes">
-          <a href="" class="header-container__redes--instagram"
+          <a
+            href="https://www.instagram.com/bimformation.es/"
+            target="_blank"
+            class="header-container__redes--instagram"
             ><img
               src="src/images/six-arrow2.svg"
               alt=""
@@ -52,13 +55,17 @@
             />
             Instagram
           </a>
-          <a href="" class="header-container__redes--facebook">
+          <a
+            href="https://www.linkedin.com/company/bim-formation-curso-iniciaci%C3%B3n-bim-al-mundo-laboral"
+            target="_blank"
+            class="header-container__redes--facebook"
+          >
             <img
               src="src/images/six-arrow2.svg"
               alt=""
               class="header-container__redes--facebook--image"
             />
-            Facebook
+            LinkedIn
           </a>
         </div>
         <div class="header-container__buttons">
@@ -1011,13 +1018,10 @@
               <p class="actions-gratis desktop dark-box__gratis">
                 MÓDULO GRATIS
               </p>
-              <a
-                href="https://www.youtube.com/watch?v=qx8WpRkgqzI"
-                target="_blank"
-                class="actions-resumen dark-box__resumen"
-                >VER RESUMEN</a
-              >
-              <a href="" class="actions-play dark-box__play">
+              <div id="resumen1" class="actions-resumen dark-box__resumen">
+                VER RESUMEN
+              </div>
+              <div class="actions-play dark-box__play" id="play1">
                 <div class="actions-play--shadow1 dark-box__play--sh1">
                   <div class="actions-play--shadow2 dark-box__play--sh2">
                     <img
@@ -1032,7 +1036,7 @@
                     />
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
           <!-- Box 2 -->
@@ -1061,25 +1065,18 @@
             </div>
             <h6 class="six__box--title">WORK IN PROGRESS</h6>
             <div class="six__box--actions">
-              <a
-                href="https://www.youtube.com/watch?v=UchCV19_iM0"
-                target="_blank"
-                class="actions-resumen"
-                >VER RESUMEN</a
-              >
-              <a
-                href="https://www.youtube.com/watch?v=UchCV19_iM0"
-                target="_blank"
-                class="actions-play"
-                ><div class="actions-play--shadow1">
+              <div id="resumen2" class="actions-resumen">VER RESUMEN</div>
+              <div id="play2" class="actions-play">
+                <div class="actions-play--shadow1">
                   <div class="actions-play--shadow2">
                     <img
                       src="src/images/flecha-play.svg"
                       alt=""
                       class="actions-play-image"
                     />
-                  </div></div
-              ></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Box 3 -->
@@ -1113,25 +1110,18 @@
             </h6>
 
             <div class="six__box--actions">
-              <a
-                href="https://www.youtube.com/watch?v=4X5TK4vMoYM"
-                target="_blank"
-                class="actions-resumen"
-                >VER RESUMEN</a
-              >
-              <a
-                href="https://www.youtube.com/watch?v=4X5TK4vMoYM"
-                target="_blank"
-                class="actions-play"
-                ><div class="actions-play--shadow1">
+              <div id="resumen3" class="actions-resumen">VER RESUMEN</div>
+              <div id="play3" class="actions-play">
+                <div class="actions-play--shadow1">
                   <div class="actions-play--shadow2">
                     <img
                       src="src/images/flecha-play.svg"
                       alt=""
                       class="actions-play-image"
                     />
-                  </div></div
-              ></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Box 4 -->
@@ -1160,31 +1150,73 @@
             </div>
             <h6 class="six__box--title">DOCUMENTACIÓN</h6>
             <div class="six__box--actions">
-              <a
-                href="https://www.youtube.com/watch?v=WJd2tprH6NY"
-                target="_blank"
-                class="actions-resumen"
-                >VER RESUMEN</a
-              >
-              <a
-                href="https://www.youtube.com/watch?v=WJd2tprH6NY"
-                target="_blank"
-                class="actions-play"
-                ><div class="actions-play--shadow1">
+              <div id="resumen4" class="actions-resumen">VER RESUMEN</div>
+              <div id="play4" class="actions-play">
+                <div class="actions-play--shadow1">
                   <div class="actions-play--shadow2">
                     <img
                       src="src/images/flecha-play.svg"
                       alt=""
                       class="actions-play-image"
                     />
-                  </div></div
-              ></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <div class="youtube-video-container videoContainer1">
+      <iframe
+        src="https://www.youtube.com/embed/qx8WpRkgqzI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        id="video1"
+        class="video1"
+      ></iframe>
+    </div>
+    <div class="youtube-video-container videoContainer2">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/UchCV19_iM0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        id="video2"
+        class="video2"
+      ></iframe>
+    </div>
+    <div class="youtube-video-container videoContainer3">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/4X5TK4vMoYM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        id="video3"
+        class="video3"
+      ></iframe>
+    </div>
+    <div class="youtube-video-container videoContainer4">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/WJd2tprH6NY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        id="video4"
+        class="video4"
+      ></iframe>
+    </div>
     <!-- OPINIONES -->
     <section class="section seven opiniones">
       <h3 class="seven__title seven-title scroll-seven animado">
@@ -1201,6 +1233,27 @@
       <!-- SLIDER -->
       <div class="swiper mySwiper mobile">
         <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="opinion-box">
+              <figure class="opinion-box__quotation">
+                <img
+                  src="src/images/quote.svg"
+                  alt=""
+                  class="opinion-box__quotation--image"
+                />
+              </figure>
+              <p class="opinion-box__text">
+                El curso tiene todo lo necesario para empezar con el mundo BIM.
+                Profundiza en el modelado mientras que también brinda
+                información sobre la gestión de la información y documentación,
+                todo se explica tal y como se aplica luego en un entorno BIM.
+                Por lo demás, son muy rápidos y resolutivos a la hora resolver
+                cualquier duda".
+              </p>
+              <h6 class="opinion-box__author">Ane</h6>
+              <p class="opinion-box__author-rol">Arquitecta y renderista</p>
+            </div>
+          </div>
           <div class="swiper-slide">
             <div class="opinion-box">
               <figure class="opinion-box__quotation">
@@ -1287,7 +1340,7 @@
       </div>
       <div class="swiper mySwiper2 desktop">
         <div class="swiper-wrapper">
-          <!-- <div class="swiper-slide">
+          <div class="swiper-slide">
             <div class="opinion-box">
               <figure class="opinion-box__quotation">
                 <img
@@ -1298,18 +1351,16 @@
               </figure>
               <p class="opinion-box__text">
                 El curso tiene todo lo necesario para empezar con el mundo BIM.
-                Me gustó que profundiza en el modelado mientras que también
-                brinda información sobre la gestión de la información y
-                documentación, todo se explica tal y como se aplica luego en un
-                entorno BIM. En cuanto a los descargables que dan, son idóneos
-                para seguir el curso, es un modelo de una casa muy completa. Por
-                lo demás, son muy rápidos y resolutivos a la hora de contestar
-                tanto en la plataforma como si les escribes a ellos directamente.
+                Profundiza en el modelado mientras que también brinda
+                información sobre la gestión de la información y documentación,
+                todo se explica tal y como se aplica luego en un entorno BIM.
+                Por lo demás, son muy rápidos y resolutivos a la hora resolver
+                cualquier duda".
               </p>
               <h6 class="opinion-box__author">Ane</h6>
               <p class="opinion-box__author-rol">Arquitecta y renderista</p>
             </div>
-          </div> -->
+          </div>
           <div class="swiper-slide">
             <div class="opinion-box">
               <figure class="opinion-box__quotation">
@@ -1533,6 +1584,8 @@
     <script src="src/js/modules.js"></script>
     <script src="src/js/admins-text.js"></script>
     <script src="src/js/scroll-animation.js"></script>
+    <script src="src/js/videos.js"></script>
+
     <!-- <script src="src/js/animation-suma.js"></script> -->
   </body>
 </html>
