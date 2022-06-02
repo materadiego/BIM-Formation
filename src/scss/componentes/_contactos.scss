@@ -83,7 +83,7 @@
 
 .form {
   //border: 2px solid red;
-  display: flex;
+
   flex-wrap: wrap;
   justify-content: center;
   @include media(desktop-s) {
@@ -191,4 +191,48 @@
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.contact-form-loader {
+  width: 40%;
+  padding-left: 1vw;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  will-change: opacity;
+  //border: 2px solid red;
+}
+
+.contact-form-loader img {
+  width: 3vw;
+}
+
+.contact-form-response {
+  //border: 2px solid red;
+  margin-top: 1vw;
+  transition: 1s;
+  will-change: opacity;
+}
+
+.contact-form-response {
+  font-size: 1.3em;
+  color: $color-variacion1;
+}
+
+.none {
+  opacity: 0;
+}
+
+.form-mobile {
+  display: flex;
+  @include media(desktop-s) {
+    display: none;
+  }
+}
+
+.form-desktop {
+  display: none;
+  @include media(desktop-s) {
+    display: flex;
+  }
 }

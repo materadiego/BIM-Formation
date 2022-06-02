@@ -49,6 +49,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-size: 1vw;
   font-family: $Fuente1;
   font-weight: 600;
   font-style: normal;
@@ -124,28 +125,20 @@ a:hover {
   z-index: 3;
 }
 
-@keyframes button-shadow {
+@keyframes button-animation {
   0% {
-    opacity: 0;
     transform: scale(1);
   }
 
-  10% {
-    opacity: 0.5;
+  20% {
+    transform: scale(1.15);
   }
 
-  50% {
-    opacity: 0.5;
-  }
-
-  70% {
-    opacity: 0;
-    transform: scale(1.6);
+  40% {
+    transform: scale(1);
   }
 
   100% {
-    opacity: 0;
-
-    transform: scale(1.7);
+    transform: scale(1);
   }
 }

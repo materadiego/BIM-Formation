@@ -13,11 +13,11 @@
   animation-name: regaloscarga;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 6s;
+  animation-delay: 12s;
   will-change: margin;
   @include media(desktop-s) {
     width: 26%;
-    top: 14vw;
+    top: 19vw;
     padding: 2vw 3vw 2vw 3.5vw;
   }
   &__title {

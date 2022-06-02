@@ -1,6 +1,6 @@
 .five {
   // border: 2px solid red;
-  padding-bottom: 10em;
+  padding-bottom: 50em;
   position: relative;
   background-color: $color-variacion2;
   @include media(desktop-s) {
@@ -20,7 +20,7 @@
   padding-bottom: 0px;
 
   position: relative;
-  top: -21.87em;
+  top: -109.35em;
   transition: 0.5s;
   //padding-bottom: 100vw;
   @include media(desktop-s) {
@@ -36,9 +36,9 @@
   }
   &__box {
     width: 45%;
-    height: 8.4em;
-    padding-top: 0.8em;
-    margin-bottom: 4em;
+    height: 42em;
+    padding-top: 4em;
+    margin-bottom: 20em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,6 +90,7 @@
       position: absolute;
       bottom: -5.25vw;
       z-index: 4;
+
       background-color: $color-variacion1;
       @include basic-flex;
       @include media(desktop-s) {
@@ -103,11 +104,28 @@
         transition: 0.3s;
         will-change: transform;
       }
-      &:hover {
-        transform: scale(1.1);
-      }
     }
   }
+}
+
+.button-animation {
+  animation-name: button-animation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.five-button2 {
+  animation-delay: 0.3s;
+}
+
+.five-button3 {
+  animation-delay: 0.6s;
+}
+
+.five-button4 {
+  animation-delay: 0.9s;
 }
 
 .five-subcontainer {
@@ -274,6 +292,7 @@
   width: 75%;
   position: absolute;
   transition: 0.3s;
+
   @include media(desktop-s) {
     border-bottom: 3px solid $color-variacion1;
   }

@@ -25,6 +25,66 @@
       name="description"
       content="Alcanza el nivel que necesitas para trabajar en un entorno profesional."
     />
+    <link
+      rel="preload"
+      as="image"
+      href="src/images/logo.svg"
+      type="image/svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="src/images/six-arrow2.svg"
+      type="image/svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="src/images/redes-wsp.png"
+      type="image/png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="src/images/chat-wsp.svg"
+      type="image/svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="src/images/chat-flecha.png"
+      type="image/png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="src/images/hero-image2.png"
+      type="image/png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="src/images/footer-in.svg"
+      type="image/svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="src/images/footer-ig.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/home/slider/footer-ig-a.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/home/slider/footer-in-a.svg"
+      type="image/svg"
+    />
     <title>BIM FORMATION</title>
   </head>
   <body>
@@ -101,17 +161,17 @@
             de nuestro curso, gratis completando <br />
             este formulario
           </p>
-          <form action="regalo.php" method="post" class="header-form">
+          <form action="" method="post" class="header-form" id="header-form">
             <input
               type="text"
-              name="nombreApellido2"
+              name="Modulo-Regalo-Nombre-Apellido"
               class="header-form__input"
               placeholder="Nombre y Apellido"
               required
             />
             <input
               type="text"
-              name="email2"
+              name="Modulo-regalo-Email"
               class="header-form__input"
               placeholder="Correo Electrónico"
               required
@@ -137,12 +197,12 @@
       >
         <div class="chat__close" id="chat-close"></div>
         <img src="src/images/chat-wsp.svg" alt="" class="chat-container__img" />
-        <h6 class="chat-container__text">
+        <!-- <h6 class="chat-container__text">
           <span class="chat-container__text--span">PARA MÁS INFO</span> <br />
           PUEDES CHATEAR <br />
           CON NOSOTROS <br />
           POR WHATSAPP
-        </h6>
+        </h6> -->
         <img
           src="src/images/chat-flecha.png"
           alt=""
@@ -561,7 +621,10 @@
           </h5>
           <h3 class="five-container__box--subtitle">PROYECTO</h3>
 
-          <div class="five-container__box--button" id="project-button">
+          <div
+            class="five-container__box--button five-button1 button-animation"
+            id="project-button"
+          >
             <div class="line-one line-one-b1"></div>
             <div class="line-two line-two-b1"></div>
             <div class="five-button-shadow1"></div>
@@ -582,7 +645,10 @@
             4
           </h5>
           <h3 class="five-container__box--subtitle">MÓDULOS</h3>
-          <div class="five-container__box--button" id="modules-button">
+          <div
+            class="five-container__box--button five-button2 button-animation"
+            id="modules-button"
+          >
             <div class="line-one line-one-b2"></div>
             <div class="line-two line-two-b2"></div>
             <div class="five-button-shadow1"></div>
@@ -603,7 +669,10 @@
             42
           </h5>
           <h3 class="five-container__box--subtitle">VIDEOS</h3>
-          <div class="five-container__box--button" id="videos-button">
+          <div
+            class="five-container__box--button five-button3 button-animation"
+            id="videos-button"
+          >
             <div class="line-one line-one-b3"></div>
             <div class="line-two line-two-b3"></div>
             <div class="five-button-shadow1"></div>
@@ -623,7 +692,10 @@
             12
           </h5>
           <h3 class="five-container__box--subtitle">HORAS</h3>
-          <div class="five-container__box--button" id="hours-button">
+          <div
+            class="five-container__box--button five-button4 button-animation"
+            id="hours-button"
+          >
             <div class="line-one line-one-b4"></div>
             <div class="line-two line-two-b4"></div>
             <div class="five-button-shadow1"></div>
@@ -945,17 +1017,17 @@
             de nuestro curso, gratis completando <br />
             este formulario
           </p>
-          <form action="regalo.php" method="post" class="regalo__form">
+          <form action="" method="post" class="regalo__form" id="regalo-form">
             <input
               type="text"
-              name="nombreApellido2"
+              name="Modulo-Regalo-Nombre-Apellido"
               class="regalo__form--input"
               placeholder="Nombre y Apellido"
               required
             />
             <input
               type="text"
-              name="email2"
+              name="Modulo-regalo-Email"
               class="regalo__form--input"
               placeholder="Correo Electrónico"
               required
@@ -1473,14 +1545,40 @@
           no dudes en escribirnos.
         </p>
         <h6 class="contacto__container--subtitle">¡Estamos para ayudarte!</h6>
-        <form action="consulta.php" method="post" class="form">
+        <form action="" method="post" class="form form-mobile" id="form">
           <input
             type="text"
-            name="nombreApellido"
+            name="Formulario-Contacto-Nombre-Apellido"
             class="form__input mobile"
             placeholder="Nombre y Apellido"
             required
           />
+
+          <input
+            type="text"
+            class="form__input"
+            name="Formulario-Contacto-Email"
+            placeholder="Correo Electrónico"
+            required
+          />
+          <textarea
+            name="Formulario-Contacto-Mensaje"
+            id=""
+            cols="30"
+            rows="10"
+            class="form__textarea"
+            placeholder="Consulta:"
+            required
+          ></textarea>
+          <button type="submit" class="submit" id="submit">ENVIAR</button>
+          <div class="contact-form-loader none" id="contact-loader">
+            <img src="src/images/loader.svg" alt="Cargando" />
+          </div>
+          <div class="contact-form-response none" id="response">
+            <p>Tu mensaje ha sido enviado</p>
+          </div>
+        </form>
+        <form action="" method="post" class="form form-desktop" id="form">
           <input
             type="text"
             name="nombre"
@@ -1511,7 +1609,13 @@
             placeholder="Consulta:"
             required
           ></textarea>
-          <button type="submit">ENVIAR</button>
+          <button type="submit" class="submit" id="submit">ENVIAR</button>
+          <div class="contact-form-loader none" id="contact-loader">
+            <img src="src/images/loader.svg" alt="Cargando" />
+          </div>
+          <div class="contact-form-response none" id="response">
+            <p>Tu mensaje ha sido enviado</p>
+          </div>
         </form>
       </div>
     </section>
@@ -1585,6 +1689,7 @@
     <script src="src/js/admins-text.js"></script>
     <script src="src/js/scroll-animation.js"></script>
     <script src="src/js/videos.js"></script>
+    <script src="src/js/contat-form.js"></script>
 
     <!-- <script src="src/js/animation-suma.js"></script> -->
   </body>

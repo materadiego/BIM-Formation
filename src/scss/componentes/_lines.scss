@@ -196,11 +196,13 @@
 }
 
 .bline-fourteen {
-  border-top: 4px solid $color-variacion1;
-  border-right: 4px solid $color-variacion1;
-  width: 25vw;
-  z-index: 0;
-  height: 9vw;
+  @include media(desktop-s) {
+    border-top: 4px solid $color-variacion1;
+    border-right: 4px solid $color-variacion1;
+    width: 25vw;
+    z-index: 0;
+    height: 9vw;
+  }
 }
 
 // .bline-twelve {

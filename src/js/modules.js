@@ -27,6 +27,10 @@ function showProject() {
     lineOneb1.classList.remove("line1-active");
     lineTwob1.classList.remove("line2-active");
     fiveContainer.classList.remove("five-container-module-active");
+    subBoxButton1.classList.add("button-animation");
+    subBoxButton2.classList.add("button-animation");
+    subBoxButton3.classList.add("button-animation");
+    subBoxButton4.classList.add("button-animation");
   } else {
     boxProyecto.classList.add("project-box-active");
     lineOneb1.classList.add("line1-active");
@@ -45,6 +49,10 @@ function showProject() {
     lineOneb4.classList.remove("line1-active");
     lineTwob4.classList.remove("line2-active");
     fiveContainer.classList.add("five-container-module-active");
+    subBoxButton1.classList.remove("button-animation");
+    subBoxButton2.classList.remove("button-animation");
+    subBoxButton3.classList.remove("button-animation");
+    subBoxButton4.classList.remove("button-animation");
   }
 }
 
@@ -55,6 +63,10 @@ function showModules() {
     lineOneb2.classList.remove("line1-active");
     lineTwob2.classList.remove("line2-active");
     fiveContainer.classList.remove("five-container-module-active");
+    subBoxButton1.classList.add("button-animation");
+    subBoxButton2.classList.add("button-animation");
+    subBoxButton3.classList.add("button-animation");
+    subBoxButton4.classList.add("button-animation");
   } else {
     boxModule.classList.add("module-box-active");
     module2.classList.add("subcont-is-active");
@@ -73,6 +85,10 @@ function showModules() {
     lineOneb4.classList.remove("line1-active");
     lineTwob4.classList.remove("line2-active");
     fiveContainer.classList.add("five-container-module-active");
+    subBoxButton1.classList.remove("button-animation");
+    subBoxButton2.classList.remove("button-animation");
+    subBoxButton3.classList.remove("button-animation");
+    subBoxButton4.classList.remove("button-animation");
   }
 }
 
