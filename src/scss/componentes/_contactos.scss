@@ -1,12 +1,11 @@
 .contacto {
-  background-color: $color-variacion5;
   padding-bottom: 9.37vw;
+  background-color: $color-variacion5;
   @include media(desktop-s) {
-    position: relative;
     padding-bottom: 7vw;
+    position: relative;
   }
   &__start {
-    //border: 2px solid red;
     padding-top: 2.68vw;
     width: 100%;
     display: flex;
@@ -24,7 +23,6 @@
       }
     }
     &--title-cont {
-      // border: 2px solid red;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -35,7 +33,6 @@
         right: 10%;
         position: absolute;
       }
-
       &--title {
         text-align: end;
         font-size: 6.25vw;
@@ -50,7 +47,6 @@
     }
   }
   &__container {
-    //border: 2px solid red;
     margin: 9.37vw auto 0;
     width: 90%;
     @include media(desktop-s) {
@@ -65,7 +61,6 @@
       color: $color-claro;
       @include media(desktop-s) {
         font-size: 1.2vw;
-        //  border: 2px solid red;
         width: 86%;
         margin-bottom: 0.5vw;
       }
@@ -83,8 +78,6 @@
 }
 
 .form {
-  //border: 2px solid red;
-
   flex-wrap: wrap;
   justify-content: center;
   @include media(desktop-s) {
@@ -108,7 +101,6 @@
       font-family: "Aventa";
       font-weight: 600;
       font-size: 3.43vw;
-
       @include media(desktop-s) {
         font-size: 1vw;
       }
@@ -120,7 +112,6 @@
     height: 31.25vw;
     font-size: 3.43vw;
     padding: 10px;
-
     margin-bottom: 6.25vw;
     border: none;
     outline: none;
@@ -201,7 +192,6 @@
   align-items: center;
   transition: 0.5s;
   will-change: opacity;
-  //border: 2px solid red;
   justify-content: center;
   @include media(desktop-s) {
     width: 40%;
@@ -218,7 +208,6 @@
 
 .contact-form-response {
   margin-top: 2vw;
-  //border: 2px solid red;
   transition: 1s;
   will-change: opacity;
   @include media(desktop-s) {
@@ -229,7 +218,6 @@
 .contact-form-response p {
   font-size: 5em;
   margin-bottom: 0;
-
   color: $color-variacion1;
   @include media(desktop-s) {
     font-size: 1.3em;

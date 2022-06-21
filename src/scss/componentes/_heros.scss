@@ -4,13 +4,11 @@
   position: relative;
   @include media(desktop-s) {
     height: 65vw;
-
     padding: 11vw 5% 0;
   }
   &__green-block {
     width: 50%;
     height: 152vw;
-
     top: 0;
     right: 0;
     z-index: 0;
@@ -28,7 +26,6 @@
     }
   }
   &__title {
-    //border: 2px solid red;
     width: 89.06vw;
     margin: 18.75vw auto 0;
     z-index: 2;
@@ -53,16 +50,15 @@
       margin: 0;
     }
     &--span {
-      color: $color-variacion5;
       font-size: 8.12vw;
       font-weight: 600;
+      color: $color-variacion5;
       @include media(desktop-s) {
         font-size: 3.25vw;
       }
     }
   }
   &__button {
-    //border: 2px solid red;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -80,7 +76,6 @@
       font-size: 5vw;
       transition: 0.3s;
       will-change: color background-color opacity;
-      //border: 2px solid red;
       opacity: 0;
       animation-name: herocarga;
       animation-duration: 0.2s;
@@ -117,7 +112,6 @@
       animation-delay: 0.6s;
       animation-fill-mode: forwards;
       animation-timing-function: ease-in;
-
       background-position: center right;
       color: $color-claro;
       background: $color-variacion1;
@@ -139,7 +133,6 @@
         }
       }
       & figure {
-        //border: 2px solid red;
         width: 2.5vw;
         height: 2.5vw;
         margin-left: 2vw;
@@ -151,7 +144,6 @@
         background-repeat: no-repeat;
         transform: rotateZ(270deg);
         transition: 0.3s;
-
         will-change: background-image;
         @include media(desktop-s) {
           width: 1.1vw;
@@ -164,7 +156,6 @@
   &__image-container {
     width: 100%;
     margin: 0vw 0 0;
-    // border: 2px solid red;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -186,7 +177,6 @@
     }
     &--img {
       width: 112%;
-      //border: 2px solid green;
       animation-name: heroimage;
       animation-duration: 1s;
       animation-delay: 2s;
@@ -215,8 +205,6 @@
     animation-timing-function: ease-in;
     display: flex;
     @include media(desktop-s) {
-      //display: none;
-      // border: 2px solid red;
       width: 43%;
       top: 20.1vw;
       height: 76vw;
@@ -346,7 +334,6 @@
 .mobile-logo {
   width: 28.12vw;
   margin: 1.56vw 0 0 5%;
-  //border: 2px solid red;
   @include media(desktop-s) {
     display: none;
   }

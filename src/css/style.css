@@ -457,10 +457,10 @@ output {
 html {
   margin: 0;
   padding: 0;
-  font-family: "Aventa";
   font-weight: 600;
   font-style: normal;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-family: "Aventa"; }
   @media only screen and (min-width: 992px) {
     html {
       font-size: 1vw; } }
@@ -469,46 +469,46 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1vw;
-  font-family: "Aventa";
   font-weight: 600;
   font-style: normal;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  font-family: "Aventa"; }
   @media only screen and (min-width: 992px) {
     body {
       font-size: 1vw; } }
 
 body::-webkit-scrollbar {
   width: 11px;
-  background: #fff;
   -webkit-box-shadow: inset 0 0 1px 0px;
-  box-shadow: inset 0 0 1px 0px; }
+  box-shadow: inset 0 0 1px 0px;
+  background: #fff; }
 
 body::-webkit-scrollbar-thumb {
-  background: #b3b3b3;
   -webkit-box-shadow: inset 0 0 3px 0;
-  box-shadow: inset 0 0 3px 0; }
+  box-shadow: inset 0 0 3px 0;
+  background: #b3b3b3; }
 
 .burger-container {
   width: 12.5vw;
   height: 12.5vw;
+  z-index: 5;
+  right: 3.12vw;
+  top: 4.68vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  z-index: 5;
-  right: 3.12vw;
-  top: 4.68vw; }
+  position: absolute; }
   @media only screen and (min-width: 992px) {
     .burger-container {
       display: none; } }
   .burger-container--image {
     width: 100%;
     height: 100%;
-    background-image: url(../images/burger.svg);
+    z-index: 3;
     background-size: 60%;
+    background-image: url(../images/burger.svg);
     background-repeat: no-repeat;
-    background-position: center;
-    z-index: 3; }
+    background-position: center; }
 
 @media only screen and (min-width: 992px) {
   .mobile {
@@ -528,12 +528,12 @@ a:hover {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 100%; }
+  margin-left: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .overlay-active {
   margin-left: 0;
@@ -770,7 +770,6 @@ a:hover {
       height: 70px;
       margin: 0;
       padding: 0 5%;
-      background-color: rgba(0, 0, 0, 0);
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -783,7 +782,8 @@ a:hover {
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
       transition: 0.3s ease;
-      will-change: background-color; } }
+      will-change: background-color;
+      background-color: rgba(0, 0, 0, 0); } }
 
 .header-logo {
   display: none; }
@@ -831,7 +831,7 @@ a:hover {
       -ms-flex-align: center;
       align-items: center; } }
   .header-container::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
     background: #090060; }
   .header-container::-webkit-scrollbar-thumb {
     background: #2fe6b0; }
@@ -880,8 +880,8 @@ a:hover {
       -ms-flex-pack: center;
       justify-content: center;
       font-size: 4.06vw;
-      color: #fff;
       font-weight: 600;
+      color: #fff;
       background-color: #090060; }
       @media only screen and (min-width: 992px) {
         .header-container__buttons--contactanos {
@@ -909,17 +909,17 @@ a:hover {
       @media only screen and (min-width: 992px) {
         .header-container__buttons--inscribirme {
           font-size: 18px;
+          font-weight: 600;
           width: 130px;
           padding: 3px 0;
           margin-right: 20px;
-          background-color: rgba(0, 0, 0, 0);
-          border: 3px solid #fff;
           -webkit-transition: 0.3s;
           -o-transition: 0.3s;
           transition: 0.3s;
           will-change: color;
-          color: #3600e0;
-          font-weight: 600; } }
+          background-color: rgba(0, 0, 0, 0);
+          border: 3px solid #fff;
+          color: #3600e0; } }
     .header-container__buttons--wsp {
       width: 35px;
       height: 35px; }
@@ -965,7 +965,6 @@ a:hover {
     line-height: 110%;
     font-weight: 300;
     font-family: "Aventa";
-    font-weight: 300;
     color: #fff; }
 
 .header-form {
@@ -1020,9 +1019,9 @@ a:hover {
 
 @media only screen and (min-width: 992px) {
   .sticky {
-    background-color: #3600e0;
     -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5); } }
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    background-color: #3600e0; } }
 
 @media only screen and (min-width: 992px) {
   .sticky .header-container__buttons--inscribirme {
@@ -1050,7 +1049,6 @@ a:hover {
   position: absolute;
   width: 75%;
   padding: 9vw 7.5vw 7vw 7.5vw;
-  background-color: #fff;
   z-index: 4;
   top: 24vw;
   opacity: 0;
@@ -1064,7 +1062,10 @@ a:hover {
   animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  will-change: margin; }
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+  will-change: margin;
+  background-color: #fff; }
   @media only screen and (min-width: 992px) {
     .regalo {
       width: 26%;
@@ -1115,7 +1116,6 @@ a:hover {
       font-size: 3.12vw;
       margin-bottom: 1.56vw;
       padding: 1.56vw;
-      border: none;
       border: 2px solid #999;
       outline: none; }
       @media only screen and (min-width: 992px) {
@@ -1123,8 +1123,8 @@ a:hover {
           font-size: 1vw;
           padding: 6px;
           margin-bottom: 0.8vw;
-          background-color: #eeeeee;
-          border: none; } }
+          border: none;
+          background-color: #eeeeee; } }
       .regalo__form--input::-webkit-input-placeholder {
         font-family: "Aventa";
         font-weight: 600;
@@ -1216,13 +1216,6 @@ a:hover {
     opacity: 1; } }
 
 .chat-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   opacity: 1;
   margin-left: 100%;
   padding: 10px 0;
@@ -1232,18 +1225,25 @@ a:hover {
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   z-index: 5;
-  background-color: rgba(255, 255, 255, 0); }
+  background-color: rgba(255, 255, 255, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   @media only screen and (min-width: 992px) {
     .chat-container {
       width: 24vw;
       margin-left: 100%;
-      bottom: auto;
       top: 8vw;
       padding: 1vw 0 1vw 2.5vw;
+      opacity: 0;
+      bottom: auto;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      opacity: 0; } }
+      display: flex; } }
   .chat-container__img {
     width: 13vw;
     height: 13vw;
@@ -1255,12 +1255,12 @@ a:hover {
       .chat-container__img {
         display: none; } }
   .chat-container__text {
-    font-family: "Aventa";
     font-weight: 600;
     padding: 0 6px 0 10px;
     font-size: 3vw;
     margin: 0;
     line-height: 110%;
+    font-family: "Aventa";
     color: #3600e0; }
     @media only screen and (min-width: 992px) {
       .chat-container__text {
@@ -1285,9 +1285,9 @@ a:hover {
     .chat__close {
       width: 15px;
       height: 15px;
-      cursor: pointer;
       left: 5px;
       top: 5px;
+      cursor: pointer;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1425,9 +1425,9 @@ a:hover {
         width: 45vw;
         margin: 0; } }
     .hero__title--span {
-      color: #090060;
       font-size: 8.12vw;
-      font-weight: 600; }
+      font-weight: 600;
+      color: #090060; }
       @media only screen and (min-width: 992px) {
         .hero__title--span {
           font-size: 3.25vw; } }
@@ -1800,9 +1800,9 @@ a:hover {
     transform: rotateZ(-6deg) translateY(-4.2vw) translateX(1.5vw); } }
 
 .two {
-  background-color: #3600e0;
   height: 118.75vw;
-  padding: 21.87vw 0 0; }
+  padding: 21.87vw 0 0;
+  background-color: #3600e0; }
   @media only screen and (min-width: 992px) {
     .two {
       padding: 6vw 5% 0;
@@ -1820,13 +1820,13 @@ a:hover {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       position: relative;
-      -webkit-transition: 0.5s linear;
-      -o-transition: 0.5s linear;
-      transition: 0.5s linear;
       -webkit-transform: translateX(0%);
       -ms-transform: translateX(0%);
       transform: translateX(0%);
-      will-change: opacity transform; }
+      will-change: opacity transform;
+      -webkit-transition: 0.5s linear;
+      -o-transition: 0.5s linear;
+      transition: 0.5s linear; }
       @media only screen and (min-width: 992px) {
         .two__container--subcontainer {
           width: 37%;
@@ -1854,18 +1854,14 @@ a:hover {
         height: 18vw;
         position: relative;
         right: 0;
-        -webkit-transition: 0.5s linear;
-        -o-transition: 0.5s linear;
-        transition: 0.5s linear;
-        will-change: opacity right;
-        will-change: background-image;
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s;
+        will-change: opacity right background-image;
         background-image: url(../images/two-reloj2.png);
         background-size: 100%;
         background-position: center;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        -webkit-transition: 0.5s linear;
+        -o-transition: 0.5s linear;
+        transition: 0.5s linear; }
         @media only screen and (min-width: 992px) {
           .two__container--subcontainer--image {
             width: 7.5vw;
@@ -1874,16 +1870,17 @@ a:hover {
         width: 100%;
         font-size: 4.6vw;
         font-weight: 300;
-        font-family: "Aventa";
         margin-left: 0;
         position: relative;
-        color: #fff; }
+        color: #fff;
+        font-family: "Aventa"; }
         @media only screen and (min-width: 992px) {
           .two__container--subcontainer--text {
             font-size: 1.65vw;
             margin-top: 0.5vw; } }
-      .two__container--subcontainer:hover figure {
-        background-image: url(../images/two-reloj3.png); }
+      @media only screen and (min-width: 992px) {
+        .two__container--subcontainer:hover figure {
+          background-image: url(../images/two-reloj3.png); } }
     .two__container--subcontainer2 {
       width: 90%;
       margin: 0 auto;
@@ -1897,10 +1894,10 @@ a:hover {
       -ms-flex-align: center;
       align-items: center;
       position: relative;
+      will-change: opacity transform;
       -webkit-transition: 0.5s linear;
       -o-transition: 0.5s linear;
-      transition: 0.5s linear;
-      will-change: opacity transform; }
+      transition: 0.5s linear; }
       @media only screen and (min-width: 992px) {
         .two__container--subcontainer2 {
           width: 37%;
@@ -1921,11 +1918,11 @@ a:hover {
         opacity: 0.25;
         opacity: 1;
         left: 0;
+        will-change: left opacity;
+        position: relative;
         -webkit-transition: 0.5s linear;
         -o-transition: 0.5s linear;
-        transition: 0.5s linear;
-        will-change: left opacity;
-        position: relative; }
+        transition: 0.5s linear; }
         @media only screen and (min-width: 992px) {
           .two__container--subcontainer2--image {
             width: 2vw;
@@ -1940,9 +1937,9 @@ a:hover {
         font-weight: 600;
         text-align: end;
         margin: 0 0 0 3.12vw;
-        font-family: "Aventa";
         font-weight: 300;
-        color: #fff; }
+        color: #fff;
+        font-family: "Aventa"; }
         @media only screen and (min-width: 992px) {
           .two__container--subcontainer2--text {
             font-size: 1.3vw;
@@ -1979,10 +1976,10 @@ a:hover {
     .two__figure--image {
       width: 93%;
       z-index: 2;
+      will-change: margin opacity;
       -webkit-transition: 1s linear;
       -o-transition: 1s linear;
-      transition: 1s linear;
-      will-change: margin opacity; }
+      transition: 1s linear; }
       @media only screen and (min-width: 992px) {
         .two__figure--image {
           width: 100%; } }
@@ -2043,10 +2040,10 @@ a:hover {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+    will-change: opacity transform margin;
     -webkit-transition: 1s linear;
     -o-transition: 1s linear;
-    transition: 1s linear;
-    will-change: opacity transform margin; }
+    transition: 1s linear; }
     @media only screen and (min-width: 992px) {
       .three__arrow {
         width: 50px;
@@ -2081,14 +2078,10 @@ a:hover {
       margin-bottom: 4vw;
       padding: 15px 10px;
       z-index: 2;
-      -webkit-transition: 1s linear;
-      -o-transition: 1s linear;
-      transition: 1s linear;
       will-change: transform opacity;
       -webkit-transition: 0.5s ease-in-out;
       -o-transition: 0.5s ease-in-out;
       transition: 0.5s ease-in-out;
-      will-change: transform;
       opacity: 1;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2175,28 +2168,28 @@ a:hover {
             font-size: 15px; } }
 
 .three-box1 {
-  background-color: #090060;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
-  transform: translateY(0); }
+  transform: translateY(0);
+  background-color: #090060; }
 
 .three-box2 {
-  background-color: #180096;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
-  transform: translateY(0); }
+  transform: translateY(0);
+  background-color: #180096; }
 
 .three-box3 {
-  background-color: #1a00ad;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
-  transform: translateY(0); }
+  transform: translateY(0);
+  background-color: #1a00ad; }
 
 .three-box4 {
-  background-color: #3600e0;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
-  transform: translateY(0); }
+  transform: translateY(0);
+  background-color: #3600e0; }
 
 .scroll-three .scroll-three-box1 {
   -webkit-transform: translateY(20%);
@@ -2428,20 +2421,18 @@ a:hover {
     .admins__container--subcont--text {
       width: 100%;
       font-size: 2.85vw;
-      font-weight: 600;
       margin-top: 6.25vw;
       margin-bottom: 0;
-      font-weight: 600;
       line-height: 120%;
       display: none;
       background-image: url(../images/quotes.svg);
       background-size: 4.5vw;
       background-position: left top;
       background-repeat: no-repeat;
-      color: #999999;
-      font-family: "Aventa";
       font-style: italic;
-      font-weight: 200; }
+      font-weight: 200;
+      color: #999999;
+      font-family: "Aventa"; }
       @media only screen and (min-width: 992px) {
         .admins__container--subcont--text {
           font-size: 1.1vw;
@@ -2453,7 +2444,6 @@ a:hover {
 
 @media only screen and (min-width: 992px) {
   .rafael-name {
-    border-right: 4px solid #2fe6b0;
     margin-top: 8vw;
     height: 6vw;
     display: -webkit-box;
@@ -2461,7 +2451,8 @@ a:hover {
     display: flex;
     -webkit-box-align: end;
     -ms-flex-align: end;
-    align-items: flex-end; } }
+    align-items: flex-end;
+    border-right: 4px solid #2fe6b0; } }
 
 @media only screen and (min-width: 992px) {
   .rafael-subtitle {
@@ -2490,17 +2481,17 @@ a:hover {
       padding-right: 10vw; } }
 
 .block-rafael1 {
-  background-color: #3600e0;
   will-change: left;
+  left: 0;
+  background-color: #3600e0;
   -webkit-transition: 1s linear;
   -o-transition: 1s linear;
-  transition: 1s linear;
-  left: 0; }
+  transition: 1s linear; }
 
 .block-rafael2 {
   left: 22.81vw;
-  background-color: #2fe6b0;
   will-change: left;
+  background-color: #2fe6b0;
   -webkit-transition: 1s linear;
   -o-transition: 1s linear;
   transition: 1s linear; }
@@ -2510,8 +2501,8 @@ a:hover {
 
 .block-rafael3 {
   left: 55.62vw;
-  background-color: #3600e0;
   will-change: left;
+  background-color: #3600e0;
   -webkit-transition: 1s linear;
   -o-transition: 1s linear;
   transition: 1s linear; }
@@ -2575,17 +2566,17 @@ a:hover {
       width: 35vw; } }
 
 .block-melissa1 {
-  background-color: #2fe6b0;
   right: 0;
   will-change: right;
+  background-color: #2fe6b0;
   -webkit-transition: 1s linear;
   -o-transition: 1s linear;
   transition: 1s linear; }
 
 .block-melissa2 {
-  background-color: #3600e0;
   right: 22.81vw;
   will-change: right;
+  background-color: #3600e0;
   -webkit-transition: 1s linear;
   -o-transition: 1s linear;
   transition: 1s linear; }
@@ -2595,8 +2586,8 @@ a:hover {
 
 .block-melissa3 {
   right: 55.62vw;
-  background-color: #2fe6b0;
   will-change: right;
+  background-color: #2fe6b0;
   -webkit-transition: 1s linear;
   -o-transition: 1s linear;
   transition: 1s linear; }
@@ -2684,9 +2675,6 @@ a:hover {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 0px;
-  -webkit-transition: 1.3s;
-  -o-transition: 1.3s;
-  transition: 1.3s;
   will-change: top;
   position: relative;
   -webkit-transition: 0.5s;
@@ -2695,7 +2683,6 @@ a:hover {
   @media only screen and (min-width: 992px) {
     .five-container {
       width: 70%;
-      top: 0;
       padding-bottom: 0.4vw;
       top: 25em;
       -webkit-box-pack: space-evenly;
@@ -2831,11 +2818,11 @@ a:hover {
   flex-direction: column;
   position: absolute;
   top: 110vw;
-  background-color: #090060;
   opacity: 0;
   -webkit-transition: 1s;
   -o-transition: 1s;
-  transition: 1s; }
+  transition: 1s;
+  background-color: #090060; }
   @media only screen and (min-width: 992px) {
     .five-subcontainer {
       height: 22em;
@@ -2986,19 +2973,18 @@ a:hover {
     background-image: url(../images/box4a.svg); } }
 
 .line-one {
-  border-bottom: 4px solid #3600e0;
   height: 0;
   width: 75%;
   position: absolute;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  border-bottom: 4px solid #3600e0; }
   @media only screen and (min-width: 992px) {
     .line-one {
       border-bottom: 3px solid #2fe6b0; } }
 
 .line-two {
-  border-bottom: 4px solid #3600e0;
   height: 0;
   width: 75%;
   -webkit-transform: rotateZ(90deg);
@@ -3007,7 +2993,8 @@ a:hover {
   position: absolute;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  border-bottom: 4px solid #3600e0; }
   @media only screen and (min-width: 992px) {
     .line-two {
       border-bottom: 3px solid #2fe6b0; } }
@@ -3171,10 +3158,10 @@ a:hover {
   top: 35vw; }
 
 .six-container {
-  background-color: #3600e0;
   padding-bottom: 50px;
   margin-top: 0px;
-  position: relative; }
+  position: relative;
+  background-color: #3600e0; }
   @media only screen and (min-width: 992px) {
     .six-container {
       padding-top: 0;
@@ -3255,10 +3242,10 @@ a:hover {
     z-index: 2;
     top: 0;
     position: relative;
+    will-change: top opacity;
     -webkit-transition: 1s linear;
     -o-transition: 1s linear;
     transition: 1s linear;
-    will-change: top opacity;
     background-color: #fff; }
     @media only screen and (min-width: 992px) {
       .six__box {
@@ -3411,10 +3398,10 @@ a:hover {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          border: 2px solid #2fe6b0;
           display: -webkit-box;
           display: -ms-flexbox;
-          display: flex; } }
+          display: flex;
+          border: 2px solid #2fe6b0; } }
     .six__box--title {
       text-align: center;
       font-size: 3.75vw;
@@ -3468,7 +3455,7 @@ a:hover {
   @media only screen and (min-width: 992px) {
     .box-l {
       left: 0;
-      margin: 0 0 0; } }
+      margin: 0; } }
 
 .box-r {
   left: 35%; }
@@ -3556,7 +3543,6 @@ a:hover {
       transition: 0.3s ease-in-out;
       height: 5em; } }
   .actions-play--shadow1 {
-    border: 0.8vw solid rgba(54, 0, 224, 0.2);
     position: absolute;
     width: 80%;
     height: 80%;
@@ -3571,12 +3557,12 @@ a:hover {
     -webkit-animation-delay: 2.8s;
     animation-delay: 2.8s;
     -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite; }
+    animation-iteration-count: infinite;
+    border: 0.8vw solid rgba(54, 0, 224, 0.2); }
     @media only screen and (min-width: 992px) {
       .actions-play--shadow1 {
         border: 4px solid rgba(54, 0, 224, 0.2); } }
   .actions-play--shadow2 {
-    border: 0.8vw solid rgba(54, 0, 224, 0.5);
     position: absolute;
     width: 75%;
     height: 75%;
@@ -3591,7 +3577,8 @@ a:hover {
     animation-iteration-count: infinite;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
+    transition: 0.3s ease-in-out;
+    border: 0.8vw solid rgba(54, 0, 224, 0.5); }
     @media only screen and (min-width: 992px) {
       .actions-play--shadow2 {
         border: 4px solid rgba(54, 0, 224, 0.5); } }
@@ -3626,14 +3613,14 @@ a:hover {
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  border: 1vw solid #3600e0;
   position: relative;
   background-image: url(../images/play-a.png);
   background-size: 70%;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0;
-  border-radius: 300px; }
+  border-radius: 300px;
+  border: 1vw solid #3600e0; }
   @media only screen and (min-width: 992px) {
     .actions-play-image {
       border: 4px solid #3600e0; } }
@@ -3685,8 +3672,8 @@ a:hover {
 
 @media only screen and (min-width: 992px) {
   .six__box:hover .actions-play-image {
-    border: 4px solid #fff;
-    background-image: url(../images/play-b.png); } }
+    background-image: url(../images/play-b.png);
+    border: 4px solid #fff; } }
 
 .scroll-six.six__title-cont--arrow {
   opacity: 0.19;
@@ -3781,14 +3768,14 @@ a:hover {
     width: 7.81vw;
     height: 7.81vw;
     margin: -5vw 0 1vw 15%;
-    -webkit-transition: 0.5s linear;
-    -o-transition: 0.5s linear;
-    transition: 0.5s linear;
     will-change: opacity transform;
     opacity: 1;
     -webkit-transform: translateX(70%) translateY77(70%);
     -ms-transform: translateX(70%) translateY77(70%);
-    transform: translateX(70%) translateY77(70%); }
+    transform: translateX(70%) translateY77(70%);
+    -webkit-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear; }
     @media only screen and (min-width: 992px) {
       .seven__arrow {
         width: 4vw;
@@ -3939,12 +3926,12 @@ a:hover {
       left: 0; } }
 
 .contacto {
-  background-color: #090060;
-  padding-bottom: 9.37vw; }
+  padding-bottom: 9.37vw;
+  background-color: #090060; }
   @media only screen and (min-width: 992px) {
     .contacto {
-      position: relative;
-      padding-bottom: 7vw; } }
+      padding-bottom: 7vw;
+      position: relative; } }
   .contacto__start {
     padding-top: 2.68vw;
     width: 100%;

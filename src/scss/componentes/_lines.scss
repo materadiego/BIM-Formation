@@ -38,7 +38,6 @@
 .bline-three {
   width: 16%;
   height: 32vw;
-  //top: 475vw;
   bottom: 0;
   right: 0;
   border-left: 2px solid $color-variacion1;
@@ -87,9 +86,7 @@
     right: 0px;
     display: block;
     width: 8%;
-
     position: absolute;
-
     top: 7em;
     border-top: 3px solid $color-variacion1;
   }
@@ -119,7 +116,6 @@
   height: 85vw;
   top: 153vw;
   left: 14vw;
-
   border-left: 2px solid $color-variacion1;
   border-bottom: 2px solid $color-variacion1;
   @include media(desktop-s) {
@@ -137,7 +133,6 @@
   height: 85vw;
   top: 237.5vw;
   left: 14vw;
-
   border-right: 2px solid $color-variacion1;
   border-bottom: 2px solid $color-variacion1;
   @include media(desktop-s) {
@@ -155,7 +150,6 @@
   height: 75vw;
   top: 322vw;
   left: 14vw;
-
   border-left: 2px solid $color-variacion1;
   @include media(desktop-s) {
     top: 65em;
@@ -204,11 +198,3 @@
     height: 9vw;
   }
 }
-
-// .bline-twelve {
-//   top: 10vw;
-//   right: 10%;
-//   height: 9vw;
-//   width: 10%;
-//   border-right: 3px solid $color-variacion1;
-// }

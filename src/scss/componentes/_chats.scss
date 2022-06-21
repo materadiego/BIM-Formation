@@ -1,7 +1,4 @@
 .chat-container {
-  display: flex;
-  position: fixed;
-  align-items: center;
   opacity: 1;
   margin-left: 100%;
   padding: 10px 0;
@@ -9,24 +6,23 @@
   width: 13vw;
   transition: 0.5s ease-in-out;
   z-index: 5;
-
   background-color: rgba(255, 255, 255, 0);
-
+  display: flex;
+  position: fixed;
+  align-items: center;
   @include media(desktop-s) {
     width: 24vw;
     margin-left: 100%;
-    bottom: auto;
     top: 8vw;
     padding: 1vw 0 1vw 2.5vw;
-    // animation: none;
-    display: flex;
     opacity: 0;
+    bottom: auto;
+    display: flex;
   }
   &__img {
     width: 13vw;
     height: 13vw;
     margin-left: 10px;
-    //border: 2px solid red;
     border-radius: 100px;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
     @include media(desktop-s) {
@@ -34,13 +30,12 @@
     }
   }
   &__text {
-    font-family: "Aventa";
-    // border: 2px solid red;
     font-weight: 600;
     padding: 0 6px 0 10px;
     font-size: 3vw;
     margin: 0;
     line-height: 110%;
+    font-family: "Aventa";
     color: $color-variacion2;
     @include media(desktop-s) {
       font-size: 1.3vw;
@@ -55,7 +50,6 @@
     }
   }
   &__arrow {
-    //border: 2px solid red;
     width: 2.5vw;
     margin-left: 1.5vw;
   }
@@ -66,16 +60,14 @@
   height: 18vw;
   z-index: 6;
   position: absolute;
-  // border: 2px solid red;
   @include media(desktop-s) {
     width: 15px;
     height: 15px;
-    cursor: pointer;
     left: 5px;
     top: 5px;
+    cursor: pointer;
     display: flex;
     position: absolute;
-    //border: 2px solid red;
     transition: 0.3s;
     will-change: background-image;
     background-image: url(../images/close.png);
@@ -142,7 +134,3 @@
     display: flex;
   }
 }
-
-// .scroll-chat {
-//   margin-left: 50%;
-// }

@@ -1,10 +1,8 @@
 .six-container {
-  // border: 2px solid red;
-  background-color: $color-variacion2;
   padding-bottom: 50px;
   margin-top: 0px;
   position: relative;
-
+  background-color: $color-variacion2;
   @include media(desktop-s) {
     padding-top: 0;
     margin-top: 10em;
@@ -13,10 +11,8 @@
   }
 }
 .six {
-  // border: 2px solid $color-variacion1;
   width: 100%;
   position: relative;
-  //margin-top: -9.37vw;
   @include media(desktop-s) {
     margin-top: 0;
     display: flex;
@@ -25,11 +21,9 @@
     padding: 0;
     width: 80%;
     height: 80em;
-
     margin: 0 auto 0;
   }
   &__title-cont {
-    //border: 2px solid red;
     width: 80%;
     margin: 0 auto 0;
     display: flex;
@@ -43,11 +37,9 @@
       padding-top: 2vw;
       padding-right: 0;
     }
-
     &--title {
       text-align: end;
       font-weight: 600;
-
       margin-bottom: 1vw;
       width: 100%;
       font-size: 6.5vw;
@@ -63,7 +55,6 @@
       }
     }
     &--arrow {
-      //border: 2px solid red;
       width: 7.81vw;
       height: 7.81vw;
       will-change: opacity transform;
@@ -81,16 +72,13 @@
   }
   &__box {
     width: 60%;
-    //border: 2px solid red;
     height: 78.125vw;
-    // margin-bottom: 6.25vw;
     z-index: 2;
     top: 0;
     position: relative;
-    transition: $scroll-transition2;
     will-change: top opacity;
+    transition: $scroll-transition2;
     background-color: $color-claro;
-
     @include media(desktop-s) {
       width: 47%;
       height: 16em;
@@ -125,7 +113,6 @@
       }
     }
     &--image {
-      //border: 2px solid red;
       width: 85%;
       height: 25vw;
       z-index: 3;
@@ -155,13 +142,11 @@
       }
     }
     &--stats {
-      //border: 2px solid red;
       width: 80%;
       margin: 11.56vw auto 0;
       display: flex;
       justify-content: flex-end;
       position: relative;
-
       z-index: 3;
       @include media(desktop-s) {
         position: absolute;
@@ -175,7 +160,6 @@
         transition: 0.3s ease-in-out;
       }
       &--minutes {
-        //border: 1px solid red;
         width: 16.25vw;
         font-weight: 600;
         font-size: 3.12vw;
@@ -197,12 +181,10 @@
             font-size: 0.29em;
             width: 100%;
             text-align: end;
-            //border: 1px solid red;
           }
         }
       }
       &--modules {
-        //border: 1px solid red;
         width: 12.5vw;
         font-weight: 600;
         font-size: 3.12vw;
@@ -235,14 +217,12 @@
           padding: 0;
           justify-content: space-between;
           align-items: center;
-          border: 2px solid $color-variacion1;
-
           display: flex;
+          border: 2px solid $color-variacion1;
         }
       }
     }
     &--title {
-      //border: 2px solid red;
       text-align: center;
       font-size: 3.75vw;
       margin-top: 3vw;
@@ -262,7 +242,6 @@
       }
     }
     &--actions {
-      //border: 2px solid red;
       width: 90%;
       margin: 0 auto;
       height: 23.43vw;
@@ -287,7 +266,7 @@
   left: 5%;
   @include media(desktop-s) {
     left: 0;
-    margin: 0 0 0;
+    margin: 0;
   }
 }
 .box-r {
@@ -296,7 +275,6 @@
     right: 0%;
     left: 53%;
     right: auto;
-    //margin-top: -90px;
   }
 }
 
@@ -329,13 +307,11 @@
 }
 
 .actions-gratis {
-  //border: 2px solid red;
   width: 48%;
   font-size: 3vw;
   padding: 2vw 0;
   margin: 0 0 1.56vw;
   font-weight: 700;
-
   text-align: center;
   color: $color-variacion2;
   background-color: $color-variacion1;
@@ -343,17 +319,14 @@
     font-size: 0.9em;
     padding: 0.5em 0;
     transition: 0.3s ease-in-out;
-
     margin: 0 0 0.5em;
   }
 }
 
 .actions-resumen {
-  //border: 2px solid red;
   width: 48%;
   font-size: 3vw;
   padding: 2vw 0;
-
   font-weight: 600;
   text-align: center;
   color: $color-claro;
@@ -366,12 +339,8 @@
 }
 
 .actions-play {
-  //border: 4px solid $color-shadow1;
-  // border: 4px solid red;
-
   width: 20.31vw;
   height: 20.31vw;
-  // border-radius: 300px;
   position: relative;
   display: flex;
   align-items: center;
@@ -380,11 +349,9 @@
   @include media(desktop-s) {
     width: 5vw;
     transition: 0.3s ease-in-out;
-
     height: 5em;
   }
   &--shadow1 {
-    border: 0.8vw solid $color-shadow1;
     position: absolute;
     width: 80%;
     height: 80%;
@@ -394,14 +361,13 @@
     animation-duration: 2s;
     animation-delay: 2.8s;
     animation-iteration-count: infinite;
+    border: 0.8vw solid $color-shadow1;
     @include media(desktop-s) {
       border: 4px solid $color-shadow1;
     }
   }
   &--shadow2 {
-    border: 0.8vw solid $color-shadow2;
     position: absolute;
-
     width: 75%;
     height: 75%;
     border-radius: 300px;
@@ -410,6 +376,7 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
     transition: 0.3s ease-in-out;
+    border: 0.8vw solid $color-shadow2;
     @include media(desktop-s) {
       border: 4px solid $color-shadow2;
     }
@@ -432,13 +399,9 @@
 }
 
 .actions-play-image {
-  // width: 7.81vw;
-  //height: 7.81vw;
   width: 68%;
   height: 68%;
   transition: 0.3s ease-in-out;
-
-  border: 1vw solid $color-variacion2;
   position: relative;
   background-image: url(../images/play-a.png);
   background-size: 70%;
@@ -446,11 +409,9 @@
   background-repeat: no-repeat;
   margin: 0;
   border-radius: 300px;
+  border: 1vw solid $color-variacion2;
   @include media(desktop-s) {
     border: 4px solid $color-variacion2;
-
-    // width: 2.5em;
-    // height: 2.5em;
   }
 }
 
@@ -513,8 +474,8 @@
 
 .six__box:hover .actions-play-image {
   @include media(desktop-s) {
-    border: 4px solid $color-claro;
     background-image: url(../images/play-b.png);
+    border: 4px solid $color-claro;
   }
 }
 

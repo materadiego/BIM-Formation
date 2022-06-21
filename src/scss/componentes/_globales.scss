@@ -38,10 +38,10 @@ $Fuente2: "Acumin Pro";
 html {
   margin: 0;
   padding: 0;
-  font-family: $Fuente1;
   font-weight: 600;
   font-style: normal;
   scroll-behavior: smooth;
+  font-family: $Fuente1;
   @include media(desktop-s) {
     font-size: 1vw;
   }
@@ -50,10 +50,10 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1vw;
-  font-family: $Fuente1;
   font-weight: 600;
   font-style: normal;
   scroll-behavior: smooth;
+  font-family: $Fuente1;
   @include media(desktop-s) {
     font-size: 1vw;
   }
@@ -61,34 +61,33 @@ body {
 
 body::-webkit-scrollbar {
   width: 11px;
-  background: $color-claro;
   box-shadow: inset 0 0 1px 0px;
+  background: $color-claro;
 }
 body::-webkit-scrollbar-thumb {
-  background: $color-secundario;
   box-shadow: inset 0 0 3px 0;
+  background: $color-secundario;
 }
 
 .burger-container {
-  //border: 2px solid red;
   width: 12.5vw;
   height: 12.5vw;
-  display: flex;
-  position: absolute;
   z-index: 5;
   right: 3.12vw;
   top: 4.68vw;
+  display: flex;
+  position: absolute;
   @include media(desktop-s) {
     display: none;
   }
   &--image {
     width: 100%;
     height: 100%;
-    background-image: url(../images/burger.svg);
+    z-index: 3;
     background-size: 60%;
+    background-image: url(../images/burger.svg);
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 3;
   }
 }
 
@@ -114,10 +113,10 @@ a:hover {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: $color-shadow5;
   z-index: 0;
   display: flex;
   margin-left: 100%;
+  background-color: $color-shadow5;
 }
 
 .overlay-active {

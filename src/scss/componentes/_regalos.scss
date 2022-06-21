@@ -1,11 +1,7 @@
 .regalo {
   position: absolute;
-  //position: sticky;
   width: 75%;
   padding: 9vw 7.5vw 7vw 7.5vw;
-  //height: 100vw;
-  //display: none;
-  background-color: $color-claro;
   z-index: 4;
   top: 24vw;
   opacity: 0;
@@ -14,12 +10,12 @@
   animation-name: regaloscarga;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  // animation-delay: 12s;
+  animation-delay: 8s;
   will-change: margin;
+  background-color: $color-claro;
   @include media(desktop-s) {
     width: 26%;
     top: 14vw;
-
     padding: 2vw 3vw 2vw 3.5vw;
   }
   &__title {
@@ -36,7 +32,6 @@
     & span {
       font-size: 5.6vw;
       line-height: 90%;
-
       color: $color-variacion1;
       @include media(desktop-s) {
         font-size: 1.61vw;
@@ -57,7 +52,6 @@
     color: $color-variacion2;
     @include media(desktop-s) {
       font-size: 0.95vw;
-      // border: 2px solid red;
       margin-bottom: 2vw;
       line-height: 115%;
     }
@@ -70,16 +64,14 @@
       font-size: 3.12vw;
       margin-bottom: 1.56vw;
       padding: 1.56vw;
-      border: none;
       border: 2px solid #999;
-
       outline: none;
       @include media(desktop-s) {
         font-size: 1vw;
         padding: 6px;
         margin-bottom: 0.8vw;
-        background-color: $color-secundario3;
         border: none;
+        background-color: $color-secundario3;
       }
       &::placeholder {
         font-family: "Aventa";
@@ -129,14 +121,11 @@
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  // border: 2px solid red;
   @include media(desktop-s) {
     width: 25px;
     height: 25px;
-
     display: flex;
     position: absolute;
-    //border: 2px solid red;
   }
   &:hover {
     @include media(desktop-s) {
