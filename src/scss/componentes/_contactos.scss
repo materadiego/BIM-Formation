@@ -6,7 +6,7 @@
     padding-bottom: 7vw;
   }
   &__start {
-    // border: 2px solid red;
+    //border: 2px solid red;
     padding-top: 2.68vw;
     width: 100%;
     display: flex;
@@ -42,7 +42,7 @@
         line-height: 120%;
         color: $color-claro;
         @include media(desktop-s) {
-          font-size: 3.1vw;
+          font-size: 2.7vw;
           text-align: start;
           width: 100%;
         }
@@ -50,23 +50,23 @@
     }
   }
   &__container {
-    // border: 2px solid red;
+    //border: 2px solid red;
     margin: 9.37vw auto 0;
     width: 90%;
     @include media(desktop-s) {
-      width: 35%;
+      width: 30%;
       position: absolute;
-      top: 3vw;
-      right: 10%;
+      top: 1vw;
+      right: 15%;
     }
     &--text {
       font-size: 3.12vw;
       font-weight: 600;
       color: $color-claro;
       @include media(desktop-s) {
-        font-size: 1.35vw;
-        //   border: 2px solid red;
-        width: 94%;
+        font-size: 1.2vw;
+        //  border: 2px solid red;
+        width: 86%;
         margin-bottom: 0.5vw;
       }
     }
@@ -74,8 +74,9 @@
       font-size: 5.62vw;
       color: $color-variacion1;
       @include media(desktop-s) {
-        font-size: 2.5vw;
+        font-size: 2vw;
         margin-bottom: 1vw;
+        font-weight: 400;
       }
     }
   }
@@ -151,8 +152,8 @@
     border: 3px solid $color-variacion1;
     background-color: $color-variacion1;
     @include media(desktop-s) {
-      font-size: 1.5vw;
-      width: 13vw;
+      font-size: 1.3vw;
+      width: 10vw;
       padding: 0.5vw;
       transition: 0.2s;
     }
@@ -173,7 +174,7 @@
   @include media(desktop-s) {
     width: 12%;
     position: relative;
-    right: -13%;
+    right: 0%;
     margin-bottom: 1vw;
   }
 }

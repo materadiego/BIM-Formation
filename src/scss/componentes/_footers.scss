@@ -75,8 +75,13 @@
           height: 2.5vw;
           margin-bottom: 0;
         }
-        & img {
+        & figure {
+          // border: 2px solid red;
           width: 100%;
+          height: 100%;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          transition: 0.3s;
         }
       }
     }
@@ -108,4 +113,31 @@
 
 .footer:hover .footer__flecha {
   width: 60%;
+}
+
+.footer-in {
+  background-image: url(../images/footer-in.svg);
+  &:hover {
+    @include media(desktop-s) {
+      background-image: url(../images/footer-in-a.svg);
+    }
+  }
+}
+
+.footer-wsp {
+  background-image: url(../images/footer-wsp.svg);
+  &:hover {
+    @include media(desktop-s) {
+      background-image: url(../images/footer-wsp-a.svg);
+    }
+  }
+}
+
+.footer-ig {
+  background-image: url(../images/footer-ig.svg);
+  &:hover {
+    @include media(desktop-s) {
+      background-image: url(../images/footer-ig-a.svg);
+    }
+  }
 }

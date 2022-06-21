@@ -13,7 +13,7 @@
     line-height: 120%;
     color: $color-variacion1;
     @include media(desktop-s) {
-      font-size: 40px;
+      font-size: 36px;
       width: 400px;
       margin: 15vw 0 0 10%;
     }
@@ -31,10 +31,16 @@
     transition: $scroll-transition2;
     will-change: opacity transform margin;
     @include media(desktop-s) {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       margin-left: 10%;
-      margin-top: 2vw;
+      margin-top: 1vw;
+      transition: 0.5s ease-in-out;
+    }
+    &:hover {
+      @include media(desktop-s) {
+        transform: translateX(10px) translateY(10px);
+      }
     }
   }
   &__container {
@@ -56,6 +62,9 @@
       z-index: 2;
       transition: $scroll-transition2;
       will-change: transform opacity;
+      transition: 0.5s ease-in-out;
+      will-change: transform;
+
       opacity: 1;
       display: flex;
       flex-direction: column;
@@ -74,11 +83,23 @@
         width: 230px;
         padding: 35px 5px 40px;
       }
+      &:hover {
+        @include media(desktop-s) {
+          transform: translateY(-30px);
+        }
+      }
+      &:hover img {
+        @include media(desktop-s) {
+          transform: scale(1.2);
+        }
+      }
       & img {
         //border: 2px solid red;
         width: 15.62vw;
         height: 15.62vw;
         margin-bottom: 15px;
+        will-change: transform;
+        transition: 0.5s ease-in-out;
         @include media(desktop-s) {
           width: 40px;
           height: 40px;

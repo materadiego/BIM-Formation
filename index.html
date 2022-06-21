@@ -8,6 +8,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-231244212-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-231244212-1");
+    </script>
     <link rel="icon" href="src/images/favicon.png" />
     <link
       rel="preload"
@@ -70,20 +84,98 @@
     <link
       rel="preload"
       as="image"
+      href="src/images/footer-wsp.svg"
+      type="image/svg"
+    />
+    <link
+      rel="preload"
+      as="image"
       href="src/images/footer-ig.svg"
       type="image/svg"
     />
     <link
       rel="prefetch"
       as="image"
-      href="src/images/home/slider/footer-ig-a.svg"
+      href="src/images/footer-ig-a.svg"
       type="image/svg"
     />
     <link
       rel="prefetch"
       as="image"
-      href="src/images/home/slider/footer-in-a.svg"
+      href="src/images/footer-wsp-a.svg"
       type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/footer-in-a.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/header-wsp.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/header-wsp3.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/logo2.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/close2.png"
+      type="image/png"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/six-arrow3.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/two-reloj3.png"
+      type="image/png"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/box1a.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/box2a.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/box3a.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/box4a.svg"
+      type="image/svg"
+    />
+    <link
+      rel="prefetch"
+      as="image"
+      href="src/images/play-b.png"
+      type="image/png"
     />
     <title>BIM FORMATION</title>
   </head>
@@ -92,13 +184,15 @@
 
     <!-- HEADER -->
     <header id="header" class="header">
-      <figure class="header-logo-container">
-        <img
-          src="src/images/logo.svg"
-          alt=""
-          class="header-logo-container__image mobile"
-        />
-      </figure>
+      <a href="http://www.bimformation.es/" class="header-logo">
+        <figure class="header-logo-container">
+          <img
+            src="src/images/logo.svg"
+            alt=""
+            class="header-logo-container__image mobile"
+          />
+        </figure>
+      </a>
       <div class="header-container">
         <div class="burger-container" id="burger-button2">
           <i class="burger-container--image"></i>
@@ -157,9 +251,9 @@
             COMPLETO!
           </p>
           <p class="header-container__subcontainer--text">
-            Para que puedas probar la excelencia <br />
-            de nuestro curso, gratis completando <br />
-            este formulario
+            ¡Registrarse es muy sencillo! Completa <br />
+            este formulario, crea tu cuenta y accede <br />
+            a todo el contenido gratuito.
           </p>
           <form action="" method="post" class="header-form" id="header-form">
             <input
@@ -197,12 +291,7 @@
       >
         <div class="chat__close" id="chat-close"></div>
         <img src="src/images/chat-wsp.svg" alt="" class="chat-container__img" />
-        <!-- <h6 class="chat-container__text">
-          <span class="chat-container__text--span">PARA MÁS INFO</span> <br />
-          PUEDES CHATEAR <br />
-          CON NOSOTROS <br />
-          POR WHATSAPP
-        </h6> -->
+
         <img
           src="src/images/chat-flecha.png"
           alt=""
@@ -237,11 +326,6 @@
         <img src="src/images/logo.svg" alt="" class="mobile-logo__image" />
       </figure>
       <div class="hero__green-block"></div>
-      <!-- 
-      <h1 class="hero__title">
-        ¿Eres arquitecto y estás en búsqueda de empleo? <br />
-        <span class="hero__title--span">Este curso es para ti.</span>
-      </h1> -->
 
       <h1 class="hero__title">
         ¿Eres arquitecto y estás en búsqueda de empleo? <br />
@@ -255,8 +339,9 @@
           >INSCRIBIRME</a
         >
         <a href="#content" class="hero__button--two"
-          >QUIERO SABER MÁS <img src="src/images/six-arrow2.svg" alt=""
-        /></a>
+          >QUIERO SABER MÁS
+          <figure></figure>
+        </a>
       </div>
       <!-- Animated figure -->
       <div class="hero__image-container">
@@ -371,17 +456,12 @@
       <div class="two__container">
         <div class="two__container--subcontainer scroll-two-title animado">
           <h2 class="two__container--subcontainer--title">
-            12 HORAS
-            <span>
-              <br />
-              DE FORMACIÓN</span
-            >
+            12 HORAS <br />
+            <span> DE FORMACIÓN</span>
           </h2>
-          <img
-            src="src/images/two-reloj.svg"
-            alt=""
+          <figure
             class="two__container--subcontainer--image scroll-two-title-image animado"
-          />
+          ></figure>
           <p class="two__container--subcontainer--text">
             ¡Preparado para el mundo laboral!
           </p>
@@ -476,7 +556,6 @@
     <!-- ADMINS -->
     <section class="section four">
       <div class="background-lines bline-eleven desktop"></div>
-      <!-- <div class="background-lines bline-twelve desktop"></div> -->
 
       <div class="four__container scroll-four animado">
         <h3 class="four__container--title">
@@ -604,8 +683,10 @@
     </section>
 
     <!-- INFO CURSO -->
-    <section class="section five">
+
+    <section class="section five scroll-five animado">
       <!-- Info box 1 -->
+      <div class="white-background"></div>
       <div class="background-lines bline-fourteen"></div>
 
       <div class="five-container five-container-active">
@@ -999,6 +1080,7 @@
         </div>
       </div>
       <!-- MODULOS -->
+
       <div class="six-container scroll-six animado">
         <div class="regalo regalo-is-active">
           <div class="regalo__close desktop" id="regalo-close"></div>
@@ -1013,9 +1095,9 @@
             alt=""
           />
           <p class="regalo__text">
-            Para que puedas probar la excelencia <br />
-            de nuestro curso, gratis completando <br />
-            este formulario
+            ¡Registrarse es muy sencillo! Completa <br />
+            este formulario, crea tu cuenta y accede <br />
+            a todo el contenido gratuito.
           </p>
           <form action="" method="post" class="regalo__form" id="regalo-form">
             <input
@@ -1037,6 +1119,7 @@
             </button>
           </form>
         </div>
+
         <div class="background-lines bline-thirteen"></div>
         <div class="six">
           <div class="background-lines bline-four"></div>
@@ -1093,21 +1176,11 @@
               <div id="resumen1" class="actions-resumen dark-box__resumen">
                 VER RESUMEN
               </div>
-              <div class="actions-play dark-box__play" id="play1">
-                <div class="actions-play--shadow1 dark-box__play--sh1">
-                  <div class="actions-play--shadow2 dark-box__play--sh2">
-                    <img
-                      src="src/images/flecha-play.svg"
-                      alt=""
-                      class="actions-play-image mobile"
-                    />
-                    <img
-                      src="src/images/flecha-play.svg"
-                      alt=""
-                      class="actions-play-image desktop"
-                    />
-                  </div>
-                </div>
+              <div class="actions-play" id="play1">
+                <figure class="actions-play-image"></figure>
+
+                <div class="actions-play--shadow1 dark-box__play--sh1"></div>
+                <div class="actions-play--shadow2 dark-box__play--sh2"></div>
               </div>
             </div>
           </div>
@@ -1139,15 +1212,10 @@
             <div class="six__box--actions">
               <div id="resumen2" class="actions-resumen">VER RESUMEN</div>
               <div id="play2" class="actions-play">
-                <div class="actions-play--shadow1">
-                  <div class="actions-play--shadow2">
-                    <img
-                      src="src/images/flecha-play.svg"
-                      alt=""
-                      class="actions-play-image"
-                    />
-                  </div>
-                </div>
+                <figure class="actions-play-image"></figure>
+
+                <div class="actions-play--shadow1 dark-box__play--sh1"></div>
+                <div class="actions-play--shadow2 dark-box__play--sh2"></div>
               </div>
             </div>
           </div>
@@ -1184,15 +1252,10 @@
             <div class="six__box--actions">
               <div id="resumen3" class="actions-resumen">VER RESUMEN</div>
               <div id="play3" class="actions-play">
-                <div class="actions-play--shadow1">
-                  <div class="actions-play--shadow2">
-                    <img
-                      src="src/images/flecha-play.svg"
-                      alt=""
-                      class="actions-play-image"
-                    />
-                  </div>
-                </div>
+                <figure class="actions-play-image"></figure>
+
+                <div class="actions-play--shadow1 dark-box__play--sh1"></div>
+                <div class="actions-play--shadow2 dark-box__play--sh2"></div>
               </div>
             </div>
           </div>
@@ -1224,15 +1287,10 @@
             <div class="six__box--actions">
               <div id="resumen4" class="actions-resumen">VER RESUMEN</div>
               <div id="play4" class="actions-play">
-                <div class="actions-play--shadow1">
-                  <div class="actions-play--shadow2">
-                    <img
-                      src="src/images/flecha-play.svg"
-                      alt=""
-                      class="actions-play-image"
-                    />
-                  </div>
-                </div>
+                <figure class="actions-play-image"></figure>
+
+                <div class="actions-play--shadow1 dark-box__play--sh1"></div>
+                <div class="actions-play--shadow2 dark-box__play--sh2"></div>
               </div>
             </div>
           </div>
@@ -1640,17 +1698,17 @@
               href="https://www.linkedin.com/company/bim-formation-curso-iniciaci%C3%B3n-bim-al-mundo-laboral/"
               target="_blank"
               class="media"
-              ><img src="src/images/footer-in.svg" alt=""
-            /></a>
+              ><figure class="footer-in"></figure
+            ></a>
             <a href="https://wa.me/34639330455" target="_blank" class="media"
-              ><img src="src/images/footer-wsp.svg" alt=""
-            /></a>
+              ><figure class="footer-wsp"></figure
+            ></a>
             <a
               href="https://www.instagram.com/bimformation.es/"
               target="_blank"
               class="media"
-              ><img src="src/images/footer-ig.svg" alt=""
-            /></a>
+              ><figure class="footer-ig"></figure
+            ></a>
           </div>
           <p class="footer-container__subcont--text">
             Síguenos en las redes sociales y pregúntanos cualquier duda sobre el
@@ -1690,7 +1748,5 @@
     <script src="src/js/scroll-animation.js"></script>
     <script src="src/js/videos.js"></script>
     <script src="src/js/contat-form.js"></script>
-
-    <!-- <script src="src/js/animation-suma.js"></script> -->
   </body>
 </html>

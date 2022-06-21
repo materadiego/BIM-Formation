@@ -55,7 +55,7 @@
 .bline-four {
   width: 10%;
   height: 2vw;
-  top: 15vw;
+  top: 10vw;
   right: 0;
   border-top: 2px solid $color-variacion1;
   @include media(desktop-s) {
@@ -66,15 +66,15 @@
 
 .bline-five {
   width: 25%;
-  height: 54vw;
-  top: 15vw;
+  height: 59vw;
+  top: 10vw;
   left: 14vw;
   border-top: 2px solid $color-variacion1;
   border-left: 2px solid $color-variacion1;
   @include media(desktop-s) {
     top: 7em;
     left: 22.3%;
-    width: 45.4%;
+    width: 53.4%;
     height: 22em;
     border-top: 3px solid $color-variacion1;
     border-left: 3px solid $color-variacion1;

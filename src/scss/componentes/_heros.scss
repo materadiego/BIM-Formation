@@ -117,9 +117,10 @@
       animation-delay: 0.6s;
       animation-fill-mode: forwards;
       animation-timing-function: ease-in;
+
+      background-position: center right;
       color: $color-claro;
       background: $color-variacion1;
-
       @include media(desktop-s) {
         font-size: 1.15vw;
         width: 15vw;
@@ -128,17 +129,33 @@
         justify-content: flex-start;
       }
       &:hover {
-        color: $color-variacion2;
+        @include media(desktop-s) {
+          color: $color-variacion2;
+        }
       }
-
-      & img {
+      &:hover figure {
+        @include media(desktop-s) {
+          background-image: url(../images/six-arrow3.svg);
+        }
+      }
+      & figure {
+        //border: 2px solid red;
         width: 2.5vw;
         height: 2.5vw;
         margin-left: 2vw;
+        margin-bottom: 0;
+        padding: 0.2vw;
+        background-image: url(../images/six-arrow2.svg);
+        background-size: 95%;
+        background-position: center;
+        background-repeat: no-repeat;
         transform: rotateZ(270deg);
+        transition: 0.3s;
+
+        will-change: background-image;
         @include media(desktop-s) {
-          width: 1vw;
-          height: 1vw;
+          width: 1.1vw;
+          height: 1.1vw;
           margin-left: 1vw;
         }
       }

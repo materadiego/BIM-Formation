@@ -619,7 +619,7 @@ a:hover {
 .bline-four {
   width: 10%;
   height: 2vw;
-  top: 15vw;
+  top: 10vw;
   right: 0;
   border-top: 2px solid #2fe6b0; }
   @media only screen and (min-width: 992px) {
@@ -629,8 +629,8 @@ a:hover {
 
 .bline-five {
   width: 25%;
-  height: 54vw;
-  top: 15vw;
+  height: 59vw;
+  top: 10vw;
   left: 14vw;
   border-top: 2px solid #2fe6b0;
   border-left: 2px solid #2fe6b0; }
@@ -638,7 +638,7 @@ a:hover {
     .bline-five {
       top: 7em;
       left: 22.3%;
-      width: 45.4%;
+      width: 53.4%;
       height: 22em;
       border-top: 3px solid #2fe6b0;
       border-left: 3px solid #2fe6b0; } }
@@ -785,24 +785,31 @@ a:hover {
       transition: 0.3s ease;
       will-change: background-color; } }
 
-.header-logo-container {
+.header-logo {
   display: none; }
   @media only screen and (min-width: 992px) {
-    .header-logo-container {
+    .header-logo {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 140px;
-      margin: 0;
-      height: 100%;
-      background-image: url(../images/logo.svg);
-      background-position: center;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      -webkit-transition: 0.3s ease;
-      -o-transition: 0.3s ease;
-      transition: 0.3s ease;
-      will-change: background-image; } }
+      height: 60px; } }
+
+@media only screen and (min-width: 992px) {
+  .header-logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 140px;
+    margin: 0;
+    height: 100%;
+    background-image: url(../images/logo.svg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    will-change: background-image; } }
 
 .header-container {
   width: 97%;
@@ -930,6 +937,8 @@ a:hover {
         -webkit-transition: 0.3s ease;
         -o-transition: 0.3s ease;
         transition: 0.3s ease; }
+        .header-container__buttons--wsp figure:hover {
+          background-image: url(../images/header-wsp3.svg); }
   .header-container__line {
     width: 100%;
     display: -webkit-box;
@@ -952,7 +961,7 @@ a:hover {
       font-size: 4.06vw;
       color: #2fe6b0; }
   .header-container__subcontainer--text {
-    font-size: 2.7vw;
+    font-size: 2.5vw;
     line-height: 110%;
     font-weight: 300;
     font-family: "Aventa";
@@ -1033,13 +1042,17 @@ a:hover {
   .sticky .header-container__buttons--wsp figure {
     background-image: url(../images/header-wsp.svg); } }
 
+@media only screen and (min-width: 992px) {
+  .sticky .header-container__buttons--wsp figure:hover {
+    background-image: url(../images/header-wsp3.svg); } }
+
 .regalo {
   position: absolute;
   width: 75%;
-  padding: 9vw 5vw 7vw 10vw;
+  padding: 9vw 7.5vw 7vw 7.5vw;
   background-color: #fff;
   z-index: 4;
-  top: 34vw;
+  top: 24vw;
   opacity: 0;
   margin-left: -75%;
   -webkit-transition: 1s ease-in-out;
@@ -1051,13 +1064,11 @@ a:hover {
   animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s;
   will-change: margin; }
   @media only screen and (min-width: 992px) {
     .regalo {
       width: 26%;
-      top: 19vw;
+      top: 14vw;
       padding: 2vw 3vw 2vw 3.5vw; } }
   .regalo__title {
     font-weight: 600;
@@ -1068,7 +1079,8 @@ a:hover {
     @media only screen and (min-width: 992px) {
       .regalo__title {
         font-size: 2vw;
-        margin-bottom: 2.5vw; } }
+        margin-bottom: 2.5vw;
+        line-height: 95%; } }
     .regalo__title span {
       font-size: 5.6vw;
       line-height: 90%;
@@ -1082,15 +1094,16 @@ a:hover {
     right: 3vw;
     width: 6vw; }
   .regalo__text {
-    font-size: 3.25vw;
+    font-size: 3vw;
     font-weight: 600;
     margin-bottom: 5vw;
     line-height: 105%;
     color: #3600e0; }
     @media only screen and (min-width: 992px) {
       .regalo__text {
-        font-size: 1.04vw;
-        margin-bottom: 2vw; } }
+        font-size: 0.95vw;
+        margin-bottom: 2vw;
+        line-height: 115%; } }
   .regalo__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1164,6 +1177,10 @@ a:hover {
   display: flex;
   position: absolute;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  will-change: background-image;
   background-image: url(../images/close.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -1175,11 +1192,10 @@ a:hover {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      position: absolute;
-      background-image: url(../images/close.png);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center; } }
+      position: absolute; } }
+  @media only screen and (min-width: 992px) {
+    .regalo__close:hover {
+      background-image: url(../images/close2.png); } }
 
 .regalo-is-active {
   margin-left: 0; }
@@ -1219,7 +1235,7 @@ a:hover {
   background-color: rgba(255, 255, 255, 0); }
   @media only screen and (min-width: 992px) {
     .chat-container {
-      width: 26vw;
+      width: 24vw;
       margin-left: 100%;
       bottom: auto;
       top: 8vw;
@@ -1240,7 +1256,7 @@ a:hover {
         display: none; } }
   .chat-container__text {
     font-family: "Aventa";
-    font-weight: 6 00;
+    font-weight: 600;
     padding: 0 6px 0 10px;
     font-size: 3vw;
     margin: 0;
@@ -1248,14 +1264,14 @@ a:hover {
     color: #3600e0; }
     @media only screen and (min-width: 992px) {
       .chat-container__text {
-        font-size: 1.5vw;
-        margin-right: 1.5vw; } }
+        font-size: 1.3vw;
+        margin-right: 1.2vw; } }
     .chat-container__text--span {
       font-size: 2.5vw;
       color: #2fe6b0; }
       @media only screen and (min-width: 992px) {
         .chat-container__text--span {
-          font-size: 1.2vw; } }
+          font-size: 1vw; } }
   .chat-container__arrow {
     width: 2.5vw;
     margin-left: 1.5vw; }
@@ -1276,10 +1292,17 @@ a:hover {
       display: -ms-flexbox;
       display: flex;
       position: absolute;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      will-change: background-image;
       background-image: url(../images/close.png);
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center; } }
+  @media only screen and (min-width: 992px) {
+    .chat__close:hover {
+      background-image: url(../images/close2.png); } }
 
 #chat-container {
   -webkit-animation: chatAparece 0.5s ease-in-out 5s 1 forwards;
@@ -1324,7 +1347,7 @@ a:hover {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); }
   @media only screen and (min-width: 992px) {
     .chat-is-active {
-      margin-left: 74%; } }
+      margin-left: 76%; } }
 
 .chat-container.mobile {
   display: -webkit-box;
@@ -1493,6 +1516,7 @@ a:hover {
       animation-fill-mode: forwards;
       -webkit-animation-timing-function: ease-in;
       animation-timing-function: ease-in;
+      background-position: center right;
       color: #fff;
       background: #2fe6b0; }
       @media only screen and (min-width: 992px) {
@@ -1504,19 +1528,33 @@ a:hover {
           -webkit-box-pack: start;
           -ms-flex-pack: start;
           justify-content: flex-start; } }
-      .hero__button--two:hover {
-        color: #3600e0; }
-      .hero__button--two img {
+      @media only screen and (min-width: 992px) {
+        .hero__button--two:hover {
+          color: #3600e0; } }
+      @media only screen and (min-width: 992px) {
+        .hero__button--two:hover figure {
+          background-image: url(../images/six-arrow3.svg); } }
+      .hero__button--two figure {
         width: 2.5vw;
         height: 2.5vw;
         margin-left: 2vw;
+        margin-bottom: 0;
+        padding: 0.2vw;
+        background-image: url(../images/six-arrow2.svg);
+        background-size: 95%;
+        background-position: center;
+        background-repeat: no-repeat;
         -webkit-transform: rotateZ(270deg);
         -ms-transform: rotate(270deg);
-        transform: rotateZ(270deg); }
+        transform: rotateZ(270deg);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        will-change: background-image; }
         @media only screen and (min-width: 992px) {
-          .hero__button--two img {
-            width: 1vw;
-            height: 1vw;
+          .hero__button--two figure {
+            width: 1.1vw;
+            height: 1.1vw;
             margin-left: 1vw; } }
   .hero__image-container {
     width: 100%;
@@ -1773,6 +1811,7 @@ a:hover {
   .two__container {
     overflow: hidden; }
     .two__container--subcontainer {
+      padding-top: 10px;
       width: 90%;
       margin: 0 auto;
       display: -webkit-box;
@@ -1795,7 +1834,7 @@ a:hover {
       .two__container--subcontainer--title {
         width: 60%;
         font-size: 11vw;
-        line-height: 70%;
+        line-height: 80%;
         margin-left: 0;
         position: relative;
         color: #2fe6b0; }
@@ -1806,36 +1845,45 @@ a:hover {
         .two__container--subcontainer--title span {
           font-size: 6.7vw;
           font-weight: 600;
-          line-height: 70%; }
+          line-height: 80%; }
           @media only screen and (min-width: 992px) {
             .two__container--subcontainer--title span {
               font-size: 2.85vw; } }
       .two__container--subcontainer--image {
-        width: 17vw;
-        height: 17vw;
+        width: 18vw;
+        height: 18vw;
         position: relative;
         right: 0;
         -webkit-transition: 0.5s linear;
         -o-transition: 0.5s linear;
         transition: 0.5s linear;
-        will-change: opacity right; }
+        will-change: opacity right;
+        will-change: background-image;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+        background-image: url(../images/two-reloj2.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat; }
         @media only screen and (min-width: 992px) {
           .two__container--subcontainer--image {
-            width: 7vw;
-            height: 7vw; } }
+            width: 7.5vw;
+            height: 7.5vw; } }
       .two__container--subcontainer--text {
         width: 100%;
         font-size: 4.6vw;
-        font-weight: 600;
-        font-family: "Aventa";
         font-weight: 300;
+        font-family: "Aventa";
         margin-left: 0;
         position: relative;
         color: #fff; }
         @media only screen and (min-width: 992px) {
           .two__container--subcontainer--text {
-            font-size: 2vw;
+            font-size: 1.65vw;
             margin-top: 0.5vw; } }
+      .two__container--subcontainer:hover figure {
+        background-image: url(../images/two-reloj3.png); }
     .two__container--subcontainer2 {
       width: 90%;
       margin: 0 auto;
@@ -1893,7 +1941,7 @@ a:hover {
         text-align: end;
         margin: 0 0 0 3.12vw;
         font-family: "Aventa";
-        font-weight: 400;
+        font-weight: 300;
         color: #fff; }
         @media only screen and (min-width: 992px) {
           .two__container--subcontainer2--text {
@@ -1982,7 +2030,7 @@ a:hover {
     color: #2fe6b0; }
     @media only screen and (min-width: 992px) {
       .three__title {
-        font-size: 40px;
+        font-size: 36px;
         width: 400px;
         margin: 15vw 0 0 10%; } }
     .three__title span {
@@ -2001,10 +2049,18 @@ a:hover {
     will-change: opacity transform margin; }
     @media only screen and (min-width: 992px) {
       .three__arrow {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         margin-left: 10%;
-        margin-top: 2vw; } }
+        margin-top: 1vw;
+        -webkit-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out; } }
+    @media only screen and (min-width: 992px) {
+      .three__arrow:hover {
+        -webkit-transform: translateX(10px) translateY(10px);
+        -ms-transform: translateX(10px) translateY(10px);
+        transform: translateX(10px) translateY(10px); } }
   .three__container {
     width: 95vw;
     margin: 50px auto 0;
@@ -2029,6 +2085,10 @@ a:hover {
       -o-transition: 1s linear;
       transition: 1s linear;
       will-change: transform opacity;
+      -webkit-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      will-change: transform;
       opacity: 1;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2056,10 +2116,24 @@ a:hover {
         .three__container--box {
           width: 230px;
           padding: 35px 5px 40px; } }
+      @media only screen and (min-width: 992px) {
+        .three__container--box:hover {
+          -webkit-transform: translateY(-30px);
+          -ms-transform: translateY(-30px);
+          transform: translateY(-30px); } }
+      @media only screen and (min-width: 992px) {
+        .three__container--box:hover img {
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          transform: scale(1.2); } }
       .three__container--box img {
         width: 15.62vw;
         height: 15.62vw;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        will-change: transform;
+        -webkit-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out; }
         @media only screen and (min-width: 992px) {
           .three__container--box img {
             width: 40px;
@@ -2156,7 +2230,7 @@ a:hover {
   margin-left: 12%; }
 
 .four {
-  padding-bottom: 40vw; }
+  padding-bottom: 20vw; }
   @media only screen and (min-width: 992px) {
     .four {
       padding-bottom: 5vw;
@@ -2185,7 +2259,7 @@ a:hover {
       color: #3600e0; }
       @media only screen and (min-width: 992px) {
         .four__container--title {
-          font-size: 2.8vw; } }
+          font-size: 2.3vw; } }
       .four__container--title span {
         color: #2fe6b0; }
     .four__container--arrow {
@@ -2212,7 +2286,10 @@ a:hover {
 .admins__img-container {
   height: 65.62vw;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
   @media only screen and (min-width: 992px) {
     .admins__img-container {
       width: 45%;
@@ -2268,7 +2345,7 @@ a:hover {
     color: #3600e0; }
     @media only screen and (min-width: 992px) {
       .admins__container--name {
-        font-size: 3vw;
+        font-size: 2.3vw;
         font-weight: 700;
         margin: 12.5vw 0 0; } }
   .admins__container--subtitle {
@@ -2350,7 +2427,7 @@ a:hover {
         background-color: #2fe6b0; }
     .admins__container--subcont--text {
       width: 100%;
-      font-size: 2.9vw;
+      font-size: 2.85vw;
       font-weight: 600;
       margin-top: 6.25vw;
       margin-bottom: 0;
@@ -2584,6 +2661,7 @@ a:hover {
 
 .five {
   padding-bottom: 50em;
+  padding-top: 10vw;
   position: relative;
   background-color: #3600e0; }
   @media only screen and (min-width: 992px) {
@@ -2596,7 +2674,7 @@ a:hover {
 
 .five-container {
   width: 90%;
-  margin: 0 auto;
+  margin: 10vw auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2606,8 +2684,11 @@ a:hover {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 0px;
+  -webkit-transition: 1.3s;
+  -o-transition: 1.3s;
+  transition: 1.3s;
+  will-change: top;
   position: relative;
-  top: -109.35em;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -2615,7 +2696,7 @@ a:hover {
     .five-container {
       width: 70%;
       top: 0;
-      padding-bottom: 0;
+      padding-bottom: 0.4vw;
       top: 25em;
       -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -2660,7 +2741,11 @@ a:hover {
       @media only screen and (min-width: 992px) {
         .five-container__box--image-cont {
           width: 3.3em;
-          height: 3.3em; } }
+          height: 3.3em;
+          -webkit-transition: 0.3s ease-in-out;
+          -o-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+          will-change: background-image transform; } }
     .five-container__box--number {
       font-size: 10vw;
       margin: 0;
@@ -2878,6 +2963,28 @@ a:hover {
 .box4 {
   background-image: url(../images/box4.svg); }
 
+@media only screen and (min-width: 992px) {
+  .five-container__box:hover .five-container__box--image-cont {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); } }
+
+@media only screen and (min-width: 992px) {
+  .five-container__box:hover .box1 {
+    background-image: url(../images/box1a.svg); } }
+
+@media only screen and (min-width: 992px) {
+  .five-container__box:hover .box2 {
+    background-image: url(../images/box2a.svg); } }
+
+@media only screen and (min-width: 992px) {
+  .five-container__box:hover .box3 {
+    background-image: url(../images/box3a.svg); } }
+
+@media only screen and (min-width: 992px) {
+  .five-container__box:hover .box4 {
+    background-image: url(../images/box4a.svg); } }
+
 .line-one {
   border-bottom: 4px solid #3600e0;
   height: 0;
@@ -2916,10 +3023,10 @@ a:hover {
   transform: rotateZ(135deg); }
 
 .five-container-active {
-  top: -12vw; }
+  top: -10vw; }
   @media only screen and (min-width: 992px) {
     .five-container-active {
-      top: 5em; } }
+      top: -5em; } }
 
 .square-1 {
   left: 19%; }
@@ -2946,13 +3053,13 @@ a:hover {
       left: 79.8%; } }
 
 .project-subcont {
-  top: 43vw; }
+  top: 65vw; }
   @media only screen and (min-width: 992px) {
     .project-subcont {
       top: 29vw; } }
 
 .modules-subcont {
-  top: 43vw;
+  top: 65vw;
   height: 109vw; }
   @media only screen and (min-width: 992px) {
     .modules-subcont {
@@ -2967,14 +3074,14 @@ a:hover {
       top: 29em; } }
 
 .videos-subcont {
-  top: 105vw;
+  top: 127vw;
   display: none; }
   @media only screen and (min-width: 992px) {
     .videos-subcont {
       top: 29em; } }
 
 .hours-subcont {
-  top: 105vw;
+  top: 127vw;
   display: none; }
   @media only screen and (min-width: 992px) {
     .hours-subcont {
@@ -3043,6 +3150,26 @@ a:hover {
 .module-container-3 {
   top: 2.3em; }
 
+.white-background {
+  position: absolute;
+  width: 100%;
+  height: 35vw;
+  top: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  will-change: height;
+  background-color: #fff; }
+  @media only screen and (min-width: 992px) {
+    .white-background {
+      height: 19vw; } }
+
+.scroll-five .white-background {
+  height: 0vw; }
+
+.scroll-five .five-container {
+  top: 35vw; }
+
 .six-container {
   background-color: #3600e0;
   padding-bottom: 50px;
@@ -3075,10 +3202,11 @@ a:hover {
       margin: 0 auto 0; } }
   .six__title-cont {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-right: 1vw;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: end;
@@ -3089,7 +3217,8 @@ a:hover {
         margin: 0 0 2em auto;
         width: 100%;
         height: 14em;
-        padding-top: 2vw; } }
+        padding-top: 2vw;
+        padding-right: 0; } }
     .six__title-cont--title {
       text-align: end;
       font-weight: 600;
@@ -3100,8 +3229,9 @@ a:hover {
       color: #fff; }
       @media only screen and (min-width: 992px) {
         .six__title-cont--title {
-          font-size: 3em;
-          margin-bottom: 0px; } }
+          font-size: 2.3em;
+          margin-bottom: 0px;
+          margin-top: 0.6em; } }
       .six__title-cont--title--span {
         color: #2fe6b0; }
     .six__title-cont--arrow {
@@ -3405,10 +3535,18 @@ a:hover {
       cursor: pointer; } }
 
 .actions-play {
-  border: 4px solid rgba(54, 0, 224, 0.2);
   width: 20.31vw;
   height: 20.31vw;
-  border-radius: 300px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   cursor: pointer; }
   @media only screen and (min-width: 992px) {
     .actions-play {
@@ -3418,41 +3556,87 @@ a:hover {
       transition: 0.3s ease-in-out;
       height: 5em; } }
   .actions-play--shadow1 {
-    border: 4px solid rgba(54, 0, 224, 0.5);
-    width: 100%;
-    height: 100%;
+    border: 0.8vw solid rgba(54, 0, 224, 0.2);
+    position: absolute;
+    width: 80%;
+    height: 80%;
     border-radius: 300px;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
+    transition: 0.3s ease-in-out;
+    -webkit-animation-name: play-animation;
+    animation-name: play-animation;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+    @media only screen and (min-width: 992px) {
+      .actions-play--shadow1 {
+        border: 4px solid rgba(54, 0, 224, 0.2); } }
   .actions-play--shadow2 {
-    border: 4px solid #3600e0;
-    width: 100%;
-    height: 100%;
+    border: 0.8vw solid rgba(54, 0, 224, 0.5);
+    position: absolute;
+    width: 75%;
+    height: 75%;
     border-radius: 300px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-animation-name: play-animation;
+    animation-name: play-animation;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
+    @media only screen and (min-width: 992px) {
+      .actions-play--shadow2 {
+        border: 4px solid rgba(54, 0, 224, 0.5); } }
+
+@-webkit-keyframes play-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  40% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); } }
+
+@keyframes play-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  40% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); } }
 
 .actions-play-image {
-  width: 7.81vw;
-  -webkit-transform: rotateZ(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotateZ(270deg);
-  margin: 0 0 0 1.87vw; }
+  width: 68%;
+  height: 68%;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 1vw solid #3600e0;
+  position: relative;
+  background-image: url(../images/play-a.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  border-radius: 300px; }
   @media only screen and (min-width: 992px) {
     .actions-play-image {
-      width: 2.5em;
-      margin: 0 0 0 0.5em; } }
+      border: 4px solid #3600e0; } }
 
 .checkbar-module {
   width: 25%;
@@ -3492,16 +3676,17 @@ a:hover {
     color: #fff; } }
 
 @media only screen and (min-width: 992px) {
-  .six__box:hover .actions-play {
-    border: 4px solid rgba(255, 255, 255, 0.15); } }
-
-@media only screen and (min-width: 992px) {
   .six__box:hover .actions-play--shadow1 {
     border: 4px solid rgba(255, 255, 255, 0.4); } }
 
 @media only screen and (min-width: 992px) {
   .six__box:hover .actions-play--shadow2 {
-    border: 4px solid #fff; } }
+    border: 4px solid rgba(255, 255, 255, 0.4); } }
+
+@media only screen and (min-width: 992px) {
+  .six__box:hover .actions-play-image {
+    border: 4px solid #fff;
+    background-image: url(../images/play-b.png); } }
 
 .scroll-six.six__title-cont--arrow {
   opacity: 0.19;
@@ -3569,7 +3754,7 @@ a:hover {
       padding-bottom: 10vw; } }
   .seven__title {
     width: 80%;
-    padding: 0 0 3.12vw 15%;
+    padding: 3vw 0 3.12vw 15%;
     font-weight: 600;
     font-size: 6.5vw;
     line-height: 120%;
@@ -3585,9 +3770,9 @@ a:hover {
     color: #fff; }
     @media only screen and (min-width: 992px) {
       .seven__title {
-        font-size: 2.8vw;
+        font-size: 2.3vw;
         width: 40%;
-        padding-left: 10%;
+        padding: 0 0 2vw 10%;
         top: -3vw;
         position: relative; } }
     .seven__title--span {
@@ -3805,7 +3990,7 @@ a:hover {
         color: #fff; }
         @media only screen and (min-width: 992px) {
           .contacto__start--title-cont--title {
-            font-size: 3.1vw;
+            font-size: 2.7vw;
             text-align: start;
             width: 100%; } }
   .contacto__container {
@@ -3813,26 +3998,27 @@ a:hover {
     width: 90%; }
     @media only screen and (min-width: 992px) {
       .contacto__container {
-        width: 35%;
+        width: 30%;
         position: absolute;
-        top: 3vw;
-        right: 10%; } }
+        top: 1vw;
+        right: 15%; } }
     .contacto__container--text {
       font-size: 3.12vw;
       font-weight: 600;
       color: #fff; }
       @media only screen and (min-width: 992px) {
         .contacto__container--text {
-          font-size: 1.35vw;
-          width: 94%;
+          font-size: 1.2vw;
+          width: 86%;
           margin-bottom: 0.5vw; } }
     .contacto__container--subtitle {
       font-size: 5.62vw;
       color: #2fe6b0; }
       @media only screen and (min-width: 992px) {
         .contacto__container--subtitle {
-          font-size: 2.5vw;
-          margin-bottom: 1vw; } }
+          font-size: 2vw;
+          margin-bottom: 1vw;
+          font-weight: 400; } }
 
 .form {
   -ms-flex-wrap: wrap;
@@ -3938,8 +4124,8 @@ a:hover {
     background-color: #2fe6b0; }
     @media only screen and (min-width: 992px) {
       .form button {
-        font-size: 1.5vw;
-        width: 13vw;
+        font-size: 1.3vw;
+        width: 10vw;
         padding: 0.5vw;
         -webkit-transition: 0.2s;
         -o-transition: 0.2s;
@@ -3957,7 +4143,7 @@ a:hover {
     .contacto-arrow {
       width: 12%;
       position: relative;
-      right: -13%;
+      right: 0%;
       margin-bottom: 1vw; } }
 
 .input-nombre {
@@ -4125,8 +4311,14 @@ a:hover {
             width: 2.5vw;
             height: 2.5vw;
             margin-bottom: 0; } }
-        .footer-container__subcont--links a img {
-          width: 100%; }
+        .footer-container__subcont--links a figure {
+          width: 100%;
+          height: 100%;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
     .footer-container__subcont--text {
       font-size: 2.5vw;
       margin: 1.56vw 0 3.12vw;
@@ -4149,3 +4341,21 @@ a:hover {
 
 .footer:hover .footer__flecha {
   width: 60%; }
+
+.footer-in {
+  background-image: url(../images/footer-in.svg); }
+  @media only screen and (min-width: 992px) {
+    .footer-in:hover {
+      background-image: url(../images/footer-in-a.svg); } }
+
+.footer-wsp {
+  background-image: url(../images/footer-wsp.svg); }
+  @media only screen and (min-width: 992px) {
+    .footer-wsp:hover {
+      background-image: url(../images/footer-wsp-a.svg); } }
+
+.footer-ig {
+  background-image: url(../images/footer-ig.svg); }
+  @media only screen and (min-width: 992px) {
+    .footer-ig:hover {
+      background-image: url(../images/footer-ig-a.svg); } }

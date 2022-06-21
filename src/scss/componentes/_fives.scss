@@ -1,6 +1,7 @@
 .five {
   // border: 2px solid red;
   padding-bottom: 50em;
+  padding-top: 10vw;
   position: relative;
   background-color: $color-variacion2;
   @include media(desktop-s) {
@@ -12,21 +13,22 @@
 
 .five-container {
   width: 90%;
-  //border: 2px solid red;
-  margin: 0 auto;
+  // border: 2px solid red;
+  margin: 10vw auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 0px;
-
+  transition: 1.3s;
+  will-change: top;
   position: relative;
-  top: -109.35em;
+  // top: -109.35em;
   transition: 0.5s;
   //padding-bottom: 100vw;
   @include media(desktop-s) {
     width: 70%;
     top: 0;
-    padding-bottom: 0;
+    padding-bottom: 0.4vw;
 
     //transition: 0.5s;
     top: 25em;
@@ -63,6 +65,8 @@
       @include media(desktop-s) {
         width: 3.3em;
         height: 3.3em;
+        transition: 0.3s ease-in-out;
+        will-change: background-image transform;
       }
     }
     &--number {
@@ -286,6 +290,36 @@
   background-image: url(../images/box4.svg);
 }
 
+.five-container__box:hover .five-container__box--image-cont {
+  @include media(desktop-s) {
+    transform: scale(1.2);
+  }
+}
+
+.five-container__box:hover .box1 {
+  @include media(desktop-s) {
+    background-image: url(../images/box1a.svg);
+  }
+}
+
+.five-container__box:hover .box2 {
+  @include media(desktop-s) {
+    background-image: url(../images/box2a.svg);
+  }
+}
+
+.five-container__box:hover .box3 {
+  @include media(desktop-s) {
+    background-image: url(../images/box3a.svg);
+  }
+}
+
+.five-container__box:hover .box4 {
+  @include media(desktop-s) {
+    background-image: url(../images/box4a.svg);
+  }
+}
+
 .line-one {
   border-bottom: 4px solid $color-variacion2;
   height: 0;
@@ -325,9 +359,10 @@
 // }
 
 .five-container-active {
-  top: -12vw;
+  top: -10vw;
+
   @include media(desktop-s) {
-    top: 5em;
+    top: -5em;
   }
 }
 
@@ -360,14 +395,14 @@
 }
 
 .project-subcont {
-  top: 43vw;
+  top: 65vw;
   @include media(desktop-s) {
     top: 29vw;
   }
 }
 
 .modules-subcont {
-  top: 43vw;
+  top: 65vw;
   height: 109vw;
   @include media(desktop-s) {
     align-items: flex-start;
@@ -380,7 +415,7 @@
 }
 
 .videos-subcont {
-  top: 105vw;
+  top: 127vw;
   display: none;
   @include media(desktop-s) {
     top: 29em;
@@ -388,7 +423,7 @@
 }
 
 .hours-subcont {
-  top: 105vw;
+  top: 127vw;
   display: none;
   @include media(desktop-s) {
     top: 29em;
@@ -465,6 +500,27 @@
 
 .module-container-3 {
   top: 2.3em;
+}
+
+.white-background {
+  position: absolute;
+  width: 100%;
+  height: 35vw;
+  top: 0;
+  transition: 1s;
+  will-change: height;
+  background-color: $color-claro;
+  @include media(desktop-s) {
+    height: 19vw;
+  }
+}
+
+.scroll-five .white-background {
+  height: 0vw;
+}
+
+.scroll-five .five-container {
+  top: 35vw;
 }
 
 // .five-button-shadow1 {

@@ -23,7 +23,7 @@ function handleSumbit(event) {
   $contactLoader.classList.remove("none");
   $contactLoader2.classList.remove("none");
 
-  fetch("https://formsubmit.co/ajax/diegomatera@gmail.com", {
+  fetch("https://formsubmit.co/ajax/cc5566c6947d7f6c5bf0241e813c4926", {
     method: "POST",
     body: new FormData(event.target),
   })
@@ -45,7 +45,7 @@ function handleSumbit(event) {
 function handleSumbit2(event) {
   event.preventDefault();
 
-  fetch("https://formsubmit.co/ajax/diegomatera@gmail.com", {
+  fetch("https://formsubmit.co/ajax/cc5566c6947d7f6c5bf0241e813c4926", {
     method: "POST",
     body: new FormData(event.target),
   })

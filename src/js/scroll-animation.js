@@ -18,6 +18,7 @@ window.addEventListener("scroll", function () {
         "scroll-three",
         "scroll-three-arrow",
         "scroll-four",
+        "scroll-five",
         "scroll-six",
         "scroll-seven"
 

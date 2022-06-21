@@ -1,23 +1,25 @@
 .regalo {
   position: absolute;
+  //position: sticky;
   width: 75%;
-  padding: 9vw 5vw 7vw 10vw;
+  padding: 9vw 7.5vw 7vw 7.5vw;
   //height: 100vw;
   //display: none;
   background-color: $color-claro;
   z-index: 4;
-  top: 34vw;
+  top: 24vw;
   opacity: 0;
   margin-left: -75%;
   transition: 1s ease-in-out;
   animation-name: regaloscarga;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 12s;
+  // animation-delay: 12s;
   will-change: margin;
   @include media(desktop-s) {
     width: 26%;
-    top: 19vw;
+    top: 14vw;
+
     padding: 2vw 3vw 2vw 3.5vw;
   }
   &__title {
@@ -29,6 +31,7 @@
     @include media(desktop-s) {
       font-size: 2vw;
       margin-bottom: 2.5vw;
+      line-height: 95%;
     }
     & span {
       font-size: 5.6vw;
@@ -47,15 +50,16 @@
     width: 6vw;
   }
   &__text {
-    font-size: 3.25vw;
+    font-size: 3vw;
     font-weight: 600;
     margin-bottom: 5vw;
     line-height: 105%;
     color: $color-variacion2;
     @include media(desktop-s) {
-      font-size: 1.04vw;
-      //  border: 2px solid red;
+      font-size: 0.95vw;
+      // border: 2px solid red;
       margin-bottom: 2vw;
+      line-height: 115%;
     }
   }
   &__form {
@@ -119,6 +123,8 @@
   display: flex;
   position: absolute;
   cursor: pointer;
+  transition: 0.3s;
+  will-change: background-image;
   background-image: url(../images/close.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -131,10 +137,11 @@
     display: flex;
     position: absolute;
     //border: 2px solid red;
-    background-image: url(../images/close.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+  }
+  &:hover {
+    @include media(desktop-s) {
+      background-image: url(../images/close2.png);
+    }
   }
 }
 

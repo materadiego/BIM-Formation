@@ -22,8 +22,17 @@
   }
 }
 
-.header-logo-container {
+.header-logo {
   display: none;
+  @include media(desktop-s) {
+    display: flex;
+    //  border: 2px solid red;
+    height: 60px;
+  }
+}
+
+.header-logo-container {
+  //display: none;
   @include media(desktop-s) {
     display: flex;
     //border: 2px solid red;
@@ -153,6 +162,9 @@
         background-position: center;
         background-repeat: no-repeat;
         transition: 0.3s ease;
+        &:hover {
+          background-image: url(../images/header-wsp3.svg);
+        }
       }
     }
   }
@@ -181,7 +193,7 @@
       }
     }
     &--text {
-      font-size: 2.7vw;
+      font-size: 2.5vw;
       line-height: 110%;
       font-weight: 300;
       font-family: $Fuente1;
@@ -264,5 +276,11 @@
 .sticky .header-container__buttons--wsp figure {
   @include media(desktop-s) {
     background-image: url(../images/header-wsp.svg);
+  }
+}
+
+.sticky .header-container__buttons--wsp figure:hover {
+  @include media(desktop-s) {
+    background-image: url(../images/header-wsp3.svg);
   }
 }

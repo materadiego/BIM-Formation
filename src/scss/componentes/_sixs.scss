@@ -31,8 +31,9 @@
   &__title-cont {
     //border: 2px solid red;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 0;
     display: flex;
+    padding-right: 1vw;
     flex-wrap: wrap;
     justify-content: flex-end;
     @include media(desktop-s) {
@@ -40,6 +41,7 @@
       width: 100%;
       height: 14em;
       padding-top: 2vw;
+      padding-right: 0;
     }
 
     &--title {
@@ -52,8 +54,9 @@
       line-height: 100%;
       color: $color-claro;
       @include media(desktop-s) {
-        font-size: 3em;
+        font-size: 2.3em;
         margin-bottom: 0px;
+        margin-top: 0.6em;
       }
       &--span {
         color: $color-variacion1;
@@ -87,6 +90,7 @@
     transition: $scroll-transition2;
     will-change: top opacity;
     background-color: $color-claro;
+
     @include media(desktop-s) {
       width: 47%;
       height: 16em;
@@ -362,10 +366,16 @@
 }
 
 .actions-play {
-  border: 4px solid $color-shadow1;
+  //border: 4px solid $color-shadow1;
+  // border: 4px solid red;
+
   width: 20.31vw;
   height: 20.31vw;
-  border-radius: 300px;
+  // border-radius: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   @include media(desktop-s) {
     width: 5vw;
@@ -374,29 +384,73 @@
     height: 5em;
   }
   &--shadow1 {
-    border: 4px solid $color-shadow2;
-    width: 100%;
-    height: 100%;
+    border: 0.8vw solid $color-shadow1;
+    position: absolute;
+    width: 80%;
+    height: 80%;
     border-radius: 300px;
     transition: 0.3s ease-in-out;
+    animation-name: play-animation;
+    animation-duration: 2s;
+    animation-delay: 2.8s;
+    animation-iteration-count: infinite;
+    @include media(desktop-s) {
+      border: 4px solid $color-shadow1;
+    }
   }
   &--shadow2 {
-    border: 4px solid $color-variacion2;
-    width: 100%;
-    height: 100%;
+    border: 0.8vw solid $color-shadow2;
+    position: absolute;
+
+    width: 75%;
+    height: 75%;
     border-radius: 300px;
-    @include basic-flex;
+    animation-name: play-animation;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
     transition: 0.3s ease-in-out;
+    @include media(desktop-s) {
+      border: 4px solid $color-shadow2;
+    }
+  }
+}
+
+@keyframes play-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
   }
 }
 
 .actions-play-image {
-  width: 7.81vw;
-  transform: rotateZ(270deg);
-  margin: 0 0 0 1.87vw;
+  // width: 7.81vw;
+  //height: 7.81vw;
+  width: 68%;
+  height: 68%;
+  transition: 0.3s ease-in-out;
+
+  border: 1vw solid $color-variacion2;
+  position: relative;
+  background-image: url(../images/play-a.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  border-radius: 300px;
   @include media(desktop-s) {
-    width: 2.5em;
-    margin: 0 0 0 0.5em;
+    border: 4px solid $color-variacion2;
+
+    // width: 2.5em;
+    // height: 2.5em;
   }
 }
 
@@ -445,11 +499,6 @@
     color: $color-claro;
   }
 }
-.six__box:hover .actions-play {
-  @include media(desktop-s) {
-    border: 4px solid $color-shadow3;
-  }
-}
 
 .six__box:hover .actions-play--shadow1 {
   @include media(desktop-s) {
@@ -458,7 +507,14 @@
 }
 .six__box:hover .actions-play--shadow2 {
   @include media(desktop-s) {
+    border: 4px solid $color-shadow4;
+  }
+}
+
+.six__box:hover .actions-play-image {
+  @include media(desktop-s) {
     border: 4px solid $color-claro;
+    background-image: url(../images/play-b.png);
   }
 }
 
