@@ -20,4 +20,4 @@ function hideChat2() {
 }
 
 chatX2.addEventListener("click", hideChat2);
-chatX.addEventListener("click", hideChat);
+// chatX.addEventListener("click", hideChat);

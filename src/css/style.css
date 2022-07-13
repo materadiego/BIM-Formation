@@ -574,7 +574,7 @@ a:hover {
 .bline-one {
   width: 16%;
   height: 85vw;
-  top: 243vw;
+  top: 242vw;
   border-top: 2px solid #2fe6b0;
   border-right: 2px solid #2fe6b0; }
   @media only screen and (min-width: 992px) {
@@ -1491,7 +1491,7 @@ a:hover {
       font-weight: 600;
       padding: 1.5vw 1.5vw;
       margin: 2.5vw 0 0;
-      font-size: 3.3vw;
+      font-size: 3.1vw;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1537,7 +1537,7 @@ a:hover {
       .hero__button--two figure {
         width: 2.5vw;
         height: 2.5vw;
-        margin-left: 2vw;
+        margin-left: 1.5vw;
         margin-bottom: 0;
         padding: 0.2vw;
         background-image: url(../images/six-arrow2.svg);
@@ -1802,11 +1802,11 @@ a:hover {
 .two {
   height: 118.75vw;
   padding: 21.87vw 0 0;
+  position: relative;
   background-color: #3600e0; }
   @media only screen and (min-width: 992px) {
     .two {
       padding: 6vw 5% 0;
-      position: relative;
       height: 31vw; } }
   .two__container {
     overflow: hidden; }
@@ -1887,9 +1887,9 @@ a:hover {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
@@ -1915,8 +1915,7 @@ a:hover {
       .two__container--subcontainer2--image {
         width: 10vw;
         height: 10vw;
-        opacity: 0.25;
-        opacity: 1;
+        display: none;
         left: 0;
         will-change: left opacity;
         position: relative;
@@ -1927,6 +1926,10 @@ a:hover {
           .two__container--subcontainer2--image {
             width: 2vw;
             height: 2vw;
+            opacity: 1;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
             -webkit-transform: rotateZ(45deg) scale(1.5);
             -ms-transform: rotate(45deg) scale(1.5);
             transform: rotateZ(45deg) scale(1.5);
@@ -1934,9 +1937,8 @@ a:hover {
       .two__container--subcontainer2--text {
         font-size: 3.8vw;
         width: 50vw;
-        font-weight: 600;
-        text-align: end;
-        margin: 0 0 0 3.12vw;
+        text-align: start;
+        margin: 1.5vw 0 0 18%;
         font-weight: 300;
         color: #fff;
         font-family: "Aventa"; }
@@ -1946,7 +1948,7 @@ a:hover {
             text-align: start;
             margin: 0;
             width: 90%;
-            font-weight: 400; } }
+            font-weight: 300; } }
         .two__container--subcontainer2--text span {
           font-weight: 600;
           color: #2fe6b0; }
@@ -1988,7 +1990,10 @@ a:hover {
   width: 0px;
   height: 0px;
   position: absolute;
-  top: -8vw; }
+  top: 0; }
+  @media only screen and (min-width: 992px) {
+    #content {
+      top: -8vw; } }
 
 .scroll-two-title {
   opacity: 0.3;
